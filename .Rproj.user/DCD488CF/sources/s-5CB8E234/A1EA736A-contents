@@ -53,6 +53,7 @@ data$Landkreis <- data$Regional.Schluessel %>%
   sapply(get_lk_by_regschl)
 
 
+# test
 
 # Development -------------------------------------------------------------
 ggplot(data %>%
