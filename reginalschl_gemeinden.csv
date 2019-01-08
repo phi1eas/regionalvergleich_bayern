@@ -1,0 +1,3638 @@
+rs_land;rs_rb;rs_kreis;rs_vb;rs_gem;rs_gemeindename
+09;;;;;Bayern
+09;1;;;;Oberbayern
+09;1;61;;;Ingolstadt
+09;1;61;0000;;Ingolstadt
+09;1;61;0000;000;Ingolstadt
+09;1;62;;;München, Landeshauptstadt
+09;1;62;0000;;München, Landeshauptstadt
+09;1;62;0000;000;München, Landeshauptstadt
+09;1;63;;;Rosenheim
+09;1;63;0000;;Rosenheim
+09;1;63;0000;000;Rosenheim
+09;1;71;;;Altötting
+09;1;71;0111;;Altötting, St
+09;1;71;0111;111;Altötting, St
+09;1;71;0112;;Burghausen, St
+09;1;71;0112;112;Burghausen, St
+09;1;71;0113;;Burgkirchen a.d.Alz
+09;1;71;0113;113;Burgkirchen a.d.Alz
+09;1;71;0117;;Garching a.d.Alz
+09;1;71;0117;117;Garching a.d.Alz
+09;1;71;0118;;Haiming
+09;1;71;0118;118;Haiming
+09;1;71;0125;;Neuötting, St
+09;1;71;0125;125;Neuötting, St
+09;1;71;0127;;Pleiskirchen
+09;1;71;0127;127;Pleiskirchen
+09;1;71;0131;;Teising
+09;1;71;0131;131;Teising
+09;1;71;0132;;Töging a.Inn, St
+09;1;71;0132;132;Töging a.Inn, St
+09;1;71;0133;;Tüßling, M
+09;1;71;0133;133;Tüßling, M
+09;1;71;0137;;Winhöring
+09;1;71;0137;137;Winhöring
+09;1;71;5101;;Emmerting (VGem)
+09;1;71;5101;114;Emmerting
+09;1;71;5101;124;Mehring
+09;1;71;5102;;Kirchweidach (VGem)
+09;1;71;5102;116;Feichten a.d.Alz
+09;1;71;5102;119;Halsbach
+09;1;71;5102;122;Kirchweidach
+09;1;71;5102;134;Tyrlaching
+09;1;71;5103;;Marktl (VGem)
+09;1;71;5103;123;Marktl, M
+09;1;71;5103;130;Stammham
+09;1;71;5104;;Reischach (VGem)
+09;1;71;5104;115;Erlbach
+09;1;71;5104;126;Perach
+09;1;71;5104;129;Reischach
+09;1;71;5106;;Unterneukirchen (VGem)
+09;1;71;5106;121;Kastl
+09;1;71;5106;135;Unterneukirchen
+09;1;72;;;Berchtesgadener Land
+09;1;72;0111;;Ainring
+09;1;72;0111;111;Ainring
+09;1;72;0112;;Anger
+09;1;72;0112;112;Anger
+09;1;72;0114;;Bad Reichenhall, GKSt
+09;1;72;0114;114;Bad Reichenhall, GKSt
+09;1;72;0115;;Bayerisch Gmain
+09;1;72;0115;115;Bayerisch Gmain
+09;1;72;0116;;Berchtesgaden, M
+09;1;72;0116;116;Berchtesgaden, M
+09;1;72;0117;;Bischofswiesen
+09;1;72;0117;117;Bischofswiesen
+09;1;72;0118;;Freilassing, St
+09;1;72;0118;118;Freilassing, St
+09;1;72;0122;;Laufen, St
+09;1;72;0122;122;Laufen, St
+09;1;72;0124;;Marktschellenberg, M
+09;1;72;0124;124;Marktschellenberg, M
+09;1;72;0128;;Piding
+09;1;72;0128;128;Piding
+09;1;72;0129;;Ramsau b.Berchtesgaden
+09;1;72;0129;129;Ramsau b.Berchtesgaden
+09;1;72;0130;;Saaldorf-Surheim
+09;1;72;0130;130;Saaldorf-Surheim
+09;1;72;0131;;Schneizlreuth
+09;1;72;0131;131;Schneizlreuth
+09;1;72;0132;;Schönau a.Königssee
+09;1;72;0132;132;Schönau a.Königssee
+09;1;72;0134;;Teisendorf, M
+09;1;72;0134;134;Teisendorf, M
+09;1;72;9444;;Gdefr. Geb. (Lkr Berchtesgadener Land)
+09;1;72;9444;444;Gdefr. Geb. (Lkr Berchtesgadener Land)
+09;1;73;;;Bad Tölz-Wolfratshausen
+09;1;73;0111;;Bad Heilbrunn
+09;1;73;0111;111;Bad Heilbrunn
+09;1;73;0112;;Bad Tölz, St
+09;1;73;0112;112;Bad Tölz, St
+09;1;73;0118;;Dietramszell
+09;1;73;0118;118;Dietramszell
+09;1;73;0120;;Egling
+09;1;73;0120;120;Egling
+09;1;73;0123;;Eurasburg
+09;1;73;0123;123;Eurasburg
+09;1;73;0124;;Gaißach
+09;1;73;0124;124;Gaißach
+09;1;73;0126;;Geretsried, St
+09;1;73;0126;126;Geretsried, St
+09;1;73;0130;;Icking
+09;1;73;0130;130;Icking
+09;1;73;0131;;Jachenau
+09;1;73;0131;131;Jachenau
+09;1;73;0134;;Königsdorf
+09;1;73;0134;134;Königsdorf
+09;1;73;0135;;Lenggries
+09;1;73;0135;135;Lenggries
+09;1;73;0137;;Münsing
+09;1;73;0137;137;Münsing
+09;1;73;0145;;Wackersberg
+09;1;73;0145;145;Wackersberg
+09;1;73;0147;;Wolfratshausen, St
+09;1;73;0147;147;Wolfratshausen, St
+09;1;73;5107;;Benediktbeuern (VGem)
+09;1;73;5107;113;Benediktbeuern
+09;1;73;5107;115;Bichl
+09;1;73;5108;;Kochel a.See (VGem)
+09;1;73;5108;133;Kochel a.See
+09;1;73;5108;142;Schlehdorf
+09;1;73;5109;;Reichersbeuern (VGem)
+09;1;73;5109;127;Greiling
+09;1;73;5109;140;Reichersbeuern
+09;1;73;5109;141;Sachsenkam
+09;1;73;9444;;Gdefr. Geb. (Lkr Bad Tölz-Wolfratshausen)
+09;1;73;9444;444;Gdefr. Geb. (Lkr Bad Tölz-Wolfratshausen)
+09;1;74;;;Dachau
+09;1;74;0111;;Altomünster, M
+09;1;74;0111;111;Altomünster, M
+09;1;74;0113;;Bergkirchen
+09;1;74;0113;113;Bergkirchen
+09;1;74;0115;;Dachau, GKSt
+09;1;74;0115;115;Dachau, GKSt
+09;1;74;0118;;Erdweg
+09;1;74;0118;118;Erdweg
+09;1;74;0121;;Haimhausen
+09;1;74;0121;121;Haimhausen
+09;1;74;0122;;Hebertshausen
+09;1;74;0122;122;Hebertshausen
+09;1;74;0126;;Karlsfeld
+09;1;74;0126;126;Karlsfeld
+09;1;74;0131;;Markt Indersdorf, M
+09;1;74;0131;131;Markt Indersdorf, M
+09;1;74;0135;;Odelzhausen
+09;1;74;0135;135;Odelzhausen
+09;1;74;0136;;Petershausen
+09;1;74;0136;136;Petershausen
+09;1;74;0137;;Pfaffenhofen a.d.Glonn
+09;1;74;0137;137;Pfaffenhofen a.d.Glonn
+09;1;74;0141;;Röhrmoos
+09;1;74;0141;141;Röhrmoos
+09;1;74;0143;;Schwabhausen
+09;1;74;0143;143;Schwabhausen
+09;1;74;0146;;Sulzemoos
+09;1;74;0146;146;Sulzemoos
+09;1;74;0147;;Hilgertshausen-Tandern
+09;1;74;0147;147;Hilgertshausen-Tandern
+09;1;74;0150;;Vierkirchen
+09;1;74;0150;150;Vierkirchen
+09;1;74;0151;;Weichs
+09;1;74;0151;151;Weichs
+09;1;75;;;Ebersberg
+09;1;75;0111;;Anzing
+09;1;75;0111;111;Anzing
+09;1;75;0115;;Ebersberg, St
+09;1;75;0115;115;Ebersberg, St
+09;1;75;0118;;Forstinning
+09;1;75;0118;118;Forstinning
+09;1;75;0122;;Grafing b.München, St
+09;1;75;0122;122;Grafing b.München, St
+09;1;75;0123;;Hohenlinden
+09;1;75;0123;123;Hohenlinden
+09;1;75;0124;;Kirchseeon, M
+09;1;75;0124;124;Kirchseeon, M
+09;1;75;0127;;Markt Schwaben, M
+09;1;75;0127;127;Markt Schwaben, M
+09;1;75;0132;;Vaterstetten
+09;1;75;0132;132;Vaterstetten
+09;1;75;0133;;Pliening
+09;1;75;0133;133;Pliening
+09;1;75;0135;;Poing
+09;1;75;0135;135;Poing
+09;1;75;0137;;Steinhöring
+09;1;75;0137;137;Steinhöring
+09;1;75;0139;;Zorneding
+09;1;75;0139;139;Zorneding
+09;1;75;5112;;Aßling (VGem)
+09;1;75;5112;112;Aßling
+09;1;75;5112;119;Frauenneuharting
+09;1;75;5112;136;Emmering
+09;1;75;5114;;Glonn (VGem)
+09;1;75;5114;113;Baiern
+09;1;75;5114;114;Bruck
+09;1;75;5114;116;Egmating
+09;1;75;5114;121;Glonn, M
+09;1;75;5114;128;Moosach
+09;1;75;5114;131;Oberpframmern
+09;1;75;9444;;Gdefr. Geb. (Lkr Ebersberg)
+09;1;75;9444;444;Gdefr. Geb. (Lkr Ebersberg)
+09;1;76;;;Eichstätt
+09;1;76;0112;;Altmannstein, M
+09;1;76;0112;112;Altmannstein, M
+09;1;76;0114;;Beilngries, St
+09;1;76;0114;114;Beilngries, St
+09;1;76;0118;;Buxheim
+09;1;76;0118;118;Buxheim
+09;1;76;0120;;Denkendorf
+09;1;76;0120;120;Denkendorf
+09;1;76;0121;;Dollnstein, M
+09;1;76;0121;121;Dollnstein, M
+09;1;76;0123;;Eichstätt, GKSt
+09;1;76;0123;123;Eichstätt, GKSt
+09;1;76;0126;;Gaimersheim, M
+09;1;76;0126;126;Gaimersheim, M
+09;1;76;0129;;Großmehring
+09;1;76;0129;129;Großmehring
+09;1;76;0131;;Hepberg
+09;1;76;0131;131;Hepberg
+09;1;76;0132;;Hitzhofen
+09;1;76;0132;132;Hitzhofen
+09;1;76;0137;;Kinding, M
+09;1;76;0137;137;Kinding, M
+09;1;76;0138;;Kipfenberg, M
+09;1;76;0138;138;Kipfenberg, M
+09;1;76;0139;;Kösching, M
+09;1;76;0139;139;Kösching, M
+09;1;76;0143;;Lenting
+09;1;76;0143;143;Lenting
+09;1;76;0148;;Mörnsheim, M
+09;1;76;0148;148;Mörnsheim, M
+09;1;76;0161;;Stammham
+09;1;76;0161;161;Stammham
+09;1;76;0164;;Titting, M
+09;1;76;0164;164;Titting, M
+09;1;76;0166;;Wellheim, M
+09;1;76;0166;166;Wellheim, M
+09;1;76;0167;;Wettstetten
+09;1;76;0167;167;Wettstetten
+09;1;76;5115;;Eichstätt (VGem)
+09;1;76;5115;155;Pollenfeld
+09;1;76;5115;160;Schernfeld
+09;1;76;5115;165;Walting
+09;1;76;5116;;Eitensheim (VGem)
+09;1;76;5116;116;Böhmfeld
+09;1;76;5116;124;Eitensheim
+09;1;76;5118;;Nassenfels (VGem)
+09;1;76;5118;111;Adelschlag
+09;1;76;5118;122;Egweil
+09;1;76;5118;149;Nassenfels, M
+09;1;76;5119;;Pförring (VGem)
+09;1;76;5119;147;Mindelstetten
+09;1;76;5119;150;Oberdolling
+09;1;76;5119;153;Pförring, M
+09;1;76;9444;;Gdefr. Geb. (Lkr Eichstätt)
+09;1;76;9444;444;Gdefr. Geb. (Lkr Eichstätt)
+09;1;77;;;Erding
+09;1;77;0113;;Bockhorn
+09;1;77;0113;113;Bockhorn
+09;1;77;0115;;Dorfen, St
+09;1;77;0115;115;Dorfen, St
+09;1;77;0117;;Erding, St
+09;1;77;0117;117;Erding, GKSt
+09;1;77;0118;;Finsing
+09;1;77;0118;118;Finsing
+09;1;77;0119;;Forstern
+09;1;77;0119;119;Forstern
+09;1;77;0120;;Fraunberg
+09;1;77;0120;120;Fraunberg
+09;1;77;0123;;Isen, M
+09;1;77;0123;123;Isen, M
+09;1;77;0127;;Lengdorf
+09;1;77;0127;127;Lengdorf
+09;1;77;0130;;Moosinning
+09;1;77;0130;130;Moosinning
+09;1;77;0137;;Sankt Wolfgang
+09;1;77;0137;137;Sankt Wolfgang
+09;1;77;0139;;Taufkirchen (Vils)
+09;1;77;0139;139;Taufkirchen (Vils)
+09;1;77;5120;;Pastetten (VGem)
+09;1;77;5120;114;Buch a.Buchrain
+09;1;77;5120;135;Pastetten
+09;1;77;5121;;Hörlkofen (VGem)
+09;1;77;5121;142;Walpertskirchen
+09;1;77;5121;144;Wörth
+09;1;77;5123;;Oberding (VGem)
+09;1;77;5123;116;Eitting
+09;1;77;5123;133;Oberding
+09;1;77;5124;;Oberneuching (VGem)
+09;1;77;5124;131;Neuching
+09;1;77;5124;134;Ottenhofen
+09;1;77;5125;;Steinkirchen (VGem)
+09;1;77;5125;121;Hohenpolding
+09;1;77;5125;122;Inning a.Holz
+09;1;77;5125;124;Kirchberg
+09;1;77;5125;138;Steinkirchen
+09;1;77;5126;;Wartenberg (VGem)
+09;1;77;5126;112;Berglern
+09;1;77;5126;126;Langenpreising
+09;1;77;5126;143;Wartenberg, M
+09;1;78;;;Freising
+09;1;78;0116;;Au i.d.Hallertau, M
+09;1;78;0116;116;Au i.d.Hallertau, M
+09;1;78;0120;;Eching
+09;1;78;0120;120;Eching
+09;1;78;0122;;Rudelzhausen
+09;1;78;0122;122;Rudelzhausen
+09;1;78;0123;;Fahrenzhausen
+09;1;78;0123;123;Fahrenzhausen
+09;1;78;0124;;Freising, GKSt
+09;1;78;0124;124;Freising, GKSt
+09;1;78;0130;;Hallbergmoos
+09;1;78;0130;130;Hallbergmoos
+09;1;78;0133;;Hohenkammer
+09;1;78;0133;133;Hohenkammer
+09;1;78;0136;;Kirchdorf a.d.Amper
+09;1;78;0136;136;Kirchdorf a.d.Amper
+09;1;78;0137;;Kranzberg
+09;1;78;0137;137;Kranzberg
+09;1;78;0138;;Langenbach
+09;1;78;0138;138;Langenbach
+09;1;78;0140;;Marzling
+09;1;78;0140;140;Marzling
+09;1;78;0143;;Moosburg a.d.Isar, St
+09;1;78;0143;143;Moosburg a.d.Isar, St
+09;1;78;0144;;Nandlstadt, M
+09;1;78;0144;144;Nandlstadt, M
+09;1;78;0145;;Neufahrn b.Freising
+09;1;78;0145;145;Neufahrn b.Freising
+09;1;78;5127;;Allershausen (VGem)
+09;1;78;5127;113;Allershausen
+09;1;78;5127;150;Paunzhausen
+09;1;78;5129;;Mauern (VGem)
+09;1;78;5129;125;Gammelsdorf
+09;1;78;5129;132;Hörgertshausen
+09;1;78;5129;142;Mauern
+09;1;78;5129;155;Wang
+09;1;78;5130;;Zolling (VGem)
+09;1;78;5130;115;Attenkirchen
+09;1;78;5130;129;Haag a.d.Amper
+09;1;78;5130;156;Wolfersdorf
+09;1;78;5130;157;Zolling
+09;1;79;;;Fürstenfeldbruck
+09;1;79;0113;;Alling
+09;1;79;0113;113;Alling
+09;1;79;0117;;Egenhofen
+09;1;79;0117;117;Egenhofen
+09;1;79;0118;;Eichenau
+09;1;79;0118;118;Eichenau
+09;1;79;0119;;Emmering
+09;1;79;0119;119;Emmering
+09;1;79;0121;;Fürstenfeldbruck, GKSt
+09;1;79;0121;121;Fürstenfeldbruck, GKSt
+09;1;79;0123;;Germering, GKSt
+09;1;79;0123;123;Germering, GKSt
+09;1;79;0126;;Gröbenzell
+09;1;79;0126;126;Gröbenzell
+09;1;79;0134;;Maisach
+09;1;79;0134;134;Maisach
+09;1;79;0138;;Moorenweis
+09;1;79;0138;138;Moorenweis
+09;1;79;0142;;Olching
+09;1;79;0142;142;Olching, St
+09;1;79;0145;;Puchheim
+09;1;79;0145;145;Puchheim, St
+09;1;79;0149;;Türkenfeld
+09;1;79;0149;149;Türkenfeld
+09;1;79;5131;;Mammendorf (VGem)
+09;1;79;5131;111;Adelshofen
+09;1;79;5131;114;Althegnenberg
+09;1;79;5131;128;Hattenhofen
+09;1;79;5131;130;Jesenwang
+09;1;79;5131;132;Landsberied
+09;1;79;5131;136;Mammendorf
+09;1;79;5131;137;Mittelstetten
+09;1;79;5131;140;Oberschweinbach
+09;1;79;5132;;Grafrath (VGem)
+09;1;79;5132;125;Grafrath
+09;1;79;5132;131;Kottgeisering
+09;1;79;5132;147;Schöngeising
+09;1;80;;;Garmisch-Partenkirchen
+09;1;80;0112;;Bad Kohlgrub
+09;1;80;0112;112;Bad Kohlgrub
+09;1;80;0116;;Farchant
+09;1;80;0116;116;Farchant
+09;1;80;0117;;Garmisch-Partenkirchen, M
+09;1;80;0117;117;Garmisch-Partenkirchen, M
+09;1;80;0118;;Grainau
+09;1;80;0118;118;Grainau
+09;1;80;0122;;Krün
+09;1;80;0122;122;Krün
+09;1;80;0123;;Mittenwald, M
+09;1;80;0123;123;Mittenwald, M
+09;1;80;0124;;Murnau a.Staffelsee, M
+09;1;80;0124;124;Murnau a.Staffelsee, M
+09;1;80;0125;;Oberammergau
+09;1;80;0125;125;Oberammergau
+09;1;80;0126;;Oberau
+09;1;80;0126;126;Oberau
+09;1;80;0134;;Uffing a.Staffelsee
+09;1;80;0134;134;Uffing a.Staffelsee
+09;1;80;0136;;Wallgau
+09;1;80;0136;136;Wallgau
+09;1;80;5133;;Saulgrub (VGem)
+09;1;80;5133;113;Bad Bayersoien
+09;1;80;5133;129;Saulgrub
+09;1;80;5135;;Unterammergau (VGem)
+09;1;80;5135;115;Ettal
+09;1;80;5135;135;Unterammergau
+09;1;80;5136;;Ohlstadt (VGem)
+09;1;80;5136;114;Eschenlohe
+09;1;80;5136;119;Großweil
+09;1;80;5136;127;Ohlstadt
+09;1;80;5136;131;Schwaigen
+09;1;80;5137;;Seehausen a.Staffelsee (VGem)
+09;1;80;5137;128;Riegsee
+09;1;80;5137;132;Seehausen a.Staffelsee
+09;1;80;5137;133;Spatzenhausen
+09;1;80;9444;;Gdefr. Geb. (Lkr Garmisch-Partenkirchen)
+09;1;80;9444;444;Gdefr. Geb. (Lkr Garmisch-Partenkirchen)
+09;1;81;;;Landsberg am Lech
+09;1;81;0113;;Denklingen
+09;1;81;0113;113;Denklingen
+09;1;81;0114;;Dießen am Ammersee, M
+09;1;81;0114;114;Dießen am Ammersee, M
+09;1;81;0116;;Egling a.d.Paar
+09;1;81;0116;116;Egling a.d.Paar
+09;1;81;0122;;Geltendorf
+09;1;81;0122;122;Geltendorf
+09;1;81;0128;;Kaufering, M
+09;1;81;0128;128;Kaufering, M
+09;1;81;0130;;Landsberg am Lech, GKSt
+09;1;81;0130;130;Landsberg am Lech, GKSt
+09;1;81;0132;;Penzing
+09;1;81;0132;132;Penzing
+09;1;81;0144;;Utting am Ammersee
+09;1;81;0144;144;Utting am Ammersee
+09;1;81;0145;;Weil
+09;1;81;0145;145;Weil
+09;1;81;5138;;Fuchstal (VGem)
+09;1;81;5138;121;Fuchstal
+09;1;81;5138;143;Unterdießen
+09;1;81;5139;;Igling (VGem)
+09;1;81;5139;126;Hurlach
+09;1;81;5139;127;Igling
+09;1;81;5139;131;Obermeitingen
+09;1;81;5140;;Prittriching (VGem)
+09;1;81;5140;134;Prittriching
+09;1;81;5140;138;Scheuring
+09;1;81;5141;;Pürgen (VGem)
+09;1;81;5141;124;Hofstetten
+09;1;81;5141;140;Schwifting
+09;1;81;5141;141;Pürgen
+09;1;81;5142;;Reichling (VGem)
+09;1;81;5142;111;Apfeldorf
+09;1;81;5142;129;Kinsau
+09;1;81;5142;133;Vilgertshofen
+09;1;81;5142;135;Reichling
+09;1;81;5142;137;Rott
+09;1;81;5142;142;Thaining
+09;1;81;5143;;Schondorf a.Ammersee (VGem)
+09;1;81;5143;115;Eching am Ammersee
+09;1;81;5143;123;Greifenberg
+09;1;81;5143;139;Schondorf am Ammersee
+09;1;81;5144;;Windach (VGem)
+09;1;81;5144;118;Eresing
+09;1;81;5144;120;Finning
+09;1;81;5144;146;Windach
+09;1;81;9444;;Gdefr. Geb. (Lkr Landsberg am Lech)
+09;1;81;9444;444;Gdefr. Geb. (Lkr Landsberg am Lech)
+09;1;82;;;Miesbach
+09;1;82;0111;;Bad Wiessee
+09;1;82;0111;111;Bad Wiessee
+09;1;82;0112;;Bayrischzell
+09;1;82;0112;112;Bayrischzell
+09;1;82;0114;;Fischbachau
+09;1;82;0114;114;Fischbachau
+09;1;82;0116;;Gmund a.Tegernsee
+09;1;82;0116;116;Gmund a.Tegernsee
+09;1;82;0119;;Hausham
+09;1;82;0119;119;Hausham
+09;1;82;0120;;Holzkirchen, M
+09;1;82;0120;120;Holzkirchen, M
+09;1;82;0123;;Irschenberg
+09;1;82;0123;123;Irschenberg
+09;1;82;0124;;Kreuth
+09;1;82;0124;124;Kreuth
+09;1;82;0125;;Miesbach, St
+09;1;82;0125;125;Miesbach, St
+09;1;82;0127;;Otterfing
+09;1;82;0127;127;Otterfing
+09;1;82;0129;;Rottach-Egern
+09;1;82;0129;129;Rottach-Egern
+09;1;82;0131;;Schliersee, M
+09;1;82;0131;131;Schliersee, M
+09;1;82;0132;;Tegernsee, St
+09;1;82;0132;132;Tegernsee, St
+09;1;82;0133;;Valley
+09;1;82;0133;133;Valley
+09;1;82;0134;;Waakirchen
+09;1;82;0134;134;Waakirchen
+09;1;82;0136;;Warngau
+09;1;82;0136;136;Warngau
+09;1;82;0137;;Weyarn
+09;1;82;0137;137;Weyarn
+09;1;83;;;Mühldorf a.Inn
+09;1;83;0112;;Ampfing
+09;1;83;0112;112;Ampfing
+09;1;83;0113;;Aschau a.Inn
+09;1;83;0113;113;Aschau a.Inn
+09;1;83;0114;;Buchbach, M
+09;1;83;0114;114;Buchbach, M
+09;1;83;0119;;Haag i.OB, M
+09;1;83;0119;119;Haag i.OB, M
+09;1;83;0127;;Mettenheim
+09;1;83;0127;127;Mettenheim
+09;1;83;0128;;Mühldorf a.Inn, St
+09;1;83;0128;128;Mühldorf a.Inn, St
+09;1;83;0135;;Obertaufkirchen
+09;1;83;0135;135;Obertaufkirchen
+09;1;83;0144;;Schwindegg
+09;1;83;0144;144;Schwindegg
+09;1;83;0148;;Waldkraiburg, St
+09;1;83;0148;148;Waldkraiburg, St
+09;1;83;5145;;Heldenstein (VGem)
+09;1;83;5145;120;Heldenstein
+09;1;83;5145;138;Rattenkirchen
+09;1;83;5146;;Gars a.Inn (VGem)
+09;1;83;5146;118;Gars a.Inn, M
+09;1;83;5146;147;Unterreit
+09;1;83;5147;;Reichertsheim (VGem)
+09;1;83;5147;123;Kirchdorf
+09;1;83;5147;140;Reichertsheim
+09;1;83;5148;;Kraiburg a.Inn (VGem)
+09;1;83;5148;122;Jettenbach
+09;1;83;5148;124;Kraiburg a.Inn, M
+09;1;83;5148;145;Taufkirchen
+09;1;83;5149;;Neumarkt-Sankt Veit (VGem)
+09;1;83;5149;115;Egglkofen
+09;1;83;5149;129;Neumarkt-Sankt Veit, St
+09;1;83;5150;;Oberbergkirchen (VGem)
+09;1;83;5150;125;Lohkirchen
+09;1;83;5150;132;Oberbergkirchen
+09;1;83;5150;143;Schönberg
+09;1;83;5150;151;Zangberg
+09;1;83;5151;;Polling (VGem)
+09;1;83;5151;134;Oberneukirchen
+09;1;83;5151;136;Polling
+09;1;83;5152;;Rohrbach (VGem)
+09;1;83;5152;116;Erharting
+09;1;83;5152;130;Niederbergkirchen
+09;1;83;5152;131;Niedertaufkirchen
+09;1;83;5183;;Maitenbeth (VGem)
+09;1;83;5183;126;Maitenbeth
+09;1;83;5183;139;Rechtmehring
+09;1;83;9444;;Gdefr. Geb. (Lkr Mühldorf a.Inn)
+09;1;83;9444;444;Gdefr. Geb. (Lkr Mühldorf a.Inn)
+09;1;84;;;München
+09;1;84;0112;;Aschheim
+09;1;84;0112;112;Aschheim
+09;1;84;0113;;Baierbrunn
+09;1;84;0113;113;Baierbrunn
+09;1;84;0114;;Brunnthal
+09;1;84;0114;114;Brunnthal
+09;1;84;0118;;Feldkirchen
+09;1;84;0118;118;Feldkirchen
+09;1;84;0119;;Garching b.München, St
+09;1;84;0119;119;Garching b.München, St
+09;1;84;0120;;Gräfelfing
+09;1;84;0120;120;Gräfelfing
+09;1;84;0121;;Grasbrunn
+09;1;84;0121;121;Grasbrunn
+09;1;84;0122;;Grünwald
+09;1;84;0122;122;Grünwald
+09;1;84;0123;;Haar
+09;1;84;0123;123;Haar
+09;1;84;0127;;Höhenkirchen-Siegertsbrunn
+09;1;84;0127;127;Höhenkirchen-Siegertsbrunn
+09;1;84;0129;;Hohenbrunn
+09;1;84;0129;129;Hohenbrunn
+09;1;84;0130;;Ismaning
+09;1;84;0130;130;Ismaning
+09;1;84;0131;;Kirchheim b.München
+09;1;84;0131;131;Kirchheim b.München
+09;1;84;0132;;Neuried
+09;1;84;0132;132;Neuried
+09;1;84;0134;;Oberhaching
+09;1;84;0134;134;Oberhaching
+09;1;84;0135;;Oberschleißheim
+09;1;84;0135;135;Oberschleißheim
+09;1;84;0136;;Ottobrunn
+09;1;84;0136;136;Ottobrunn
+09;1;84;0137;;Aying
+09;1;84;0137;137;Aying
+09;1;84;0138;;Planegg
+09;1;84;0138;138;Planegg
+09;1;84;0139;;Pullach i.Isartal
+09;1;84;0139;139;Pullach i.Isartal
+09;1;84;0140;;Putzbrunn
+09;1;84;0140;140;Putzbrunn
+09;1;84;0141;;Sauerlach
+09;1;84;0141;141;Sauerlach
+09;1;84;0142;;Schäftlarn
+09;1;84;0142;142;Schäftlarn
+09;1;84;0144;;Straßlach-Dingharting
+09;1;84;0144;144;Straßlach-Dingharting
+09;1;84;0145;;Taufkirchen
+09;1;84;0145;145;Taufkirchen
+09;1;84;0146;;Neubiberg
+09;1;84;0146;146;Neubiberg
+09;1;84;0147;;Unterföhring
+09;1;84;0147;147;Unterföhring
+09;1;84;0148;;Unterhaching
+09;1;84;0148;148;Unterhaching
+09;1;84;0149;;Unterschleißheim, St
+09;1;84;0149;149;Unterschleißheim, St
+09;1;84;9444;;Gdefr. Geb. (Lkr München)
+09;1;84;9444;444;Gdefr. Geb. (Lkr München)
+09;1;85;;;Neuburg-Schrobenhausen
+09;1;85;0113;;Aresing
+09;1;85;0113;113;Aresing
+09;1;85;0125;;Burgheim, M
+09;1;85;0125;125;Burgheim, M
+09;1;85;0127;;Ehekirchen
+09;1;85;0127;127;Ehekirchen
+09;1;85;0139;;Karlshuld
+09;1;85;0139;139;Karlshuld
+09;1;85;0140;;Karlskron
+09;1;85;0140;140;Karlskron
+09;1;85;0149;;Neuburg a.d.Donau, GKSt
+09;1;85;0149;149;Neuburg a.d.Donau, GKSt
+09;1;85;0150;;Oberhausen
+09;1;85;0150;150;Oberhausen
+09;1;85;0153;;Rennertshofen, M
+09;1;85;0153;153;Rennertshofen, M
+09;1;85;0158;;Schrobenhausen, St
+09;1;85;0158;158;Schrobenhausen, St
+09;1;85;0163;;Königsmoos
+09;1;85;0163;163;Königsmoos
+09;1;85;0168;;Weichering
+09;1;85;0168;168;Weichering
+09;1;85;5154;;Neuburg a.d.Donau (VGem)
+09;1;85;5154;118;Bergheim
+09;1;85;5154;157;Rohrenfels
+09;1;85;5155;;Schrobenhausen (VGem)
+09;1;85;5155;116;Berg im Gau
+09;1;85;5155;123;Brunnen
+09;1;85;5155;131;Gachenbach
+09;1;85;5155;143;Langenmosen
+09;1;85;5155;166;Waidhofen
+09;1;86;;;Pfaffenhofen a.d.Ilm
+09;1;86;0113;;Baar-Ebenhausen
+09;1;86;0113;113;Baar-Ebenhausen
+09;1;86;0125;;Gerolsbach
+09;1;86;0125;125;Gerolsbach
+09;1;86;0128;;Hohenwart, M
+09;1;86;0128;128;Hohenwart, M
+09;1;86;0132;;Jetzendorf
+09;1;86;0132;132;Jetzendorf
+09;1;86;0137;;Manching, M
+09;1;86;0137;137;Manching, M
+09;1;86;0139;;Münchsmünster
+09;1;86;0139;139;Münchsmünster
+09;1;86;0143;;Pfaffenhofen a.d.Ilm, St
+09;1;86;0143;143;Pfaffenhofen a.d.Ilm, St
+09;1;86;0146;;Reichertshausen
+09;1;86;0146;146;Reichertshausen
+09;1;86;0149;;Rohrbach
+09;1;86;0149;149;Rohrbach
+09;1;86;0151;;Scheyern
+09;1;86;0151;151;Scheyern
+09;1;86;0152;;Schweitenkirchen
+09;1;86;0152;152;Schweitenkirchen
+09;1;86;0158;;Vohburg a.d.Donau, St
+09;1;86;0158;158;Vohburg a.d.Donau, St
+09;1;86;0162;;Wolnzach, M
+09;1;86;0162;162;Wolnzach, M
+09;1;86;5156;;Geisenfeld (VGem)
+09;1;86;5156;116;Ernsgaden
+09;1;86;5156;122;Geisenfeld, St
+09;1;86;5157;;Ilmmünster (VGem)
+09;1;86;5157;126;Hettenshausen
+09;1;86;5157;130;Ilmmünster
+09;1;86;5158;;Reichertshofen (VGem)
+09;1;86;5158;144;Pörnbach
+09;1;86;5158;147;Reichertshofen, M
+09;1;87;;;Rosenheim
+09;1;87;0113;;Amerang
+09;1;87;0113;113;Amerang
+09;1;87;0114;;Aschau i.Chiemgau
+09;1;87;0114;114;Aschau i.Chiemgau
+09;1;87;0116;;Babensham
+09;1;87;0116;116;Babensham
+09;1;87;0117;;Bad Aibling, St
+09;1;87;0117;117;Bad Aibling, St
+09;1;87;0118;;Bernau a.Chiemsee
+09;1;87;0118;118;Bernau a.Chiemsee
+09;1;87;0120;;Brannenburg
+09;1;87;0120;120;Brannenburg
+09;1;87;0122;;Bruckmühl, M
+09;1;87;0122;122;Bruckmühl, M
+09;1;87;0124;;Edling
+09;1;87;0124;124;Edling
+09;1;87;0125;;Eggstätt
+09;1;87;0125;125;Eggstätt
+09;1;87;0126;;Eiselfing
+09;1;87;0126;126;Eiselfing
+09;1;87;0128;;Bad Endorf, M
+09;1;87;0128;128;Bad Endorf, M
+09;1;87;0129;;Bad Feilnbach
+09;1;87;0129;129;Bad Feilnbach
+09;1;87;0130;;Feldkirchen-Westerham
+09;1;87;0130;130;Feldkirchen-Westerham
+09;1;87;0131;;Flintsbach a.Inn
+09;1;87;0131;131;Flintsbach a.Inn
+09;1;87;0132;;Frasdorf
+09;1;87;0132;132;Frasdorf
+09;1;87;0134;;Griesstätt
+09;1;87;0134;134;Griesstätt
+09;1;87;0137;;Großkarolinenfeld
+09;1;87;0137;137;Großkarolinenfeld
+09;1;87;0142;;Schechen
+09;1;87;0142;142;Schechen
+09;1;87;0148;;Kiefersfelden
+09;1;87;0148;148;Kiefersfelden
+09;1;87;0150;;Kolbermoor, St
+09;1;87;0150;150;Kolbermoor, St
+09;1;87;0154;;Neubeuern, M
+09;1;87;0154;154;Neubeuern, M
+09;1;87;0156;;Nußdorf a.Inn
+09;1;87;0156;156;Nußdorf a.Inn
+09;1;87;0157;;Oberaudorf
+09;1;87;0157;157;Oberaudorf
+09;1;87;0162;;Prien a.Chiemsee, M
+09;1;87;0162;162;Prien a.Chiemsee, M
+09;1;87;0163;;Prutting
+09;1;87;0163;163;Prutting
+09;1;87;0165;;Raubling
+09;1;87;0165;165;Raubling
+09;1;87;0167;;Riedering
+09;1;87;0167;167;Riedering
+09;1;87;0168;;Rimsting
+09;1;87;0168;168;Rimsting
+09;1;87;0169;;Rohrdorf
+09;1;87;0169;169;Rohrdorf
+09;1;87;0172;;Samerberg
+09;1;87;0172;172;Samerberg
+09;1;87;0174;;Söchtenau
+09;1;87;0174;174;Söchtenau
+09;1;87;0176;;Soyen
+09;1;87;0176;176;Soyen
+09;1;87;0177;;Stephanskirchen
+09;1;87;0177;177;Stephanskirchen
+09;1;87;0179;;Tuntenhausen
+09;1;87;0179;179;Tuntenhausen
+09;1;87;0181;;Vogtareuth
+09;1;87;0181;181;Vogtareuth
+09;1;87;0182;;Wasserburg a.Inn, St
+09;1;87;0182;182;Wasserburg a.Inn, St
+09;1;87;5160;;Breitbrunn a.Chiemsee (VGem)
+09;1;87;5160;121;Breitbrunn a.Chiemsee
+09;1;87;5160;123;Chiemsee
+09;1;87;5160;138;Gstadt a.Chiemsee
+09;1;87;5162;;Halfing (VGem)
+09;1;87;5162;139;Halfing
+09;1;87;5162;145;Höslwang
+09;1;87;5162;173;Schonstett
+09;1;87;5165;;Rott a.Inn (VGem)
+09;1;87;5165;164;Ramerberg
+09;1;87;5165;170;Rott a.Inn
+09;1;87;5184;;Pfaffing (VGem)
+09;1;87;5184;159;Pfaffing
+09;1;87;5184;186;Albaching
+09;1;87;9444;;Gdefr. Geb. (Lkr Rosenheim)
+09;1;87;9444;444;Gdefr. Geb. (Lkr Rosenheim)
+09;1;88;;;Starnberg
+09;1;88;0113;;Berg
+09;1;88;0113;113;Berg
+09;1;88;0117;;Andechs
+09;1;88;0117;117;Andechs
+09;1;88;0118;;Feldafing
+09;1;88;0118;118;Feldafing
+09;1;88;0120;;Gauting
+09;1;88;0120;120;Gauting
+09;1;88;0121;;Gilching
+09;1;88;0121;121;Gilching
+09;1;88;0124;;Herrsching a.Ammersee
+09;1;88;0124;124;Herrsching a.Ammersee
+09;1;88;0126;;Inning a.Ammersee
+09;1;88;0126;126;Inning a.Ammersee
+09;1;88;0127;;Krailling
+09;1;88;0127;127;Krailling
+09;1;88;0132;;Seefeld
+09;1;88;0132;132;Seefeld
+09;1;88;0137;;Pöcking
+09;1;88;0137;137;Pöcking
+09;1;88;0139;;Starnberg, St
+09;1;88;0139;139;Starnberg, St
+09;1;88;0141;;Tutzing
+09;1;88;0141;141;Tutzing
+09;1;88;0144;;Weßling
+09;1;88;0144;144;Weßling
+09;1;88;0145;;Wörthsee
+09;1;88;0145;145;Wörthsee
+09;1;88;9444;;Gdefr. Geb. (Lkr Starnberg)
+09;1;88;9444;444;Gdefr. Geb. (Lkr Starnberg)
+09;1;89;;;Traunstein
+09;1;89;0111;;Altenmarkt a.d.Alz
+09;1;89;0111;111;Altenmarkt a.d.Alz
+09;1;89;0114;;Chieming
+09;1;89;0114;114;Chieming
+09;1;89;0115;;Engelsberg
+09;1;89;0115;115;Engelsberg
+09;1;89;0118;;Fridolfing
+09;1;89;0118;118;Fridolfing
+09;1;89;0119;;Grabenstätt
+09;1;89;0119;119;Grabenstätt
+09;1;89;0120;;Grassau, M
+09;1;89;0120;120;Grassau, M
+09;1;89;0124;;Inzell
+09;1;89;0124;124;Inzell
+09;1;89;0127;;Kirchanschöring
+09;1;89;0127;127;Kirchanschöring
+09;1;89;0130;;Nußdorf
+09;1;89;0130;130;Nußdorf
+09;1;89;0134;;Palling
+09;1;89;0134;134;Palling
+09;1;89;0135;;Petting
+09;1;89;0135;135;Petting
+09;1;89;0139;;Reit im Winkl
+09;1;89;0139;139;Reit im Winkl
+09;1;89;0140;;Ruhpolding
+09;1;89;0140;140;Ruhpolding
+09;1;89;0141;;Schleching
+09;1;89;0141;141;Schleching
+09;1;89;0142;;Schnaitsee
+09;1;89;0142;142;Schnaitsee
+09;1;89;0143;;Seeon-Seebruck
+09;1;89;0143;143;Seeon-Seebruck
+09;1;89;0145;;Siegsdorf
+09;1;89;0145;145;Siegsdorf
+09;1;89;0148;;Surberg
+09;1;89;0148;148;Surberg
+09;1;89;0149;;Tacherting
+09;1;89;0149;149;Tacherting
+09;1;89;0152;;Tittmoning, St
+09;1;89;0152;152;Tittmoning, St
+09;1;89;0154;;Traunreut, St
+09;1;89;0154;154;Traunreut, St
+09;1;89;0155;;Traunstein, GKSt
+09;1;89;0155;155;Traunstein, GKSt
+09;1;89;0157;;Trostberg, St
+09;1;89;0157;157;Trostberg, St
+09;1;89;0159;;Übersee
+09;1;89;0159;159;Übersee
+09;1;89;0160;;Unterwössen
+09;1;89;0160;160;Unterwössen
+09;1;89;5166;;Bergen (VGem)
+09;1;89;5166;113;Bergen
+09;1;89;5166;161;Vachendorf
+09;1;89;5169;;Marquartstein (VGem)
+09;1;89;5169;129;Marquartstein
+09;1;89;5169;146;Staudach-Egerndach
+09;1;89;5170;;Obing (VGem)
+09;1;89;5170;126;Kienberg
+09;1;89;5170;133;Obing
+09;1;89;5170;137;Pittenhart
+09;1;89;5173;;Waging a.See (VGem)
+09;1;89;5173;150;Taching a.See
+09;1;89;5173;162;Waging a.See, M
+09;1;89;5173;165;Wonneberg
+09;1;89;9444;;Gdefr. Geb. (Lkr Traunstein)
+09;1;89;9444;444;Gdefr. Geb. (Lkr Traunstein)
+09;1;90;;;Weilheim-Schongau
+09;1;90;0115;;Bernried am Starnberger See
+09;1;90;0115;115;Bernried am Starnberger See
+09;1;90;0130;;Hohenpeißenberg
+09;1;90;0130;130;Hohenpeißenberg
+09;1;90;0138;;Pähl
+09;1;90;0138;138;Pähl
+09;1;90;0139;;Peißenberg, M
+09;1;90;0139;139;Peißenberg, M
+09;1;90;0140;;Peiting, M
+09;1;90;0140;140;Peiting, M
+09;1;90;0141;;Penzberg, St
+09;1;90;0141;141;Penzberg, St
+09;1;90;0142;;Polling
+09;1;90;0142;142;Polling
+09;1;90;0144;;Raisting
+09;1;90;0144;144;Raisting
+09;1;90;0148;;Schongau, St
+09;1;90;0148;148;Schongau, St
+09;1;90;0157;;Weilheim i.OB, St
+09;1;90;0157;157;Weilheim i.OB, St
+09;1;90;0158;;Wessobrunn
+09;1;90;0158;158;Wessobrunn
+09;1;90;0159;;Wielenbach
+09;1;90;0159;159;Wielenbach
+09;1;90;5174;;Altenstadt (VGem)
+09;1;90;5174;111;Altenstadt
+09;1;90;5174;129;Hohenfurch
+09;1;90;5174;133;Ingenried
+09;1;90;5174;149;Schwabbruck
+09;1;90;5174;151;Schwabsoien
+09;1;90;5175;;Bernbeuren (VGem)
+09;1;90;5175;114;Bernbeuren
+09;1;90;5175;118;Burggen
+09;1;90;5176;;Habach (VGem)
+09;1;90;5176;113;Antdorf
+09;1;90;5176;126;Habach
+09;1;90;5176;136;Obersöchering
+09;1;90;5176;153;Sindelsdorf
+09;1;90;5177;;Huglfing (VGem)
+09;1;90;5177;120;Eberfing
+09;1;90;5177;121;Eglfing
+09;1;90;5177;131;Huglfing
+09;1;90;5177;135;Oberhausen
+09;1;90;5178;;Rottenbuch (VGem)
+09;1;90;5178;117;Böbing
+09;1;90;5178;145;Rottenbuch
+09;1;90;5179;;Seeshaupt (VGem)
+09;1;90;5179;132;Iffeldorf
+09;1;90;5179;152;Seeshaupt
+09;1;90;5180;;Steingaden (VGem)
+09;1;90;5180;143;Prem
+09;1;90;5180;154;Steingaden
+09;1;90;5180;160;Wildsteig
+09;2;;;;Niederbayern
+09;2;61;;;Landshut
+09;2;61;0000;;Landshut
+09;2;61;0000;000;Landshut
+09;2;62;;;Passau
+09;2;62;0000;;Passau
+09;2;62;0000;000;Passau
+09;2;63;;;Straubing
+09;2;63;0000;;Straubing
+09;2;63;0000;000;Straubing
+09;2;71;;;Deggendorf
+09;2;71;0111;;Aholming
+09;2;71;0111;111;Aholming
+09;2;71;0113;;Auerbach
+09;2;71;0113;113;Auerbach
+09;2;71;0116;;Bernried
+09;2;71;0116;116;Bernried
+09;2;71;0119;;Deggendorf, GKSt
+09;2;71;0119;119;Deggendorf, GKSt
+09;2;71;0122;;Grafling
+09;2;71;0122;122;Grafling
+09;2;71;0125;;Hengersberg, M
+09;2;71;0125;125;Hengersberg, M
+09;2;71;0127;;Iggensbach
+09;2;71;0127;127;Iggensbach
+09;2;71;0128;;Künzing
+09;2;71;0128;128;Künzing
+09;2;71;0132;;Metten, M
+09;2;71;0132;132;Metten, M
+09;2;71;0138;;Niederalteich
+09;2;71;0138;138;Niederalteich
+09;2;71;0140;;Offenberg
+09;2;71;0140;140;Offenberg
+09;2;71;0141;;Osterhofen, St
+09;2;71;0141;141;Osterhofen, St
+09;2;71;0146;;Plattling, St
+09;2;71;0146;146;Plattling, St
+09;2;71;0151;;Stephansposching
+09;2;71;0151;151;Stephansposching
+09;2;71;0153;;Winzer, M
+09;2;71;0153;153;Winzer, M
+09;2;71;5202;;Lalling (VGem)
+09;2;71;5202;123;Grattersdorf
+09;2;71;5202;126;Hunding
+09;2;71;5202;130;Lalling
+09;2;71;5202;148;Schaufling
+09;2;71;5204;;Oberpöring (VGem)
+09;2;71;5204;139;Oberpöring
+09;2;71;5204;143;Otzing
+09;2;71;5204;152;Wallerfing
+09;2;71;5205;;Moos (VGem)
+09;2;71;5205;118;Buchhofen
+09;2;71;5205;135;Moos
+09;2;71;5206;;Schöllnach (VGem)
+09;2;71;5206;114;Außernzell
+09;2;71;5206;149;Schöllnach, M
+09;2;72;;;Freyung-Grafenau
+09;2;72;0118;;Freyung, St
+09;2;72;0118;118;Freyung, St
+09;2;72;0120;;Grafenau, St
+09;2;72;0120;120;Grafenau, St
+09;2;72;0121;;Grainet
+09;2;72;0121;121;Grainet
+09;2;72;0122;;Haidmühle
+09;2;72;0122;122;Haidmühle
+09;2;72;0127;;Hohenau
+09;2;72;0127;127;Hohenau
+09;2;72;0129;;Jandelsbrunn
+09;2;72;0129;129;Jandelsbrunn
+09;2;72;0134;;Mauth
+09;2;72;0134;134;Mauth
+09;2;72;0136;;Neureichenau
+09;2;72;0136;136;Neureichenau
+09;2;72;0140;;Ringelai
+09;2;72;0140;140;Ringelai
+09;2;72;0141;;Röhrnbach, M
+09;2;72;0141;141;Röhrnbach, M
+09;2;72;0142;;Saldenburg
+09;2;72;0142;142;Saldenburg
+09;2;72;0143;;Sankt Oswald-Riedlhütte
+09;2;72;0143;143;Sankt Oswald-Riedlhütte
+09;2;72;0146;;Neuschönau
+09;2;72;0146;146;Neuschönau
+09;2;72;0149;;Spiegelau
+09;2;72;0149;149;Spiegelau
+09;2;72;0151;;Waldkirchen, St
+09;2;72;0151;151;Waldkirchen, St
+09;2;72;5211;;Schönberg (VGem)
+09;2;72;5211;116;Eppenschlag
+09;2;72;5211;128;Innernzell
+09;2;72;5211;145;Schöfweg
+09;2;72;5211;147;Schönberg, M
+09;2;72;5212;;Hinterschmiding (VGem)
+09;2;72;5212;126;Hinterschmiding
+09;2;72;5212;139;Philippsreut
+09;2;72;5213;;Thurmansbang (VGem)
+09;2;72;5213;150;Thurmansbang
+09;2;72;5213;152;Zenting
+09;2;72;5214;;Perlesreut (VGem)
+09;2;72;5214;119;Fürsteneck
+09;2;72;5214;138;Perlesreut, M
+09;2;72;9444;;Gdefr. Geb. (Lkr Freyung-Grafenau)
+09;2;72;9444;444;Gdefr. Geb. (Lkr Freyung-Grafenau)
+09;2;73;;;Kelheim
+09;2;73;0111;;Abensberg, St
+09;2;73;0111;111;Abensberg, St
+09;2;73;0116;;Bad Abbach, M
+09;2;73;0116;116;Bad Abbach, M
+09;2;73;0137;;Kelheim, St
+09;2;73;0137;137;Kelheim, St
+09;2;73;0147;;Mainburg, St
+09;2;73;0147;147;Mainburg, St
+09;2;73;0152;;Neustadt a.d.Donau, St
+09;2;73;0152;152;Neustadt a.d.Donau, St
+09;2;73;0159;;Painten, M
+09;2;73;0159;159;Painten, M
+09;2;73;0164;;Riedenburg, St
+09;2;73;0164;164;Riedenburg, St
+09;2;73;0165;;Rohr i.NB, M
+09;2;73;0165;165;Rohr i.NB, M
+09;2;73;5215;;Ihrlerstein (VGem)
+09;2;73;5215;121;Essing, M
+09;2;73;5215;133;Ihrlerstein
+09;2;73;5216;;Saal a.d.Donau (VGem)
+09;2;73;5216;166;Saal a.d.Donau
+09;2;73;5216;175;Teugn
+09;2;73;5217;;Langquaid (VGem)
+09;2;73;5217;125;Hausen
+09;2;73;5217;127;Herrngiersdorf
+09;2;73;5217;141;Langquaid, M
+09;2;73;5218;;Siegenburg (VGem)
+09;2;73;5218;119;Biburg
+09;2;73;5218;139;Kirchdorf
+09;2;73;5218;172;Siegenburg, M
+09;2;73;5218;177;Train
+09;2;73;5218;181;Wildenberg
+09;2;73;5219;;Mainburg (VGem)
+09;2;73;5219;113;Aiglsbach
+09;2;73;5219;115;Attenhofen
+09;2;73;5219;163;Elsendorf
+09;2;73;5219;178;Volkenschwand
+09;2;73;9444;;Gdefr. Geb. (Lkr Kelheim)
+09;2;73;9444;444;Gdefr. Geb. (Lkr Kelheim)
+09;2;73;9444;444;Gdefr. Geb. (Lkr Kelheim)
+09;2;74;;;Landshut
+09;2;74;0111;;Adlkofen
+09;2;74;0111;111;Adlkofen
+09;2;74;0113;;Altdorf, M
+09;2;74;0113;113;Altdorf, M
+09;2;74;0120;;Bodenkirchen
+09;2;74;0120;120;Bodenkirchen
+09;2;74;0121;;Buch a.Erlbach
+09;2;74;0121;121;Buch a.Erlbach
+09;2;74;0124;;Eching
+09;2;74;0124;124;Eching
+09;2;74;0126;;Ergolding, M
+09;2;74;0126;126;Ergolding, M
+09;2;74;0128;;Essenbach, M
+09;2;74;0128;128;Essenbach, M
+09;2;74;0134;;Geisenhausen, M
+09;2;74;0134;134;Geisenhausen, M
+09;2;74;0141;;Hohenthann
+09;2;74;0141;141;Hohenthann
+09;2;74;0146;;Kumhausen
+09;2;74;0146;146;Kumhausen
+09;2;74;0153;;Neufahrn i.NB
+09;2;74;0153;153;Neufahrn i.NB
+09;2;74;0156;;Niederaichbach
+09;2;74;0156;156;Niederaichbach
+09;2;74;0172;;Pfeffenhausen, M
+09;2;74;0172;172;Pfeffenhausen, M
+09;2;74;0176;;Rottenburg a.d.Laaber, St
+09;2;74;0176;176;Rottenburg a.d.Laaber, St
+09;2;74;0182;;Tiefenbach
+09;2;74;0182;182;Tiefenbach
+09;2;74;0184;;Vilsbiburg, St
+09;2;74;0184;184;Vilsbiburg, St
+09;2;74;0185;;Vilsheim
+09;2;74;0185;185;Vilsheim
+09;2;74;0194;;Bruckberg
+09;2;74;0194;194;Bruckberg
+09;2;74;5220;;Ergoldsbach (VGem)
+09;2;74;5220;119;Bayerbach b.Ergoldsbach
+09;2;74;5220;127;Ergoldsbach, M
+09;2;74;5221;;Furth (VGem)
+09;2;74;5221;132;Furth
+09;2;74;5221;165;Obersüßbach
+09;2;74;5221;187;Weihmichl
+09;2;74;5222;;Wörth a.d.Isar (VGem)
+09;2;74;5222;174;Postau
+09;2;74;5222;188;Weng
+09;2;74;5222;191;Wörth a.d.Isar
+09;2;74;5223;;Gerzen (VGem)
+09;2;74;5223;112;Aham
+09;2;74;5223;135;Gerzen
+09;2;74;5223;145;Kröning
+09;2;74;5223;179;Schalkham
+09;2;74;5226;;Altfraunhofen (VGem)
+09;2;74;5226;114;Altfraunhofen
+09;2;74;5226;118;Baierbach
+09;2;74;5227;;Velden (VGem)
+09;2;74;5227;154;Neufraunhofen
+09;2;74;5227;183;Velden, M
+09;2;74;5227;193;Wurmsham
+09;2;75;;;Passau
+09;2;75;0111;;Aicha vorm Wald
+09;2;75;0111;111;Aicha vorm Wald
+09;2;75;0114;;Aldersbach
+09;2;75;0114;114;Aldersbach
+09;2;75;0116;;Bad Füssing
+09;2;75;0116;116;Bad Füssing
+09;2;75;0118;;Breitenberg
+09;2;75;0118;118;Breitenberg
+09;2;75;0119;;Büchlberg
+09;2;75;0119;119;Büchlberg
+09;2;75;0120;;Eging a.See, M
+09;2;75;0120;120;Eging a.See, M
+09;2;75;0121;;Fürstenstein
+09;2;75;0121;121;Fürstenstein
+09;2;75;0122;;Fürstenzell, M
+09;2;75;0122;122;Fürstenzell, M
+09;2;75;0124;;Bad Griesbach i.Rottal, St
+09;2;75;0124;124;Bad Griesbach i.Rottal, St
+09;2;75;0125;;Haarbach
+09;2;75;0125;125;Haarbach
+09;2;75;0126;;Hauzenberg, St
+09;2;75;0126;126;Hauzenberg, St
+09;2;75;0127;;Hofkirchen, M
+09;2;75;0127;127;Hofkirchen, M
+09;2;75;0128;;Hutthurm, M
+09;2;75;0128;128;Hutthurm, M
+09;2;75;0130;;Kirchham
+09;2;75;0130;130;Kirchham
+09;2;75;0131;;Kößlarn, M
+09;2;75;0131;131;Kößlarn, M
+09;2;75;0133;;Neuburg a.Inn
+09;2;75;0133;133;Neuburg a.Inn
+09;2;75;0134;;Neuhaus a.Inn
+09;2;75;0134;134;Neuhaus a.Inn
+09;2;75;0135;;Neukirchen vorm Wald
+09;2;75;0135;135;Neukirchen vorm Wald
+09;2;75;0137;;Obernzell, M
+09;2;75;0137;137;Obernzell, M
+09;2;75;0138;;Ortenburg, M
+09;2;75;0138;138;Ortenburg, M
+09;2;75;0141;;Pocking, St
+09;2;75;0141;141;Pocking, St
+09;2;75;0144;;Ruderting
+09;2;75;0144;144;Ruderting
+09;2;75;0145;;Ruhstorf a.d.Rott, M
+09;2;75;0145;145;Ruhstorf a.d.Rott, M
+09;2;75;0146;;Salzweg
+09;2;75;0146;146;Salzweg
+09;2;75;0148;;Sonnen
+09;2;75;0148;148;Sonnen
+09;2;75;0149;;Tettenweis
+09;2;75;0149;149;Tettenweis
+09;2;75;0150;;Thyrnau
+09;2;75;0150;150;Thyrnau
+09;2;75;0151;;Tiefenbach
+09;2;75;0151;151;Tiefenbach
+09;2;75;0153;;Untergriesbach, M
+09;2;75;0153;153;Untergriesbach, M
+09;2;75;0154;;Vilshofen an der Donau, St
+09;2;75;0154;154;Vilshofen an der Donau, St
+09;2;75;0156;;Wegscheid, M
+09;2;75;0156;156;Wegscheid, M
+09;2;75;0159;;Windorf, M
+09;2;75;0159;159;Windorf, M
+09;2;75;5229;;Tittling (VGem)
+09;2;75;5229;152;Tittling, M
+09;2;75;5229;160;Witzmannsberg
+09;2;75;5232;;Aidenbach (VGem)
+09;2;75;5232;112;Aidenbach, M
+09;2;75;5232;117;Beutelsbach
+09;2;75;5234;;Rotthalmünster (VGem)
+09;2;75;5234;132;Malching
+09;2;75;5234;143;Rotthalmünster, M
+09;2;76;;;Regen
+09;2;76;0113;;Arnbruck
+09;2;76;0113;113;Arnbruck
+09;2;76;0115;;Bayerisch Eisenstein
+09;2;76;0115;115;Bayerisch Eisenstein
+09;2;76;0116;;Bischofsmais
+09;2;76;0116;116;Bischofsmais
+09;2;76;0117;;Bodenmais, M
+09;2;76;0117;117;Bodenmais, M
+09;2;76;0118;;Böbrach
+09;2;76;0118;118;Böbrach
+09;2;76;0120;;Drachselsried
+09;2;76;0120;120;Drachselsried
+09;2;76;0121;;Frauenau
+09;2;76;0121;121;Frauenau
+09;2;76;0122;;Geiersthal
+09;2;76;0122;122;Geiersthal
+09;2;76;0126;;Kirchberg i.Wald
+09;2;76;0126;126;Kirchberg i.Wald
+09;2;76;0127;;Kirchdorf i.Wald
+09;2;76;0127;127;Kirchdorf i.Wald
+09;2;76;0128;;Kollnburg
+09;2;76;0128;128;Kollnburg
+09;2;76;0129;;Langdorf
+09;2;76;0129;129;Langdorf
+09;2;76;0130;;Lindberg
+09;2;76;0130;130;Lindberg
+09;2;76;0134;;Patersdorf
+09;2;76;0134;134;Patersdorf
+09;2;76;0135;;Prackenbach
+09;2;76;0135;135;Prackenbach
+09;2;76;0138;;Regen, St
+09;2;76;0138;138;Regen, St
+09;2;76;0139;;Rinchnach
+09;2;76;0139;139;Rinchnach
+09;2;76;0143;;Teisnach, M
+09;2;76;0143;143;Teisnach, M
+09;2;76;0144;;Viechtach, St
+09;2;76;0144;144;Viechtach, St
+09;2;76;0148;;Zwiesel, St
+09;2;76;0148;148;Zwiesel, St
+09;2;76;5238;;Ruhmannsfelden (VGem)
+09;2;76;5238;111;Achslach
+09;2;76;5238;123;Gotteszell
+09;2;76;5238;142;Ruhmannsfelden, M
+09;2;76;5238;146;Zachenberg
+09;2;77;;;Rottal-Inn
+09;2;77;0111;;Arnstorf, M
+09;2;77;0111;111;Arnstorf, M
+09;2;77;0114;;Dietersburg
+09;2;77;0114;114;Dietersburg
+09;2;77;0116;;Eggenfelden, St
+09;2;77;0116;116;Eggenfelden, St
+09;2;77;0117;;Egglham
+09;2;77;0117;117;Egglham
+09;2;77;0121;;Gangkofen, M
+09;2;77;0121;121;Gangkofen, M
+09;2;77;0124;;Hebertsfelden
+09;2;77;0124;124;Hebertsfelden
+09;2;77;0126;;Johanniskirchen
+09;2;77;0126;126;Johanniskirchen
+09;2;77;0127;;Julbach
+09;2;77;0127;127;Julbach
+09;2;77;0128;;Kirchdorf a.Inn
+09;2;77;0128;128;Kirchdorf a.Inn
+09;2;77;0134;;Mitterskirchen
+09;2;77;0134;134;Mitterskirchen
+09;2;77;0138;;Pfarrkirchen, St
+09;2;77;0138;138;Pfarrkirchen, St
+09;2;77;0139;;Postmünster
+09;2;77;0139;139;Postmünster
+09;2;77;0142;;Roßbach
+09;2;77;0142;142;Roßbach
+09;2;77;0144;;Schönau
+09;2;77;0144;144;Schönau
+09;2;77;0145;;Simbach a.Inn, St
+09;2;77;0145;145;Simbach a.Inn, St
+09;2;77;0149;;Triftern, M
+09;2;77;0149;149;Triftern, M
+09;2;77;0151;;Unterdietfurt
+09;2;77;0151;151;Unterdietfurt
+09;2;77;0152;;Wittibreut
+09;2;77;0152;152;Wittibreut
+09;2;77;0153;;Wurmannsquick, M
+09;2;77;0153;153;Wurmannsquick, M
+09;2;77;0154;;Zeilarn
+09;2;77;0154;154;Zeilarn
+09;2;77;5239;;Falkenberg (VGem)
+09;2;77;5239;119;Falkenberg
+09;2;77;5239;131;Malgersdorf
+09;2;77;5239;141;Rimbach
+09;2;77;5240;;Massing (VGem)
+09;2;77;5240;122;Geratskirchen
+09;2;77;5240;133;Massing, M
+09;2;77;5241;;Bad Birnbach (VGem)
+09;2;77;5241;112;Bayerbach
+09;2;77;5241;113;Bad Birnbach, M
+09;2;77;5243;;Tann (VGem)
+09;2;77;5243;140;Reut
+09;2;77;5243;148;Tann, M
+09;2;77;5244;;Ering (VGem)
+09;2;77;5244;118;Ering
+09;2;77;5244;147;Stubenberg
+09;2;78;;;Straubing-Bogen
+09;2;78;0118;;Bogen, St
+09;2;78;0118;118;Bogen, St
+09;2;78;0121;;Feldkirchen
+09;2;78;0121;121;Feldkirchen
+09;2;78;0123;;Geiselhöring, St
+09;2;78;0123;123;Geiselhöring, St
+09;2;78;0129;;Haibach
+09;2;78;0129;129;Haibach
+09;2;78;0141;;Kirchroth
+09;2;78;0141;141;Kirchroth
+09;2;78;0143;;Konzell
+09;2;78;0143;143;Konzell
+09;2;78;0144;;Laberweinting
+09;2;78;0144;144;Laberweinting
+09;2;78;0146;;Leiblfing
+09;2;78;0146;146;Leiblfing
+09;2;78;0148;;Mallersdorf-Pfaffenberg, M
+09;2;78;0148;148;Mallersdorf-Pfaffenberg, M
+09;2;78;0167;;Oberschneiding
+09;2;78;0167;167;Oberschneiding
+09;2;78;0170;;Parkstetten
+09;2;78;0170;170;Parkstetten
+09;2;78;0178;;Rattenberg
+09;2;78;0178;178;Rattenberg
+09;2;78;0184;;Sankt Englmar
+09;2;78;0184;184;Sankt Englmar
+09;2;78;0190;;Steinach
+09;2;78;0190;190;Steinach
+09;2;78;0197;;Wiesenfelden
+09;2;78;0197;197;Wiesenfelden
+09;2;78;5246;;Stallwang (VGem)
+09;2;78;5246;147;Loitzendorf
+09;2;78;5246;179;Rattiszell
+09;2;78;5246;189;Stallwang
+09;2;78;5248;;Mitterfels (VGem)
+09;2;78;5248;116;Ascha
+09;2;78;5248;120;Falkenfels
+09;2;78;5248;134;Haselbach
+09;2;78;5248;151;Mitterfels, M
+09;2;78;5249;;Hunderdorf (VGem)
+09;2;78;5249;139;Hunderdorf
+09;2;78;5249;154;Neukirchen
+09;2;78;5249;198;Windberg
+09;2;78;5250;;Rain (VGem)
+09;2;78;5250;112;Aholfing
+09;2;78;5250;117;Atting
+09;2;78;5250;172;Perkam
+09;2;78;5250;177;Rain
+09;2;78;5252;;Schwarzach (VGem)
+09;2;78;5252;149;Mariaposching
+09;2;78;5252;159;Niederwinkling
+09;2;78;5252;171;Perasdorf
+09;2;78;5252;187;Schwarzach, M
+09;2;78;5256;;Aiterhofen (VGem)
+09;2;78;5256;113;Aiterhofen
+09;2;78;5256;182;Salching
+09;2;78;5257;;Straßkirchen (VGem)
+09;2;78;5257;140;Irlbach
+09;2;78;5257;192;Straßkirchen
+09;2;79;;;Dingolfing-Landau
+09;2;79;0112;;Dingolfing, St
+09;2;79;0112;112;Dingolfing, St
+09;2;79;0113;;Eichendorf, M
+09;2;79;0113;113;Eichendorf, M
+09;2;79;0115;;Frontenhausen, M
+09;2;79;0115;115;Frontenhausen, M
+09;2;79;0122;;Landau a.d.Isar, St
+09;2;79;0122;122;Landau a.d.Isar, St
+09;2;79;0124;;Loiching
+09;2;79;0124;124;Loiching
+09;2;79;0126;;Marklkofen
+09;2;79;0126;126;Marklkofen
+09;2;79;0127;;Mengkofen
+09;2;79;0127;127;Mengkofen
+09;2;79;0128;;Moosthenning
+09;2;79;0128;128;Moosthenning
+09;2;79;0130;;Niederviehbach
+09;2;79;0130;130;Niederviehbach
+09;2;79;0132;;Pilsting, M
+09;2;79;0132;132;Pilsting, M
+09;2;79;0134;;Reisbach, M
+09;2;79;0134;134;Reisbach, M
+09;2;79;0135;;Simbach, M
+09;2;79;0135;135;Simbach, M
+09;2;79;0137;;Wallersdorf, M
+09;2;79;0137;137;Wallersdorf, M
+09;2;79;5208;;Mamming (VGem)
+09;2;79;5208;116;Gottfrieding
+09;2;79;5208;125;Mamming
+09;3;;;;Oberpfalz
+09;3;61;;;Amberg
+09;3;61;0000;;Amberg
+09;3;61;0000;000;Amberg
+09;3;62;;;Regensburg
+09;3;62;0000;;Regensburg
+09;3;62;0000;000;Regensburg
+09;3;63;;;Weiden i.d.OPf.
+09;3;63;0000;;Weiden i.d.OPf.
+09;3;63;0000;000;Weiden i.d.OPf.
+09;3;71;;;Amberg-Sulzbach
+09;3;71;0111;;Ammerthal
+09;3;71;0111;111;Ammerthal
+09;3;71;0113;;Auerbach i.d.OPf., St
+09;3;71;0113;113;Auerbach i.d.OPf., St
+09;3;71;0118;;Ebermannsdorf
+09;3;71;0118;118;Ebermannsdorf
+09;3;71;0119;;Edelsfeld
+09;3;71;0119;119;Edelsfeld
+09;3;71;0120;;Ensdorf
+09;3;71;0120;120;Ensdorf
+09;3;71;0121;;Freihung, M
+09;3;71;0121;121;Freihung, M
+09;3;71;0122;;Freudenberg
+09;3;71;0122;122;Freudenberg
+09;3;71;0127;;Hirschau, St
+09;3;71;0127;127;Hirschau, St
+09;3;71;0129;;Hohenburg, M
+09;3;71;0129;129;Hohenburg, M
+09;3;71;0132;;Kastl, M
+09;3;71;0132;132;Kastl, M
+09;3;71;0136;;Kümmersbruck
+09;3;71;0136;136;Kümmersbruck
+09;3;71;0144;;Poppenricht
+09;3;71;0144;144;Poppenricht
+09;3;71;0146;;Rieden, M
+09;3;71;0146;146;Rieden, M
+09;3;71;0148;;Schmidmühlen, M
+09;3;71;0148;148;Schmidmühlen, M
+09;3;71;0150;;Schnaittenbach, St
+09;3;71;0150;150;Schnaittenbach, St
+09;3;71;0151;;Sulzbach-Rosenberg, St
+09;3;71;0151;151;Sulzbach-Rosenberg, St
+09;3;71;0154;;Ursensollen
+09;3;71;0154;154;Ursensollen
+09;3;71;0156;;Vilseck, St
+09;3;71;0156;156;Vilseck, St
+09;3;71;5301;;Hahnbach (VGem)
+09;3;71;5301;123;Gebenbach
+09;3;71;5301;126;Hahnbach, M
+09;3;71;5302;;Königstein (VGem)
+09;3;71;5302;128;Hirschbach
+09;3;71;5302;135;Königstein, M
+09;3;71;5303;;Neukirchen b.Sulzbach-R. (VGem)
+09;3;71;5303;140;Etzelwang
+09;3;71;5303;141;Neukirchen b.Sulzbach-Rosenberg
+09;3;71;5303;157;Weigendorf
+09;3;71;5304;;Illschwang (VGem)
+09;3;71;5304;116;Birgland
+09;3;71;5304;131;Illschwang
+09;3;71;9444;;Gdefr. Geb. (Lkr Amberg-Sulzbach)
+09;3;71;9444;444;Gdefr. Geb. (Lkr Amberg-Sulzbach)
+09;3;72;;;Cham
+09;3;72;0112;;Arnschwang
+09;3;72;0112;112;Arnschwang
+09;3;72;0113;;Arrach
+09;3;72;0113;113;Arrach
+09;3;72;0115;;Blaibach
+09;3;72;0115;115;Blaibach
+09;3;72;0116;;Cham, St
+09;3;72;0116;116;Cham, St
+09;3;72;0117;;Chamerau
+09;3;72;0117;117;Chamerau
+09;3;72;0124;;Eschlkam, M
+09;3;72;0124;124;Eschlkam, M
+09;3;72;0126;;Furth im Wald, St
+09;3;72;0126;126;Furth im Wald, St
+09;3;72;0130;;Grafenwiesen
+09;3;72;0130;130;Grafenwiesen
+09;3;72;0135;;Hohenwarth
+09;3;72;0135;135;Hohenwarth
+09;3;72;0137;;Bad Kötzting, St
+09;3;72;0137;137;Bad Kötzting, St
+09;3;72;0138;;Lam, M
+09;3;72;0138;138;Lam, M
+09;3;72;0143;;Miltach
+09;3;72;0143;143;Miltach
+09;3;72;0144;;Neukirchen b.Hl.Blut, M
+09;3;72;0144;144;Neukirchen b.Hl.Blut, M
+09;3;72;0146;;Pemfling
+09;3;72;0146;146;Pemfling
+09;3;72;0151;;Rimbach
+09;3;72;0151;151;Rimbach
+09;3;72;0153;;Roding, St
+09;3;72;0153;153;Roding, St
+09;3;72;0154;;Rötz, St
+09;3;72;0154;154;Rötz, St
+09;3;72;0155;;Runding
+09;3;72;0155;155;Runding
+09;3;72;0157;;Schönthal
+09;3;72;0157;157;Schönthal
+09;3;72;0158;;Schorndorf
+09;3;72;0158;158;Schorndorf
+09;3;72;0164;;Traitsching
+09;3;72;0164;164;Traitsching
+09;3;72;0168;;Waffenbrunn
+09;3;72;0168;168;Waffenbrunn
+09;3;72;0171;;Waldmünchen, St
+09;3;72;0171;171;Waldmünchen, St
+09;3;72;0175;;Willmering
+09;3;72;0175;175;Willmering
+09;3;72;0177;;Zandt
+09;3;72;0177;177;Zandt
+09;3;72;0178;;Lohberg
+09;3;72;0178;178;Lohberg
+09;3;72;5308;;Tiefenbach (VGem)
+09;3;72;5308;163;Tiefenbach
+09;3;72;5308;165;Treffelstein
+09;3;72;5310;;Stamsried (VGem)
+09;3;72;5310;147;Pösing
+09;3;72;5310;161;Stamsried, M
+09;3;72;5312;;Weiding (VGem)
+09;3;72;5312;128;Gleißenberg
+09;3;72;5312;174;Weiding
+09;3;72;5313;;Walderbach (VGem)
+09;3;72;5313;149;Reichenbach
+09;3;72;5313;170;Walderbach
+09;3;72;5317;;Wald (VGem)
+09;3;72;5317;167;Zell
+09;3;72;5317;169;Wald
+09;3;72;5318;;Falkenstein (VGem)
+09;3;72;5318;125;Falkenstein, M
+09;3;72;5318;142;Michelsneukirchen
+09;3;72;5318;150;Rettenbach
+09;3;73;;;Neumarkt i.d.OPf.
+09;3;73;0112;;Berching, St
+09;3;73;0112;112;Berching, St
+09;3;73;0113;;Berg b.Neumarkt i.d.OPf.
+09;3;73;0113;113;Berg b.Neumarkt i.d.OPf.
+09;3;73;0115;;Breitenbrunn, M
+09;3;73;0115;115;Breitenbrunn, M
+09;3;73;0119;;Deining
+09;3;73;0119;119;Deining
+09;3;73;0121;;Dietfurt a.d.Altmühl, St
+09;3;73;0121;121;Dietfurt a.d.Altmühl, St
+09;3;73;0126;;Freystadt, St
+09;3;73;0126;126;Freystadt, St
+09;3;73;0134;;Hohenfels, M
+09;3;73;0134;134;Hohenfels, M
+09;3;73;0140;;Lauterhofen, M
+09;3;73;0140;140;Lauterhofen, M
+09;3;73;0143;;Lupburg, M
+09;3;73;0143;143;Lupburg, M
+09;3;73;0146;;Mühlhausen
+09;3;73;0146;146;Mühlhausen
+09;3;73;0147;;Neumarkt i.d.OPf., GKSt
+09;3;73;0147;147;Neumarkt i.d.OPf., GKSt
+09;3;73;0151;;Parsberg, St
+09;3;73;0151;151;Parsberg, St
+09;3;73;0155;;Postbauer-Heng, M
+09;3;73;0155;155;Postbauer-Heng, M
+09;3;73;0156;;Pyrbaum, M
+09;3;73;0156;156;Pyrbaum, M
+09;3;73;0160;;Seubersdorf i.d.OPf.
+09;3;73;0160;160;Seubersdorf i.d.OPf.
+09;3;73;0167;;Velburg, St
+09;3;73;0167;167;Velburg, St
+09;3;73;5321;;Neumarkt i.d.OPf. (VGem)
+09;3;73;5321;114;Berngau
+09;3;73;5321;153;Pilsach
+09;3;73;5321;159;Sengenthal
+09;3;74;;;Neustadt a.d.Waldnaab
+09;3;74;0111;;Altenstadt a.d.Waldnaab
+09;3;74;0111;111;Altenstadt a.d.Waldnaab
+09;3;74;0118;;Eslarn, M
+09;3;74;0118;118;Eslarn, M
+09;3;74;0121;;Floß, M
+09;3;74;0121;121;Floß, M
+09;3;74;0122;;Flossenbürg
+09;3;74;0122;122;Flossenbürg
+09;3;74;0124;;Grafenwöhr, St
+09;3;74;0124;124;Grafenwöhr, St
+09;3;74;0133;;Luhe-Wildenau, M
+09;3;74;0133;133;Luhe-Wildenau, M
+09;3;74;0134;;Mantel, M
+09;3;74;0134;134;Mantel, M
+09;3;74;0137;;Moosbach, M
+09;3;74;0137;137;Moosbach, M
+09;3;74;0139;;Neustadt a.d.Waldnaab, St
+09;3;74;0139;139;Neustadt a.d.Waldnaab, St
+09;3;74;0162;;Vohenstrauß, St
+09;3;74;0162;162;Vohenstrauß, St
+09;3;74;0164;;Waidhaus, M
+09;3;74;0164;164;Waidhaus, M
+09;3;74;0165;;Waldthurn, M
+09;3;74;0165;165;Waldthurn, M
+09;3;74;0168;;Windischeschenbach, St
+09;3;74;0168;168;Windischeschenbach, St
+09;3;74;5323;;Neustadt a.d.Waldnaab (VGem)
+09;3;74;5323;128;Kirchendemenreuth
+09;3;74;5323;144;Parkstein, M
+09;3;74;5323;150;Püchersreuth
+09;3;74;5323;158;Störnstein
+09;3;74;5323;160;Theisseil
+09;3;74;5324;;Pressath (VGem)
+09;3;74;5324;148;Trabitz
+09;3;74;5324;149;Pressath, St
+09;3;74;5324;156;Schwarzenbach
+09;3;74;5325;;Weiherhammer (VGem)
+09;3;74;5325;119;Etzenricht
+09;3;74;5325;131;Kohlberg, M
+09;3;74;5325;166;Weiherhammer
+09;3;74;5326;;Kirchenthumbach (VGem)
+09;3;74;5326;129;Kirchenthumbach, M
+09;3;74;5326;155;Schlammersdorf
+09;3;74;5326;163;Vorbach
+09;3;74;5327;;Eschenbach i.d.OPf. (VGem)
+09;3;74;5327;117;Eschenbach i.d.OPf., St
+09;3;74;5327;140;Neustadt am Kulm, St
+09;3;74;5327;157;Speinshart
+09;3;74;5329;;Schirmitz (VGem)
+09;3;74;5329;127;Irchenrieth
+09;3;74;5329;146;Pirk
+09;3;74;5329;154;Schirmitz
+09;3;74;5329;170;Bechtsrieth
+09;3;74;5330;;Tännesberg (VGem)
+09;3;74;5330;132;Leuchtenberg, M
+09;3;74;5330;159;Tännesberg, M
+09;3;74;5331;;Pleystein (VGem)
+09;3;74;5331;123;Georgenberg
+09;3;74;5331;147;Pleystein, St
+09;3;74;9444;;Gdefr. Geb. (Lkr Neustadt a.d.Waldnaab)
+09;3;74;9444;444;Gdefr. Geb. (Lkr Neustadt a.d.Waldnaab)
+09;3;75;;;Regensburg
+09;3;75;0117;;Barbing
+09;3;75;0117;117;Barbing
+09;3;75;0118;;Beratzhausen, M
+09;3;75;0118;118;Beratzhausen, M
+09;3;75;0119;;Bernhardswald
+09;3;75;0119;119;Bernhardswald
+09;3;75;0143;;Hagelstadt
+09;3;75;0143;143;Hagelstadt
+09;3;75;0148;;Hemau, St
+09;3;75;0148;148;Hemau, St
+09;3;75;0161;;Köfering
+09;3;75;0161;161;Köfering
+09;3;75;0165;;Lappersdorf, M
+09;3;75;0165;165;Lappersdorf, M
+09;3;75;0170;;Mintraching
+09;3;75;0170;170;Mintraching
+09;3;75;0174;;Neutraubling, St
+09;3;75;0174;174;Neutraubling, St
+09;3;75;0175;;Nittendorf, M
+09;3;75;0175;175;Nittendorf, M
+09;3;75;0179;;Obertraubling
+09;3;75;0179;179;Obertraubling
+09;3;75;0180;;Pentling
+09;3;75;0180;180;Pentling
+09;3;75;0181;;Pettendorf
+09;3;75;0181;181;Pettendorf
+09;3;75;0183;;Pfatter
+09;3;75;0183;183;Pfatter
+09;3;75;0190;;Regenstauf, M
+09;3;75;0190;190;Regenstauf, M
+09;3;75;0196;;Schierling, M
+09;3;75;0196;196;Schierling, M
+09;3;75;0199;;Sinzing
+09;3;75;0199;199;Sinzing
+09;3;75;0204;;Tegernheim
+09;3;75;0204;204;Tegernheim
+09;3;75;0205;;Thalmassing
+09;3;75;0205;205;Thalmassing
+09;3;75;0208;;Wenzenbach
+09;3;75;0208;208;Wenzenbach
+09;3;75;0209;;Wiesent
+09;3;75;0209;209;Wiesent
+09;3;75;0213;;Zeitlarn
+09;3;75;0213;213;Zeitlarn
+09;3;75;5332;;Kallmünz (VGem)
+09;3;75;5332;131;Duggendorf
+09;3;75;5332;153;Holzheim a.Forst
+09;3;75;5332;156;Kallmünz, M
+09;3;75;5333;;Laaber (VGem)
+09;3;75;5333;122;Brunn
+09;3;75;5333;127;Deuerling
+09;3;75;5333;162;Laaber, M
+09;3;75;5334;;Pielenhofen-Wolfsegg (VGem)
+09;3;75;5334;184;Pielenhofen
+09;3;75;5334;211;Wolfsegg
+09;3;75;5335;;Donaustauf (VGem)
+09;3;75;5335;114;Altenthann
+09;3;75;5335;116;Bach a.d.Donau
+09;3;75;5335;130;Donaustauf, M
+09;3;75;5336;;Wörth a.d.Donau (VGem)
+09;3;75;5336;120;Brennberg
+09;3;75;5336;210;Wörth a.d.Donau, St
+09;3;75;5337;;Alteglofsheim (VGem)
+09;3;75;5337;113;Alteglofsheim
+09;3;75;5337;182;Pfakofen
+09;3;75;5338;;Sünching (VGem)
+09;3;75;5338;115;Aufhausen
+09;3;75;5338;171;Mötzing
+09;3;75;5338;191;Riekofen
+09;3;75;5338;201;Sünching
+09;3;75;9444;;Gdefr. Geb. (Lkr Regensburg)
+09;3;75;9444;444;Gdefr. Geb. (Lkr Regensburg)
+09;3;76;;;Schwandorf
+09;3;76;0116;;Bodenwöhr
+09;3;76;0116;116;Bodenwöhr
+09;3;76;0117;;Bruck i.d.OPf., M
+09;3;76;0117;117;Bruck i.d.OPf., M
+09;3;76;0119;;Burglengenfeld, St
+09;3;76;0119;119;Burglengenfeld, St
+09;3;76;0125;;Fensterbach
+09;3;76;0125;125;Fensterbach
+09;3;76;0141;;Maxhütte-Haidhof, St
+09;3;76;0141;141;Maxhütte-Haidhof, St
+09;3;76;0147;;Neunburg vorm Wald, St
+09;3;76;0147;147;Neunburg vorm Wald, St
+09;3;76;0149;;Nittenau, St
+09;3;76;0149;149;Nittenau, St
+09;3;76;0150;;Wernberg-Köblitz, M
+09;3;76;0150;150;Wernberg-Köblitz, M
+09;3;76;0151;;Oberviechtach, St
+09;3;76;0151;151;Oberviechtach, St
+09;3;76;0159;;Schmidgaden
+09;3;76;0159;159;Schmidgaden
+09;3;76;0161;;Schwandorf, GKSt
+09;3;76;0161;161;Schwandorf, GKSt
+09;3;76;0170;;Teublitz, St
+09;3;76;0170;170;Teublitz, St
+09;3;76;5339;;Oberviechtach (VGem)
+09;3;76;5339;131;Gleiritsch
+09;3;76;5339;148;Niedermurach
+09;3;76;5339;171;Teunz
+09;3;76;5339;178;Winklarn, M
+09;3;76;5341;;Nabburg (VGem)
+09;3;76;5341;112;Altendorf
+09;3;76;5341;133;Guteneck
+09;3;76;5341;144;Nabburg, St
+09;3;76;5342;;Schwarzenfeld (VGem)
+09;3;76;5342;162;Schwarzach b.Nabburg
+09;3;76;5342;163;Schwarzenfeld, M
+09;3;76;5342;169;Stulln
+09;3;76;5343;;Pfreimd (VGem)
+09;3;76;5343;153;Pfreimd, St
+09;3;76;5343;173;Trausnitz
+09;3;76;5344;;Schönsee (VGem)
+09;3;76;5344;160;Schönsee, St
+09;3;76;5344;167;Stadlern
+09;3;76;5344;176;Weiding
+09;3;76;5345;;Neunburg vorm Wald (VGem)
+09;3;76;5345;122;Dieterskirchen
+09;3;76;5345;146;Neukirchen-Balbini, M
+09;3;76;5345;164;Schwarzhofen, M
+09;3;76;5345;172;Thanstein
+09;3;76;5346;;Wackersdorf (VGem)
+09;3;76;5346;168;Steinberg am See
+09;3;76;5346;175;Wackersdorf
+09;3;76;9444;;Gdefr. Geb. (Lkr Schwandorf)
+09;3;76;9444;444;Gdefr. Geb. (Lkr Schwandorf)
+09;3;77;;;Tirschenreuth
+09;3;77;0112;;Bärnau, St
+09;3;77;0112;112;Bärnau, St
+09;3;77;0116;;Erbendorf, St
+09;3;77;0116;116;Erbendorf, St
+09;3;77;0118;;Friedenfels
+09;3;77;0118;118;Friedenfels
+09;3;77;0119;;Fuchsmühl, M
+09;3;77;0119;119;Fuchsmühl, M
+09;3;77;0127;;Immenreuth
+09;3;77;0127;127;Immenreuth
+09;3;77;0131;;Konnersreuth, M
+09;3;77;0131;131;Konnersreuth, M
+09;3;77;0133;;Kulmain
+09;3;77;0133;133;Kulmain
+09;3;77;0139;;Mähring, M
+09;3;77;0139;139;Mähring, M
+09;3;77;0142;;Neualbenreuth, M
+09;3;77;0142;142;Neualbenreuth, M
+09;3;77;0146;;Plößberg, M
+09;3;77;0146;146;Plößberg, M
+09;3;77;0154;;Tirschenreuth, St
+09;3;77;0154;154;Tirschenreuth, St
+09;3;77;0157;;Waldershof, St
+09;3;77;0157;157;Waldershof, St
+09;3;77;0158;;Waldsassen, St
+09;3;77;0158;158;Waldsassen, St
+09;3;77;5347;;Mitterteich (VGem)
+09;3;77;5347;137;Leonberg
+09;3;77;5347;141;Mitterteich, St
+09;3;77;5347;145;Pechbrunn
+09;3;77;5348;;Kemnath (VGem)
+09;3;77;5348;128;Kastl
+09;3;77;5348;129;Kemnath, St
+09;3;77;5349;;Neusorg (VGem)
+09;3;77;5349;113;Brand
+09;3;77;5349;115;Ebnath
+09;3;77;5349;143;Neusorg
+09;3;77;5349;148;Pullenreuth
+09;3;77;5350;;Krummennaab (VGem)
+09;3;77;5350;132;Krummennaab
+09;3;77;5350;149;Reuth b.Erbendorf
+09;3;77;5351;;Wiesau (VGem)
+09;3;77;5351;117;Falkenberg, M
+09;3;77;5351;159;Wiesau, M
+09;4;;;;Oberfranken
+09;4;61;;;Bamberg
+09;4;61;0000;;Bamberg
+09;4;61;0000;000;Bamberg
+09;4;62;;;Bayreuth
+09;4;62;0000;;Bayreuth
+09;4;62;0000;000;Bayreuth
+09;4;63;;;Coburg
+09;4;63;0000;;Coburg
+09;4;63;0000;000;Coburg
+09;4;64;;;Hof
+09;4;64;0000;;Hof
+09;4;64;0000;000;Hof
+09;4;71;;;Bamberg
+09;4;71;0111;;Altendorf
+09;4;71;0111;111;Altendorf
+09;4;71;0117;;Bischberg
+09;4;71;0117;117;Bischberg
+09;4;71;0119;;Breitengüßbach
+09;4;71;0119;119;Breitengüßbach
+09;4;71;0123;;Buttenheim, M
+09;4;71;0123;123;Buttenheim, M
+09;4;71;0131;;Frensdorf
+09;4;71;0131;131;Frensdorf
+09;4;71;0137;;Gundelsheim
+09;4;71;0137;137;Gundelsheim
+09;4;71;0140;;Hallstadt, St
+09;4;71;0140;140;Hallstadt, St
+09;4;71;0142;;Heiligenstadt i.OFr., M
+09;4;71;0142;142;Heiligenstadt i.OFr., M
+09;4;71;0145;;Hirschaid, M
+09;4;71;0145;145;Hirschaid, M
+09;4;71;0150;;Kemmern
+09;4;71;0150;150;Kemmern
+09;4;71;0155;;Litzendorf
+09;4;71;0155;155;Litzendorf
+09;4;71;0159;;Memmelsdorf
+09;4;71;0159;159;Memmelsdorf
+09;4;71;0165;;Oberhaid
+09;4;71;0165;165;Oberhaid
+09;4;71;0169;;Pettstadt
+09;4;71;0169;169;Pettstadt
+09;4;71;0172;;Pommersfelden
+09;4;71;0172;172;Pommersfelden
+09;4;71;0174;;Rattelsdorf, M
+09;4;71;0174;174;Rattelsdorf, M
+09;4;71;0185;;Scheßlitz, St
+09;4;71;0185;185;Scheßlitz, St
+09;4;71;0191;;Stegaurach
+09;4;71;0191;191;Stegaurach
+09;4;71;0195;;Strullendorf
+09;4;71;0195;195;Strullendorf
+09;4;71;0207;;Viereth-Trunstadt
+09;4;71;0207;207;Viereth-Trunstadt
+09;4;71;0208;;Walsdorf
+09;4;71;0208;208;Walsdorf
+09;4;71;0214;;Zapfendorf, M
+09;4;71;0214;214;Zapfendorf, M
+09;4;71;0220;;Schlüsselfeld, St
+09;4;71;0220;220;Schlüsselfeld, St
+09;4;71;5401;;Baunach (VGem)
+09;4;71;5401;115;Baunach, St
+09;4;71;5401;133;Gerach
+09;4;71;5401;152;Lauter
+09;4;71;5401;175;Reckendorf
+09;4;71;5403;;Steinfeld (VGem)
+09;4;71;5403;151;Königsfeld
+09;4;71;5403;189;Stadelhofen
+09;4;71;5403;209;Wattendorf
+09;4;71;5407;;Ebrach (VGem)
+09;4;71;5407;122;Burgwindheim, M
+09;4;71;5407;128;Ebrach, M
+09;4;71;5408;;Burgebrach (VGem)
+09;4;71;5408;120;Burgebrach, M
+09;4;71;5408;186;Schönbrunn i.Steigerwald
+09;4;71;5445;;Lisberg (VGem)
+09;4;71;5445;154;Lisberg
+09;4;71;5445;173;Priesendorf
+09;4;71;9444;;Gdefr. Geb. (Lkr Bamberg)
+09;4;71;9444;444;Gdefr. Geb. (Lkr Bamberg)
+09;4;71;9444;444;Gdefr. Geb. (Lkr Bamberg)
+09;4;71;9444;444;Gdefr. Geb. (Lkr Bamberg)
+09;4;71;9444;444;Gdefr. Geb. (Lkr Bamberg)
+09;4;72;;;Bayreuth
+09;4;72;0111;;Ahorntal
+09;4;72;0111;111;Ahorntal
+09;4;72;0116;;Bad Berneck i.Fichtelgebirge, St
+09;4;72;0116;116;Bad Berneck i.Fichtelgebirge, St
+09;4;72;0119;;Bindlach
+09;4;72;0119;119;Bindlach
+09;4;72;0121;;Bischofsgrün
+09;4;72;0121;121;Bischofsgrün
+09;4;72;0131;;Eckersdorf
+09;4;72;0131;131;Eckersdorf
+09;4;72;0138;;Fichtelberg
+09;4;72;0138;138;Fichtelberg
+09;4;72;0139;;Gefrees, St
+09;4;72;0139;139;Gefrees, St
+09;4;72;0143;;Goldkronach, St
+09;4;72;0143;143;Goldkronach, St
+09;4;72;0150;;Heinersreuth
+09;4;72;0150;150;Heinersreuth
+09;4;72;0164;;Mehlmeisel
+09;4;72;0164;164;Mehlmeisel
+09;4;72;0175;;Pegnitz, St
+09;4;72;0175;175;Pegnitz, St
+09;4;72;0179;;Pottenstein, St
+09;4;72;0179;179;Pottenstein, St
+09;4;72;0190;;Speichersdorf
+09;4;72;0190;190;Speichersdorf
+09;4;72;0197;;Waischenfeld, St
+09;4;72;0197;197;Waischenfeld, St
+09;4;72;0198;;Warmensteinach
+09;4;72;0198;198;Warmensteinach
+09;4;72;5412;;Hollfeld (VGem)
+09;4;72;5412;115;Aufseß
+09;4;72;5412;154;Hollfeld, St
+09;4;72;5412;176;Plankenfels
+09;4;72;5413;;Mistelgau (VGem)
+09;4;72;5413;141;Glashütten
+09;4;72;5413;167;Mistelgau
+09;4;72;5414;;Mistelbach (VGem)
+09;4;72;5414;140;Gesees
+09;4;72;5414;155;Hummeltal
+09;4;72;5414;166;Mistelbach
+09;4;72;5415;;Weidenberg (VGem)
+09;4;72;5415;133;Emtmannsberg
+09;4;72;5415;156;Kirchenpingarten
+09;4;72;5415;188;Seybothenreuth
+09;4;72;5415;199;Weidenberg, M
+09;4;72;5416;;Creußen (VGem)
+09;4;72;5416;127;Creußen, St
+09;4;72;5416;146;Haag
+09;4;72;5416;180;Prebitz
+09;4;72;5416;184;Schnabelwaid, M
+09;4;72;5417;;Betzenstein (VGem)
+09;4;72;5417;118;Betzenstein, St
+09;4;72;5417;177;Plech, M
+09;4;72;9444;;Gdefr. Geb. (Lkr Bayreuth)
+09;4;72;9444;444;Gdefr. Geb. (Lkr Bayreuth)
+09;4;72;9444;444;Gdefr. Geb. (Lkr Bayreuth)
+09;4;73;;;Coburg
+09;4;73;0112;;Ahorn
+09;4;73;0112;112;Ahorn
+09;4;73;0120;;Dörfles-Esbach
+09;4;73;0120;120;Dörfles-Esbach
+09;4;73;0121;;Ebersdorf b.Coburg
+09;4;73;0121;121;Ebersdorf b.Coburg
+09;4;73;0132;;Großheirath
+09;4;73;0132;132;Großheirath
+09;4;73;0138;;Itzgrund
+09;4;73;0138;138;Itzgrund
+09;4;73;0141;;Lautertal
+09;4;73;0141;141;Lautertal
+09;4;73;0144;;Meeder
+09;4;73;0144;144;Meeder
+09;4;73;0151;;Neustadt b.Coburg, GKSt
+09;4;73;0151;151;Neustadt b.Coburg, GKSt
+09;4;73;0158;;Bad Rodach, St
+09;4;73;0158;158;Bad Rodach, St
+09;4;73;0159;;Rödental, St
+09;4;73;0159;159;Rödental, St
+09;4;73;0165;;Seßlach, St
+09;4;73;0165;165;Seßlach, St
+09;4;73;0166;;Sonnefeld
+09;4;73;0166;166;Sonnefeld
+09;4;73;0170;;Untersiemau
+09;4;73;0170;170;Untersiemau
+09;4;73;0174;;Weidhausen b.Coburg
+09;4;73;0174;174;Weidhausen b.Coburg
+09;4;73;0175;;Weitramsdorf
+09;4;73;0175;175;Weitramsdorf
+09;4;73;5418;;Grub a.Forst (VGem)
+09;4;73;5418;134;Grub a.Forst
+09;4;73;5418;153;Niederfüllbach
+09;4;73;9444;;Gdefr. Geb. (Lkr Coburg)
+09;4;73;9444;444;Gdefr. Geb. (Lkr Coburg)
+09;4;74;;;Forchheim
+09;4;74;0123;;Eggolsheim, M
+09;4;74;0123;123;Eggolsheim, M
+09;4;74;0124;;Egloffstein, M
+09;4;74;0124;124;Egloffstein, M
+09;4;74;0126;;Forchheim, GKSt
+09;4;74;0126;126;Forchheim, GKSt
+09;4;74;0129;;Gößweinstein, M
+09;4;74;0129;129;Gößweinstein, M
+09;4;74;0133;;Hallerndorf
+09;4;74;0133;133;Hallerndorf
+09;4;74;0134;;Hausen
+09;4;74;0134;134;Hausen
+09;4;74;0135;;Heroldsbach
+09;4;74;0135;135;Heroldsbach
+09;4;74;0140;;Igensdorf, M
+09;4;74;0140;140;Igensdorf, M
+09;4;74;0146;;Langensendelbach
+09;4;74;0146;146;Langensendelbach
+09;4;74;0154;;Neunkirchen a.Brand, M
+09;4;74;0154;154;Neunkirchen a.Brand, M
+09;4;74;0156;;Obertrubach
+09;4;74;0156;156;Obertrubach
+09;4;74;0161;;Pretzfeld, M
+09;4;74;0161;161;Pretzfeld, M
+09;4;74;0176;;Wiesenttal, M
+09;4;74;0176;176;Wiesenttal, M
+09;4;74;5420;;Ebermannstadt (VGem)
+09;4;74;5420;121;Ebermannstadt, St
+09;4;74;5420;168;Unterleinleiter
+09;4;74;5422;;Gosberg (VGem)
+09;4;74;5422;145;Kunreuth
+09;4;74;5422;158;Pinzberg
+09;4;74;5422;175;Wiesenthau
+09;4;74;5423;;Kirchehrenbach (VGem)
+09;4;74;5423;143;Kirchehrenbach
+09;4;74;5423;147;Leutenbach
+09;4;74;5423;171;Weilersbach
+09;4;74;5425;;Effeltrich (VGem)
+09;4;74;5425;122;Effeltrich
+09;4;74;5425;160;Poxdorf
+09;4;74;5426;;Dormitz (VGem)
+09;4;74;5426;119;Dormitz
+09;4;74;5426;137;Hetzles
+09;4;74;5426;144;Kleinsendelbach
+09;4;74;5427;;Gräfenberg (VGem)
+09;4;74;5427;132;Gräfenberg, St
+09;4;74;5427;138;Hiltpoltstein, M
+09;4;74;5427;173;Weißenohe
+09;4;75;;;Hof
+09;4;75;0112;;Bad Steben, M
+09;4;75;0112;112;Bad Steben, M
+09;4;75;0113;;Berg
+09;4;75;0113;113;Berg
+09;4;75;0120;;Döhlau
+09;4;75;0120;120;Döhlau
+09;4;75;0128;;Geroldsgrün
+09;4;75;0128;128;Geroldsgrün
+09;4;75;0136;;Helmbrechts, St
+09;4;75;0136;136;Helmbrechts, St
+09;4;75;0141;;Köditz
+09;4;75;0141;141;Köditz
+09;4;75;0142;;Konradsreuth
+09;4;75;0142;142;Konradsreuth
+09;4;75;0154;;Münchberg, St
+09;4;75;0154;154;Münchberg, St
+09;4;75;0156;;Naila, St
+09;4;75;0156;156;Naila, St
+09;4;75;0158;;Oberkotzau, M
+09;4;75;0158;158;Oberkotzau, M
+09;4;75;0161;;Regnitzlosau
+09;4;75;0161;161;Regnitzlosau
+09;4;75;0162;;Rehau, St
+09;4;75;0162;162;Rehau, St
+09;4;75;0168;;Schwarzenbach a.d.Saale, St
+09;4;75;0168;168;Schwarzenbach a.d.Saale, St
+09;4;75;0169;;Schwarzenbach a.Wald, St
+09;4;75;0169;169;Schwarzenbach a.Wald, St
+09;4;75;0171;;Selbitz, St
+09;4;75;0171;171;Selbitz, St
+09;4;75;0175;;Stammbach, M
+09;4;75;0175;175;Stammbach, M
+09;4;75;0189;;Zell im Fichtelgebirge, M
+09;4;75;0189;189;Zell im Fichtelgebirge, M
+09;4;75;5428;;Lichtenberg (VGem)
+09;4;75;5428;137;Issigau
+09;4;75;5428;146;Lichtenberg, St
+09;4;75;5430;;Feilitzsch (VGem)
+09;4;75;5430;123;Feilitzsch
+09;4;75;5430;127;Gattendorf
+09;4;75;5430;181;Töpen
+09;4;75;5430;182;Trogen
+09;4;75;5431;;Schauenstein (VGem)
+09;4;75;5431;145;Leupoldsgrün
+09;4;75;5431;165;Schauenstein, St
+09;4;75;5432;;Sparneck (VGem)
+09;4;75;5432;174;Sparneck, M
+09;4;75;5432;184;Weißdorf
+09;4;75;9444;;Gdefr. Geb. (Lkr Hof)
+09;4;75;9444;444;Gdefr. Geb. (Lkr Hof)
+09;4;75;9444;444;Gdefr. Geb. (Lkr Hof)
+09;4;76;;;Kronach
+09;4;76;0145;;Kronach, St
+09;4;76;0145;145;Kronach, St
+09;4;76;0146;;Küps, M
+09;4;76;0146;146;Küps, M
+09;4;76;0152;;Ludwigsstadt, St
+09;4;76;0152;152;Ludwigsstadt, St
+09;4;76;0159;;Nordhalben, M
+09;4;76;0159;159;Nordhalben, M
+09;4;76;0164;;Pressig, M
+09;4;76;0164;164;Pressig, M
+09;4;76;0175;;Steinbach a.Wald
+09;4;76;0175;175;Steinbach a.Wald
+09;4;76;0177;;Steinwiesen, M
+09;4;76;0177;177;Steinwiesen, M
+09;4;76;0178;;Stockheim
+09;4;76;0178;178;Stockheim
+09;4;76;0179;;Tettau, M
+09;4;76;0179;179;Tettau, M
+09;4;76;0183;;Marktrodach, M
+09;4;76;0183;183;Marktrodach, M
+09;4;76;0184;;Wallenfels, St
+09;4;76;0184;184;Wallenfels, St
+09;4;76;0185;;Weißenbrunn
+09;4;76;0185;185;Weißenbrunn
+09;4;76;0189;;Wilhelmsthal
+09;4;76;0189;189;Wilhelmsthal
+09;4;76;5433;;Teuschnitz (VGem)
+09;4;76;5433;166;Reichenbach
+09;4;76;5433;180;Teuschnitz, St
+09;4;76;5433;182;Tschirn
+09;4;76;5434;;Mitwitz (VGem)
+09;4;76;5434;154;Mitwitz, M
+09;4;76;5434;171;Schneckenlohe
+09;4;76;9444;;Gdefr. Geb. (Lkr Kronach)
+09;4;76;9444;444;Gdefr. Geb. (Lkr Kronach)
+09;4;77;;;Kulmbach
+09;4;77;0121;;Himmelkron
+09;4;77;0121;121;Himmelkron
+09;4;77;0128;;Kulmbach, GKSt
+09;4;77;0128;128;Kulmbach, GKSt
+09;4;77;0136;;Mainleus, M
+09;4;77;0136;136;Mainleus, M
+09;4;77;0139;;Marktschorgast, M
+09;4;77;0139;139;Marktschorgast, M
+09;4;77;0142;;Neudrossenfeld
+09;4;77;0142;142;Neudrossenfeld
+09;4;77;0143;;Neuenmarkt
+09;4;77;0143;143;Neuenmarkt
+09;4;77;0148;;Presseck, M
+09;4;77;0148;148;Presseck, M
+09;4;77;0157;;Thurnau, M
+09;4;77;0157;157;Thurnau, M
+09;4;77;0163;;Wirsberg, M
+09;4;77;0163;163;Wirsberg, M
+09;4;77;5435;;Stadtsteinach (VGem)
+09;4;77;5435;151;Rugendorf
+09;4;77;5435;156;Stadtsteinach, St
+09;4;77;5436;;Marktleugast (VGem)
+09;4;77;5436;117;Grafengehaig, M
+09;4;77;5436;138;Marktleugast, M
+09;4;77;5437;;Untersteinach (VGem)
+09;4;77;5437;118;Guttenberg
+09;4;77;5437;129;Kupferberg, St
+09;4;77;5437;135;Ludwigschorgast, M
+09;4;77;5437;159;Untersteinach
+09;4;77;5438;;Kasendorf (VGem)
+09;4;77;5438;124;Kasendorf, M
+09;4;77;5438;164;Wonsees, M
+09;4;77;5439;;Trebgast (VGem)
+09;4;77;5439;119;Harsdorf
+09;4;77;5439;127;Ködnitz
+09;4;77;5439;158;Trebgast
+09;4;78;;;Lichtenfels
+09;4;78;0111;;Altenkunstadt
+09;4;78;0111;111;Altenkunstadt
+09;4;78;0116;;Burgkunstadt, St
+09;4;78;0116;116;Burgkunstadt, St
+09;4;78;0120;;Ebensfeld, M
+09;4;78;0120;120;Ebensfeld, M
+09;4;78;0139;;Lichtenfels, St
+09;4;78;0139;139;Lichtenfels, St
+09;4;78;0145;;Michelau i.OFr.
+09;4;78;0145;145;Michelau i.OFr.
+09;4;78;0165;;Bad Staffelstein, St
+09;4;78;0165;165;Bad Staffelstein, St
+09;4;78;0176;;Weismain, St
+09;4;78;0176;176;Weismain, St
+09;4;78;5441;;Redwitz a.d.Rodach (VGem)
+09;4;78;5441;143;Marktgraitz, M
+09;4;78;5441;155;Redwitz a.d.Rodach
+09;4;78;5446;;Hochstadt-Marktzeuln (VGem)
+09;4;78;5446;127;Hochstadt a.Main
+09;4;78;5446;144;Marktzeuln, M
+09;4;78;9444;;Gdefr. Geb. (Lkr Lichtenfels)
+09;4;78;9444;444;Gdefr. Geb. (Lkr Lichtenfels)
+09;4;79;;;Wunsiedel i.Fichtelgebirge
+09;4;79;0112;;Arzberg, St
+09;4;79;0112;112;Arzberg, St
+09;4;79;0129;;Kirchenlamitz, St
+09;4;79;0129;129;Kirchenlamitz, St
+09;4;79;0135;;Marktleuthen, St
+09;4;79;0135;135;Marktleuthen, St
+09;4;79;0136;;Marktredwitz, GKSt
+09;4;79;0136;136;Marktredwitz, GKSt
+09;4;79;0145;;Röslau
+09;4;79;0145;145;Röslau
+09;4;79;0150;;Schönwald, St
+09;4;79;0150;150;Schönwald, St
+09;4;79;0152;;Selb, GKSt
+09;4;79;0152;152;Selb, GKSt
+09;4;79;0166;;Weißenstadt, St
+09;4;79;0166;166;Weißenstadt, St
+09;4;79;0169;;Wunsiedel, St
+09;4;79;0169;169;Wunsiedel, St
+09;4;79;5442;;Thiersheim (VGem)
+09;4;79;5442;126;Höchstädt i.Fichtelgebirge
+09;4;79;5442;158;Thiersheim, M
+09;4;79;5442;159;Thierstein, M
+09;4;79;5443;;Schirnding (VGem)
+09;4;79;5443;127;Hohenberg a.d.Eger, St
+09;4;79;5443;147;Schirnding, M
+09;4;79;5444;;Tröstau (VGem)
+09;4;79;5444;111;Bad Alexandersbad
+09;4;79;5444;138;Nagel
+09;4;79;5444;161;Tröstau
+09;4;79;9444;;Gdefr. Geb. (Lkr Wunsiedel i.Fichtelgebirge)
+09;4;79;9444;444;Gdefr. Geb. (Lkr Wunsiedel i.Fichtelgebirge)
+09;5;;;;Mittelfranken
+09;5;61;;;Ansbach
+09;5;61;0000;;Ansbach
+09;5;61;0000;000;Ansbach
+09;5;62;;;Erlangen
+09;5;62;0000;;Erlangen
+09;5;62;0000;000;Erlangen
+09;5;63;;;Fürth
+09;5;63;0000;;Fürth
+09;5;63;0000;000;Fürth
+09;5;64;;;Nürnberg
+09;5;64;0000;;Nürnberg
+09;5;64;0000;000;Nürnberg
+09;5;65;;;Schwabach
+09;5;65;0000;;Schwabach
+09;5;65;0000;000;Schwabach
+09;5;71;;;Ansbach
+09;5;71;0113;;Arberg, M
+09;5;71;0113;113;Arberg, M
+09;5;71;0114;;Aurach
+09;5;71;0114;114;Aurach
+09;5;71;0115;;Bechhofen, M
+09;5;71;0115;115;Bechhofen, M
+09;5;71;0127;;Burgoberbach
+09;5;71;0127;127;Burgoberbach
+09;5;71;0130;;Colmberg, M
+09;5;71;0130;130;Colmberg, M
+09;5;71;0135;;Dietenhofen, M
+09;5;71;0135;135;Dietenhofen, M
+09;5;71;0136;;Dinkelsbühl, GKSt
+09;5;71;0136;136;Dinkelsbühl, GKSt
+09;5;71;0139;;Dürrwangen, M
+09;5;71;0139;139;Dürrwangen, M
+09;5;71;0145;;Feuchtwangen, St
+09;5;71;0145;145;Feuchtwangen, St
+09;5;71;0146;;Flachslanden, M
+09;5;71;0146;146;Flachslanden, M
+09;5;71;0165;;Heilsbronn, St
+09;5;71;0165;165;Heilsbronn, St
+09;5;71;0166;;Herrieden, St
+09;5;71;0166;166;Herrieden, St
+09;5;71;0170;;Langfurth
+09;5;71;0170;170;Langfurth
+09;5;71;0171;;Lehrberg, M
+09;5;71;0171;171;Lehrberg, M
+09;5;71;0174;;Leutershausen, St
+09;5;71;0174;174;Leutershausen, St
+09;5;71;0175;;Lichtenau, M
+09;5;71;0175;175;Lichtenau, M
+09;5;71;0177;;Merkendorf, St
+09;5;71;0177;177;Merkendorf, St
+09;5;71;0180;;Neuendettelsau
+09;5;71;0180;180;Neuendettelsau
+09;5;71;0183;;Oberdachstetten
+09;5;71;0183;183;Oberdachstetten
+09;5;71;0190;;Petersaurach
+09;5;71;0190;190;Petersaurach
+09;5;71;0193;;Rothenburg ob der Tauber, GKSt
+09;5;71;0193;193;Rothenburg ob der Tauber, GKSt
+09;5;71;0196;;Sachsen b.Ansbach
+09;5;71;0196;196;Sachsen b.Ansbach
+09;5;71;0199;;Schnelldorf
+09;5;71;0199;199;Schnelldorf
+09;5;71;0200;;Schopfloch, M
+09;5;71;0200;200;Schopfloch, M
+09;5;71;0214;;Wassertrüdingen, St
+09;5;71;0214;214;Wassertrüdingen, St
+09;5;71;0226;;Windsbach, St
+09;5;71;0226;226;Windsbach, St
+09;5;71;5501;;Rothenburg ob der Tauber (VGem)
+09;5;71;5501;111;Adelshofen
+09;5;71;5501;152;Gebsattel
+09;5;71;5501;155;Geslau
+09;5;71;5501;169;Insingen
+09;5;71;5501;181;Neusitz
+09;5;71;5501;188;Ohrenbach
+09;5;71;5501;205;Steinsfeld
+09;5;71;5501;225;Windelsbach
+09;5;71;5502;;Schillingsfürst (VGem)
+09;5;71;5502;125;Buch a.Wald
+09;5;71;5502;134;Diebach
+09;5;71;5502;137;Dombühl, M
+09;5;71;5502;198;Schillingsfürst, St
+09;5;71;5502;222;Wettringen
+09;5;71;5502;228;Wörnitz
+09;5;71;5504;;Weihenzell (VGem)
+09;5;71;5504;122;Bruckberg
+09;5;71;5504;194;Rügland
+09;5;71;5504;217;Weihenzell
+09;5;71;5506;;Triesdorf (VGem)
+09;5;71;5506;189;Ornbau, St
+09;5;71;5506;216;Weidenbach, M
+09;5;71;5507;;Dentlein a.Forst (VGem)
+09;5;71;5507;128;Burk
+09;5;71;5507;132;Dentlein a.Forst, M
+09;5;71;5507;223;Wieseth
+09;5;71;5508;;Wilburgstetten (VGem)
+09;5;71;5508;179;Mönchsroth
+09;5;71;5508;218;Weiltingen, M
+09;5;71;5508;224;Wilburgstetten
+09;5;71;5509;;Hesselberg (VGem)
+09;5;71;5509;141;Ehingen
+09;5;71;5509;154;Gerolfingen
+09;5;71;5509;192;Röckingen
+09;5;71;5509;208;Unterschwaningen
+09;5;71;5509;227;Wittelshofen
+09;5;71;5538;;Wolframs-Eschenbach (VGem)
+09;5;71;5538;178;Mitteleschenbach
+09;5;71;5538;229;Wolframs-Eschenbach, St
+09;5;71;9444;;Gdefr. Geb. (Lkr Ansbach)
+09;5;71;9444;444;Gdefr. Geb. (Lkr Ansbach)
+09;5;72;;;Erlangen-Höchstadt
+09;5;72;0111;;Adelsdorf
+09;5;72;0111;111;Adelsdorf
+09;5;72;0115;;Baiersdorf, St
+09;5;72;0115;115;Baiersdorf, St
+09;5;72;0119;;Bubenreuth
+09;5;72;0119;119;Bubenreuth
+09;5;72;0121;;Eckental, M
+09;5;72;0121;121;Eckental, M
+09;5;72;0130;;Hemhofen
+09;5;72;0130;130;Hemhofen
+09;5;72;0131;;Heroldsberg, M
+09;5;72;0131;131;Heroldsberg, M
+09;5;72;0132;;Herzogenaurach, St
+09;5;72;0132;132;Herzogenaurach, St
+09;5;72;0135;;Höchstadt a.d.Aisch, St
+09;5;72;0135;135;Höchstadt a.d.Aisch, St
+09;5;72;0137;;Kalchreuth
+09;5;72;0137;137;Kalchreuth
+09;5;72;0142;;Möhrendorf
+09;5;72;0142;142;Möhrendorf
+09;5;72;0149;;Röttenbach
+09;5;72;0149;149;Röttenbach
+09;5;72;0160;;Wachenroth, M
+09;5;72;0160;160;Wachenroth, M
+09;5;72;0164;;Weisendorf, M
+09;5;72;0164;164;Weisendorf, M
+09;5;72;5510;;Höchstadt a.d.Aisch (VGem)
+09;5;72;5510;126;Gremsdorf
+09;5;72;5510;139;Lonnerstadt, M
+09;5;72;5510;143;Mühlhausen, M
+09;5;72;5510;159;Vestenbergsgreuth, M
+09;5;72;5512;;Aurachtal (VGem)
+09;5;72;5512;114;Aurachtal
+09;5;72;5512;147;Oberreichenbach
+09;5;72;5514;;Uttenreuth (VGem)
+09;5;72;5514;120;Buckenhof
+09;5;72;5514;141;Marloffstein
+09;5;72;5514;154;Spardorf
+09;5;72;5514;158;Uttenreuth
+09;5;72;5539;;Heßdorf (VGem)
+09;5;72;5539;127;Großenseebach
+09;5;72;5539;133;Heßdorf
+09;5;72;9444;;Gdefr. Geb. (Lkr Erlangen-Höchstadt)
+09;5;72;9444;444;Gdefr. Geb. (Lkr Erlangen-Höchstadt)
+09;5;72;9444;444;Gdefr. Geb. (Lkr Erlangen-Höchstadt)
+09;5;73;;;Fürth
+09;5;73;0111;;Ammerndorf, M
+09;5;73;0111;111;Ammerndorf, M
+09;5;73;0114;;Cadolzburg, M
+09;5;73;0114;114;Cadolzburg, M
+09;5;73;0115;;Großhabersdorf
+09;5;73;0115;115;Großhabersdorf
+09;5;73;0120;;Langenzenn, St
+09;5;73;0120;120;Langenzenn, St
+09;5;73;0122;;Oberasbach, St
+09;5;73;0122;122;Oberasbach, St
+09;5;73;0124;;Puschendorf
+09;5;73;0124;124;Puschendorf
+09;5;73;0125;;Roßtal, M
+09;5;73;0125;125;Roßtal, M
+09;5;73;0127;;Stein, St
+09;5;73;0127;127;Stein, St
+09;5;73;0133;;Wilhermsdorf, M
+09;5;73;0133;133;Wilhermsdorf, M
+09;5;73;0134;;Zirndorf, St
+09;5;73;0134;134;Zirndorf, St
+09;5;73;5517;;Veitsbronn (VGem)
+09;5;73;5517;126;Seukendorf
+09;5;73;5517;130;Veitsbronn
+09;5;73;5540;;Obermichelbach-Tuchenbach (VGem)
+09;5;73;5540;123;Obermichelbach
+09;5;73;5540;129;Tuchenbach
+09;5;74;;;Nürnberger Land
+09;5;74;0112;;Altdorf b.Nürnberg, St
+09;5;74;0112;112;Altdorf b.Nürnberg, St
+09;5;74;0117;;Burgthann
+09;5;74;0117;117;Burgthann
+09;5;74;0123;;Feucht, M
+09;5;74;0123;123;Feucht, M
+09;5;74;0132;;Hersbruck, St
+09;5;74;0132;132;Hersbruck, St
+09;5;74;0135;;Kirchensittenbach
+09;5;74;0135;135;Kirchensittenbach
+09;5;74;0138;;Lauf a.d.Pegnitz, St
+09;5;74;0138;138;Lauf a.d.Pegnitz, St
+09;5;74;0139;;Leinburg
+09;5;74;0139;139;Leinburg
+09;5;74;0140;;Neuhaus a.d.Pegnitz, M
+09;5;74;0140;140;Neuhaus a.d.Pegnitz, M
+09;5;74;0141;;Neunkirchen a.Sand
+09;5;74;0141;141;Neunkirchen a.Sand
+09;5;74;0146;;Ottensoos
+09;5;74;0146;146;Ottensoos
+09;5;74;0147;;Pommelsbrunn
+09;5;74;0147;147;Pommelsbrunn
+09;5;74;0150;;Reichenschwand
+09;5;74;0150;150;Reichenschwand
+09;5;74;0152;;Röthenbach a.d.Pegnitz, St
+09;5;74;0152;152;Röthenbach a.d.Pegnitz, St
+09;5;74;0154;;Rückersdorf
+09;5;74;0154;154;Rückersdorf
+09;5;74;0155;;Schnaittach, M
+09;5;74;0155;155;Schnaittach, M
+09;5;74;0156;;Schwaig b.Nürnberg
+09;5;74;0156;156;Schwaig b.Nürnberg
+09;5;74;0157;;Schwarzenbruck
+09;5;74;0157;157;Schwarzenbruck
+09;5;74;0158;;Simmelsdorf
+09;5;74;0158;158;Simmelsdorf
+09;5;74;0164;;Winkelhaid
+09;5;74;0164;164;Winkelhaid
+09;5;74;5527;;Velden (VGem)
+09;5;74;5527;129;Hartenstein
+09;5;74;5527;160;Velden, St
+09;5;74;5527;161;Vorra
+09;5;74;5528;;Happurg (VGem)
+09;5;74;5528;111;Alfeld
+09;5;74;5528;128;Happurg
+09;5;74;5529;;Henfenfeld (VGem)
+09;5;74;5529;120;Engelthal
+09;5;74;5529;131;Henfenfeld
+09;5;74;5529;145;Offenhausen
+09;5;74;9444;;Gdefr. Geb. (Lkr Nürnberger Land)
+09;5;74;9444;444;Gdefr. Geb. (Lkr Nürnberger Land)
+09;5;75;;;Neustadt a.d.Aisch-Bad Windsheim
+09;5;75;0112;;Bad Windsheim, St
+09;5;75;0112;112;Bad Windsheim, St
+09;5;75;0116;;Burghaslach, M
+09;5;75;0116;116;Burghaslach, M
+09;5;75;0119;;Dietersheim
+09;5;75;0119;119;Dietersheim
+09;5;75;0121;;Emskirchen, M
+09;5;75;0121;121;Emskirchen, M
+09;5;75;0135;;Ipsheim, M
+09;5;75;0135;135;Ipsheim, M
+09;5;75;0145;;Markt Erlbach, M
+09;5;75;0145;145;Markt Erlbach, M
+09;5;75;0153;;Neustadt a.d.Aisch, St
+09;5;75;0153;153;Neustadt a.d.Aisch, St
+09;5;75;0156;;Obernzenn, M
+09;5;75;0156;156;Obernzenn, M
+09;5;75;5518;;Scheinfeld (VGem)
+09;5;75;5518;138;Langenfeld
+09;5;75;5518;144;Markt Bibart, M
+09;5;75;5518;147;Markt Taschendorf, M
+09;5;75;5518;157;Oberscheinfeld, M
+09;5;75;5518;161;Scheinfeld, St
+09;5;75;5518;165;Sugenheim, M
+09;5;75;5519;;Uffenheim (VGem)
+09;5;75;5519;122;Ergersheim
+09;5;75;5519;127;Gollhofen
+09;5;75;5519;130;Hemmersheim
+09;5;75;5519;134;Ippesheim, M
+09;5;75;5519;146;Markt Nordheim, M
+09;5;75;5519;155;Oberickelsheim
+09;5;75;5519;163;Simmershofen
+09;5;75;5519;168;Uffenheim, St
+09;5;75;5519;179;Weigenheim
+09;5;75;5520;;Hagenbüchach-Wilhelmsdorf (VGem)
+09;5;75;5520;129;Hagenbüchach
+09;5;75;5520;181;Wilhelmsdorf
+09;5;75;5521;;Diespeck (VGem)
+09;5;75;5521;113;Baudenbach, M
+09;5;75;5521;118;Diespeck
+09;5;75;5521;128;Gutenstetten
+09;5;75;5521;150;Münchsteinach
+09;5;75;5522;;Uehlfeld (VGem)
+09;5;75;5522;117;Dachsbach, M
+09;5;75;5522;125;Gerhardshofen
+09;5;75;5522;167;Uehlfeld, M
+09;5;75;5524;;Burgbernheim (VGem)
+09;5;75;5524;115;Burgbernheim, St
+09;5;75;5524;124;Gallmersgarten
+09;5;75;5524;133;Illesheim
+09;5;75;5524;143;Marktbergel, M
+09;5;75;5525;;Neuhof a.d.Zenn (VGem)
+09;5;75;5525;152;Neuhof a.d.Zenn, M
+09;5;75;5525;166;Trautskirchen
+09;5;75;9444;;Gdefr. Geb. (Lkr Neustadt a.d.Aisch-Bad Windsheim)
+09;5;75;9444;444;Gdefr. Geb. (Lkr Neustadt a.d.Aisch-Bad Windsheim)
+09;5;76;;;Roth
+09;5;76;0111;;Abenberg, St
+09;5;76;0111;111;Abenberg, St
+09;5;76;0113;;Allersberg, M
+09;5;76;0113;113;Allersberg, M
+09;5;76;0117;;Büchenbach
+09;5;76;0117;117;Büchenbach
+09;5;76;0121;;Georgensgmünd
+09;5;76;0121;121;Georgensgmünd
+09;5;76;0122;;Greding, St
+09;5;76;0122;122;Greding, St
+09;5;76;0126;;Heideck, St
+09;5;76;0126;126;Heideck, St
+09;5;76;0127;;Hilpoltstein, St
+09;5;76;0127;127;Hilpoltstein, St
+09;5;76;0128;;Kammerstein
+09;5;76;0128;128;Kammerstein
+09;5;76;0132;;Schwanstetten, M
+09;5;76;0132;132;Schwanstetten, M
+09;5;76;0137;;Rednitzhembach
+09;5;76;0137;137;Rednitzhembach
+09;5;76;0141;;Röttenbach
+09;5;76;0141;141;Röttenbach
+09;5;76;0142;;Rohr
+09;5;76;0142;142;Rohr
+09;5;76;0143;;Roth, St
+09;5;76;0143;143;Roth, St
+09;5;76;0147;;Spalt, St
+09;5;76;0147;147;Spalt, St
+09;5;76;0148;;Thalmässing, M
+09;5;76;0148;148;Thalmässing, M
+09;5;76;0151;;Wendelstein, M
+09;5;76;0151;151;Wendelstein, M
+09;5;76;9444;;Gdefr. Geb. (Lkr Roth)
+09;5;76;9444;444;Gdefr. Geb. (Lkr Roth)
+09;5;77;;;Weißenburg-Gunzenhausen
+09;5;77;0114;;Muhr a.See
+09;5;77;0114;114;Muhr a.See
+09;5;77;0136;;Gunzenhausen, St
+09;5;77;0136;136;Gunzenhausen, St
+09;5;77;0148;;Langenaltheim
+09;5;77;0148;148;Langenaltheim
+09;5;77;0158;;Pappenheim, St
+09;5;77;0158;158;Pappenheim, St
+09;5;77;0161;;Pleinfeld, M
+09;5;77;0161;161;Pleinfeld, M
+09;5;77;0162;;Polsingen
+09;5;77;0162;162;Polsingen
+09;5;77;0168;;Solnhofen
+09;5;77;0168;168;Solnhofen
+09;5;77;0173;;Treuchtlingen, St
+09;5;77;0173;173;Treuchtlingen, St
+09;5;77;0177;;Weißenburg i.Bay., GKSt
+09;5;77;0177;177;Weißenburg i.Bay., GKSt
+09;5;77;5532;;Gunzenhausen (VGem)
+09;5;77;5532;111;Absberg, M
+09;5;77;5532;138;Haundorf
+09;5;77;5532;159;Pfofeld
+09;5;77;5532;172;Theilenhofen
+09;5;77;5533;;Altmühltal (VGem)
+09;5;77;5533;113;Alesheim
+09;5;77;5533;122;Dittenheim
+09;5;77;5533;149;Markt Berolzheim, M
+09;5;77;5533;150;Meinheim
+09;5;77;5534;;Ellingen (VGem)
+09;5;77;5534;125;Ellingen, St
+09;5;77;5534;127;Ettenstatt
+09;5;77;5534;141;Höttingen
+09;5;77;5535;;Nennslingen (VGem)
+09;5;77;5535;115;Bergen
+09;5;77;5535;120;Burgsalach
+09;5;77;5535;151;Nennslingen, M
+09;5;77;5535;163;Raitenbuch
+09;5;77;5536;;Hahnenkamm (VGem)
+09;5;77;5536;133;Gnotzheim, M
+09;5;77;5536;140;Heidenheim, M
+09;5;77;5536;179;Westheim
+09;6;;;;Unterfranken
+09;6;61;;;Aschaffenburg
+09;6;61;0000;;Aschaffenburg
+09;6;61;0000;000;Aschaffenburg
+09;6;62;;;Schweinfurt
+09;6;62;0000;;Schweinfurt
+09;6;62;0000;000;Schweinfurt
+09;6;63;;;Würzburg
+09;6;63;0000;;Würzburg
+09;6;63;0000;000;Würzburg
+09;6;71;;;Aschaffenburg
+09;6;71;0111;;Alzenau, St
+09;6;71;0111;111;Alzenau, St
+09;6;71;0112;;Bessenbach
+09;6;71;0112;112;Bessenbach
+09;6;71;0114;;Karlstein a.Main
+09;6;71;0114;114;Karlstein a.Main
+09;6;71;0119;;Geiselbach
+09;6;71;0119;119;Geiselbach
+09;6;71;0120;;Glattbach
+09;6;71;0120;120;Glattbach
+09;6;71;0121;;Goldbach, M
+09;6;71;0121;121;Goldbach, M
+09;6;71;0122;;Großostheim, M
+09;6;71;0122;122;Großostheim, M
+09;6;71;0124;;Haibach
+09;6;71;0124;124;Haibach
+09;6;71;0130;;Hösbach, M
+09;6;71;0130;130;Hösbach, M
+09;6;71;0133;;Johannesberg
+09;6;71;0133;133;Johannesberg
+09;6;71;0134;;Kahl a.Main
+09;6;71;0134;134;Kahl a.Main
+09;6;71;0136;;Kleinostheim
+09;6;71;0136;136;Kleinostheim
+09;6;71;0139;;Laufach
+09;6;71;0139;139;Laufach
+09;6;71;0140;;Mainaschaff
+09;6;71;0140;140;Mainaschaff
+09;6;71;0143;;Mömbris, M
+09;6;71;0143;143;Mömbris, M
+09;6;71;0148;;Rothenbuch
+09;6;71;0148;148;Rothenbuch
+09;6;71;0150;;Sailauf
+09;6;71;0150;150;Sailauf
+09;6;71;0155;;Stockstadt a.Main, M
+09;6;71;0155;155;Stockstadt a.Main, M
+09;6;71;0156;;Waldaschaff
+09;6;71;0156;156;Waldaschaff
+09;6;71;0157;;Weibersbrunn
+09;6;71;0157;157;Weibersbrunn
+09;6;71;5602;;Heigenbrücken (VGem)
+09;6;71;5602;126;Heigenbrücken
+09;6;71;5602;128;Heinrichsthal
+09;6;71;5603;;Mespelbrunn (VGem)
+09;6;71;5603;127;Heimbuchenthal
+09;6;71;5603;141;Mespelbrunn
+09;6;71;5603;160;Dammbach
+09;6;71;5604;;Schöllkrippen (VGem)
+09;6;71;5604;113;Blankenbach
+09;6;71;5604;135;Kleinkahl
+09;6;71;5604;138;Krombach
+09;6;71;5604;152;Schöllkrippen, M
+09;6;71;5604;153;Sommerkahl
+09;6;71;5604;159;Westerngrund
+09;6;71;5604;162;Wiesen
+09;6;71;9444;;Gdefr. Geb. (Lkr Aschaffenburg)
+09;6;71;9444;444;Gdefr. Geb. (Lkr Aschaffenburg)
+09;6;72;;;Bad Kissingen
+09;6;72;0112;;Bad Bocklet, M
+09;6;72;0112;112;Bad Bocklet, M
+09;6;72;0113;;Bad Brückenau, St
+09;6;72;0113;113;Bad Brückenau, St
+09;6;72;0114;;Bad Kissingen, GKSt
+09;6;72;0114;114;Bad Kissingen, GKSt
+09;6;72;0117;;Burkardroth, M
+09;6;72;0117;117;Burkardroth, M
+09;6;72;0127;;Hammelburg, St
+09;6;72;0127;127;Hammelburg, St
+09;6;72;0134;;Motten
+09;6;72;0134;134;Motten
+09;6;72;0135;;Münnerstadt, St
+09;6;72;0135;135;Münnerstadt, St
+09;6;72;0136;;Nüdlingen
+09;6;72;0136;136;Nüdlingen
+09;6;72;0139;;Oberthulba, M
+09;6;72;0139;139;Oberthulba, M
+09;6;72;0140;;Oerlenbach
+09;6;72;0140;140;Oerlenbach
+09;6;72;0161;;Wartmannsroth
+09;6;72;0161;161;Wartmannsroth
+09;6;72;0163;;Wildflecken, M
+09;6;72;0163;163;Wildflecken, M
+09;6;72;0166;;Zeitlofs, M
+09;6;72;0166;166;Zeitlofs, M
+09;6;72;5606;;Bad Brückenau (VGem)
+09;6;72;5606;126;Geroda, M
+09;6;72;5606;138;Oberleichtersbach
+09;6;72;5606;145;Riedenberg
+09;6;72;5606;149;Schondra, M
+09;6;72;5607;;Elfershausen (VGem)
+09;6;72;5607;121;Elfershausen, M
+09;6;72;5607;124;Fuchsstadt
+09;6;72;5608;;Euerdorf (VGem)
+09;6;72;5608;111;Aura a.d.Saale
+09;6;72;5608;122;Euerdorf, M
+09;6;72;5608;142;Ramsthal
+09;6;72;5608;155;Sulzthal, M
+09;6;72;5609;;Maßbach (VGem)
+09;6;72;5609;131;Maßbach, M
+09;6;72;5609;143;Rannungen
+09;6;72;5609;157;Thundorf i.UFr.
+09;6;72;9444;;Gdefr. Geb. (Lkr Bad Kissingen)
+09;6;72;9444;444;Gdefr. Geb. (Lkr Bad Kissingen)
+09;6;73;;;Rhön-Grabfeld
+09;6;73;0114;;Bad Neustadt a.d.Saale, St
+09;6;73;0114;114;Bad Neustadt a.d.Saale, St
+09;6;73;0116;;Bastheim
+09;6;73;0116;116;Bastheim
+09;6;73;0117;;Bischofsheim a.d.Rhön, St
+09;6;73;0117;117;Bischofsheim a.d.Rhön, St
+09;6;73;0141;;Bad Königshofen i.Grabfeld, St
+09;6;73;0141;141;Bad Königshofen i.Grabfeld, St
+09;6;73;0149;;Oberelsbach, M
+09;6;73;0149;149;Oberelsbach, M
+09;6;73;0162;;Sandberg
+09;6;73;0162;162;Sandberg
+09;6;73;5633;;Mellrichstadt (VGem)
+09;6;73;5633;130;Hendungen
+09;6;73;5633;142;Mellrichstadt, St
+09;6;73;5633;151;Oberstreu
+09;6;73;5633;170;Stockheim
+09;6;73;5634;;Bad Königshofen i.Grabfeld (VGem)
+09;6;73;5634;113;Aubstadt
+09;6;73;5634;126;Großbardorf
+09;6;73;5634;131;Herbstadt
+09;6;73;5634;134;Höchheim
+09;6;73;5634;172;Sulzdorf a.d.Lederhecke
+09;6;73;5634;173;Sulzfeld
+09;6;73;5634;174;Trappstadt, M
+09;6;73;5635;;Bad Neustadt a.d.Saale (VGem)
+09;6;73;5635;135;Hohenroth
+09;6;73;5635;146;Niederlauer
+09;6;73;5635;156;Rödelmaier
+09;6;73;5635;161;Salz
+09;6;73;5635;163;Schönau a.d.Brend
+09;6;73;5635;171;Strahlungen
+09;6;73;5635;186;Burglauer
+09;6;73;5637;;Fladungen (VGem)
+09;6;73;5637;123;Fladungen, St
+09;6;73;5637;129;Hausen
+09;6;73;5637;147;Nordheim v.d.Rhön
+09;6;73;5638;;Heustreu (VGem)
+09;6;73;5638;133;Heustreu
+09;6;73;5638;136;Hollstadt
+09;6;73;5638;175;Unsleben
+09;6;73;5638;183;Wollbach
+09;6;73;5639;;Ostheim v.d.Rhön (VGem)
+09;6;73;5639;153;Ostheim v.d.Rhön, St
+09;6;73;5639;167;Sondheim v.d.Rhön
+09;6;73;5639;182;Willmars
+09;6;73;5640;;Saal a.d.Saale (VGem)
+09;6;73;5640;127;Großeibstadt
+09;6;73;5640;160;Saal a.d.Saale, M
+09;6;73;5640;184;Wülfershausen a.d.Saale
+09;6;73;9444;;Gdefr. Geb. (Lkr Rhön-Grabfeld)
+09;6;73;9444;444;Gdefr. Geb. (Lkr Rhön-Grabfeld)
+09;6;73;9444;444;Gdefr. Geb. (Lkr Rhön-Grabfeld)
+09;6;74;;;Haßberge
+09;6;74;0133;;Eltmann, St
+09;6;74;0133;133;Eltmann, St
+09;6;74;0147;;Haßfurt, St
+09;6;74;0147;147;Haßfurt, St
+09;6;74;0159;;Oberaurach
+09;6;74;0159;159;Oberaurach
+09;6;74;0163;;Knetzgau
+09;6;74;0163;163;Knetzgau
+09;6;74;0164;;Königsberg i.Bay., St
+09;6;74;0164;164;Königsberg i.Bay., St
+09;6;74;0171;;Maroldsweisach, M
+09;6;74;0171;171;Maroldsweisach, M
+09;6;74;0187;;Rauhenebrach
+09;6;74;0187;187;Rauhenebrach
+09;6;74;0195;;Sand a.Main
+09;6;74;0195;195;Sand a.Main
+09;6;74;0210;;Untermerzbach
+09;6;74;0210;210;Untermerzbach
+09;6;74;0221;;Zeil a.Main, St
+09;6;74;0221;221;Zeil a.Main, St
+09;6;74;5610;;Ebelsbach (VGem)
+09;6;74;5610;118;Breitbrunn
+09;6;74;5610;129;Ebelsbach
+09;6;74;5610;160;Kirchlauter
+09;6;74;5610;201;Stettfeld
+09;6;74;5611;;Ebern (VGem)
+09;6;74;5611;130;Ebern, St
+09;6;74;5611;184;Pfarrweisach
+09;6;74;5611;190;Rentweinsdorf, M
+09;6;74;5612;;Hofheim i.UFr. (VGem)
+09;6;74;5612;111;Aidhausen
+09;6;74;5612;120;Bundorf
+09;6;74;5612;121;Burgpreppach, M
+09;6;74;5612;149;Hofheim i.UFr., St
+09;6;74;5612;153;Riedbach
+09;6;74;5612;223;Ermershausen
+09;6;74;5613;;Theres (VGem)
+09;6;74;5613;139;Gädheim
+09;6;74;5613;180;Theres
+09;6;74;5613;219;Wonfurt
+09;6;75;;;Kitzingen
+09;6;75;0117;;Dettelbach, St
+09;6;75;0117;117;Dettelbach, St
+09;6;75;0127;;Geiselwind, M
+09;6;75;0127;127;Geiselwind, M
+09;6;75;0141;;Kitzingen, GKSt
+09;6;75;0141;141;Kitzingen, GKSt
+09;6;75;0144;;Mainbernheim, St
+09;6;75;0144;144;Mainbernheim, St
+09;6;75;0158;;Prichsenstadt, St
+09;6;75;0158;158;Prichsenstadt, St
+09;6;75;0165;;Schwarzach a.Main, M
+09;6;75;0165;165;Schwarzach a.Main, M
+09;6;75;5614;;Wiesentheid (VGem)
+09;6;75;5614;111;Abtswind, M
+09;6;75;5614;116;Castell
+09;6;75;5614;162;Rüdenhausen, M
+09;6;75;5614;178;Wiesentheid, M
+09;6;75;5615;;Großlangheim (VGem)
+09;6;75;5615;131;Großlangheim, M
+09;6;75;5615;142;Kleinlangheim, M
+09;6;75;5615;177;Wiesenbronn
+09;6;75;5616;;Iphofen (VGem)
+09;6;75;5616;139;Iphofen, St
+09;6;75;5616;148;Markt Einersheim, M
+09;6;75;5616;161;Rödelsee
+09;6;75;5616;179;Willanzheim, M
+09;6;75;5617;;Kitzingen (VGem)
+09;6;75;5617;112;Albertshofen
+09;6;75;5617;113;Biebelried
+09;6;75;5617;114;Buchbrunn
+09;6;75;5617;146;Mainstockheim
+09;6;75;5617;170;Sulzfeld a.Main
+09;6;75;5618;;Marktbreit (VGem)
+09;6;75;5618;147;Marktbreit, St
+09;6;75;5618;149;Marktsteft, St
+09;6;75;5618;150;Martinsheim
+09;6;75;5618;156;Obernbreit, M
+09;6;75;5618;166;Segnitz
+09;6;75;5618;167;Seinsheim, M
+09;6;75;5619;;Volkach (VGem)
+09;6;75;5619;155;Nordheim a.Main
+09;6;75;5619;169;Sommerach
+09;6;75;5619;174;Volkach, St
+09;6;76;;;Miltenberg
+09;6;76;0112;;Amorbach, St
+09;6;76;0112;112;Amorbach, St
+09;6;76;0117;;Collenberg
+09;6;76;0117;117;Collenberg
+09;6;76;0118;;Dorfprozelten
+09;6;76;0118;118;Dorfprozelten
+09;6;76;0119;;Eichenbühl
+09;6;76;0119;119;Eichenbühl
+09;6;76;0121;;Elsenfeld, M
+09;6;76;0121;121;Elsenfeld, M
+09;6;76;0122;;Erlenbach a.Main, St
+09;6;76;0122;122;Erlenbach a.Main, St
+09;6;76;0123;;Eschau, M
+09;6;76;0123;123;Eschau, M
+09;6;76;0124;;Faulbach
+09;6;76;0124;124;Faulbach
+09;6;76;0125;;Großheubach, M
+09;6;76;0125;125;Großheubach, M
+09;6;76;0126;;Großwallstadt
+09;6;76;0126;126;Großwallstadt
+09;6;76;0131;;Kirchzell, M
+09;6;76;0131;131;Kirchzell, M
+09;6;76;0134;;Klingenberg a.Main, St
+09;6;76;0134;134;Klingenberg a.Main, St
+09;6;76;0136;;Leidersbach
+09;6;76;0136;136;Leidersbach
+09;6;76;0139;;Miltenberg, St
+09;6;76;0139;139;Miltenberg, St
+09;6;76;0140;;Mömlingen
+09;6;76;0140;140;Mömlingen
+09;6;76;0144;;Niedernberg
+09;6;76;0144;144;Niedernberg
+09;6;76;0145;;Obernburg a.Main, St
+09;6;76;0145;145;Obernburg a.Main, St
+09;6;76;0156;;Schneeberg, M
+09;6;76;0156;156;Schneeberg, M
+09;6;76;0160;;Sulzbach a.Main, M
+09;6;76;0160;160;Sulzbach a.Main, M
+09;6;76;0165;;Weilbach, M
+09;6;76;0165;165;Weilbach, M
+09;6;76;0169;;Wörth a.Main, St
+09;6;76;0169;169;Wörth a.Main, St
+09;6;76;5626;;Erftal (VGem)
+09;6;76;5626;116;Bürgstadt, M
+09;6;76;5626;143;Neunkirchen
+09;6;76;5627;;Kleinheubach (VGem)
+09;6;76;5627;132;Kleinheubach, M
+09;6;76;5627;135;Laudenbach
+09;6;76;5627;153;Rüdenau
+09;6;76;5630;;Kleinwallstadt (VGem)
+09;6;76;5630;128;Hausen
+09;6;76;5630;133;Kleinwallstadt, M
+09;6;76;5631;;Mönchberg (VGem)
+09;6;76;5631;141;Mönchberg, M
+09;6;76;5631;151;Röllbach
+09;6;76;5632;;Stadtprozelten (VGem)
+09;6;76;5632;111;Altenbuch
+09;6;76;5632;158;Stadtprozelten, St
+09;6;76;9444;;Gdefr. Geb. (Lkr Miltenberg)
+09;6;76;9444;444;Gdefr. Geb. (Lkr Miltenberg)
+09;6;77;;;Main-Spessart
+09;6;77;0114;;Arnstein, St
+09;6;77;0114;114;Arnstein, St
+09;6;77;0127;;Eußenheim
+09;6;77;0127;127;Eußenheim
+09;6;77;0129;;Frammersbach, M
+09;6;77;0129;129;Frammersbach, M
+09;6;77;0131;;Gemünden a.Main, St
+09;6;77;0131;131;Gemünden a.Main, St
+09;6;77;0148;;Karlstadt, St
+09;6;77;0148;148;Karlstadt, St
+09;6;77;0154;;Triefenstein, M
+09;6;77;0154;154;Triefenstein, M
+09;6;77;0155;;Lohr a.Main, St
+09;6;77;0155;155;Lohr a.Main, St
+09;6;77;0157;;Marktheidenfeld, St
+09;6;77;0157;157;Marktheidenfeld, St
+09;6;77;0177;;Rieneck, St
+09;6;77;0177;177;Rieneck, St
+09;6;77;5620;;Kreuzwertheim (VGem)
+09;6;77;5620;137;Hasloch
+09;6;77;5620;151;Kreuzwertheim, M
+09;6;77;5620;182;Schollbrunn
+09;6;77;5621;;Marktheidenfeld (VGem)
+09;6;77;5621;119;Birkenfeld
+09;6;77;5621;120;Bischbrunn
+09;6;77;5621;125;Erlenbach b.Marktheidenfeld
+09;6;77;5621;126;Esselbach
+09;6;77;5621;135;Hafenlohr
+09;6;77;5621;146;Karbach, M
+09;6;77;5621;178;Roden
+09;6;77;5621;181;Rothenfels, St
+09;6;77;5621;193;Urspringen
+09;6;77;5622;;Burgsinn (VGem)
+09;6;77;5622;116;Aura i.Sinngrund
+09;6;77;5622;122;Burgsinn, M
+09;6;77;5622;128;Fellen
+09;6;77;5622;159;Mittelsinn
+09;6;77;5622;169;Obersinn, M
+09;6;77;5623;;Gemünden a.Main (VGem)
+09;6;77;5623;132;Gössenheim
+09;6;77;5623;133;Gräfendorf
+09;6;77;5623;149;Karsbach
+09;6;77;5624;;Lohr a.Main (VGem)
+09;6;77;5624;164;Neuendorf
+09;6;77;5624;166;Neustadt a.Main
+09;6;77;5624;172;Rechtenbach
+09;6;77;5624;186;Steinfeld
+09;6;77;5625;;Zellingen (VGem)
+09;6;77;5625;142;Himmelstadt
+09;6;77;5625;175;Retzstadt
+09;6;77;5625;189;Thüngen, M
+09;6;77;5625;203;Zellingen, M
+09;6;77;5656;;Partenstein (VGem)
+09;6;77;5656;165;Neuhütten
+09;6;77;5656;170;Partenstein
+09;6;77;5656;200;Wiesthal
+09;6;77;9444;;Gdefr. Geb. (Lkr Main-Spessart)
+09;6;77;9444;444;Gdefr. Geb. (Lkr Main-Spessart)
+09;6;78;;;Schweinfurt
+09;6;78;0115;;Bergrheinfeld
+09;6;78;0115;115;Bergrheinfeld
+09;6;78;0123;;Dittelbrunn
+09;6;78;0123;123;Dittelbrunn
+09;6;78;0128;;Euerbach
+09;6;78;0128;128;Euerbach
+09;6;78;0132;;Geldersheim
+09;6;78;0132;132;Geldersheim
+09;6;78;0135;;Gochsheim
+09;6;78;0135;135;Gochsheim
+09;6;78;0136;;Grafenrheinfeld
+09;6;78;0136;136;Grafenrheinfeld
+09;6;78;0138;;Grettstadt
+09;6;78;0138;138;Grettstadt
+09;6;78;0150;;Kolitzheim
+09;6;78;0150;150;Kolitzheim
+09;6;78;0160;;Niederwerrn
+09;6;78;0160;160;Niederwerrn
+09;6;78;0168;;Poppenhausen
+09;6;78;0168;168;Poppenhausen
+09;6;78;0170;;Röthlein
+09;6;78;0170;170;Röthlein
+09;6;78;0174;;Schonungen
+09;6;78;0174;174;Schonungen
+09;6;78;0176;;Schwebheim
+09;6;78;0176;176;Schwebheim
+09;6;78;0178;;Sennfeld
+09;6;78;0178;178;Sennfeld
+09;6;78;0181;;Stadtlauringen, M
+09;6;78;0181;181;Stadtlauringen, M
+09;6;78;0186;;Üchtelhausen
+09;6;78;0186;186;Üchtelhausen
+09;6;78;0190;;Waigolshausen
+09;6;78;0190;190;Waigolshausen
+09;6;78;0192;;Wasserlosen
+09;6;78;0192;192;Wasserlosen
+09;6;78;0193;;Werneck, M
+09;6;78;0193;193;Werneck, M
+09;6;78;5642;;Gerolzhofen (VGem)
+09;6;78;5642;122;Dingolshausen
+09;6;78;5642;124;Donnersdorf
+09;6;78;5642;130;Frankenwinheim
+09;6;78;5642;134;Gerolzhofen, St
+09;6;78;5642;153;Lülsfeld
+09;6;78;5642;157;Michelau i.Steigerwald
+09;6;78;5642;164;Oberschwarzach, M
+09;6;78;5642;183;Sulzheim
+09;6;78;5643;;Schwanfeld (VGem)
+09;6;78;5643;175;Schwanfeld
+09;6;78;5643;196;Wipfeld
+09;6;78;9444;;Gdefr. Geb. (Lkr Schweinfurt)
+09;6;78;9444;444;Gdefr. Geb. (Lkr Schweinfurt)
+09;6;79;;;Würzburg
+09;6;79;0126;;Eisingen
+09;6;79;0126;126;Eisingen
+09;6;79;0134;;Gaukönigshofen
+09;6;79;0134;134;Gaukönigshofen
+09;6;79;0136;;Gerbrunn
+09;6;79;0136;136;Gerbrunn
+09;6;79;0142;;Güntersleben
+09;6;79;0142;142;Güntersleben
+09;6;79;0143;;Hausen b.Würzburg
+09;6;79;0143;143;Hausen b.Würzburg
+09;6;79;0147;;Höchberg, M
+09;6;79;0147;147;Höchberg, M
+09;6;79;0155;;Kleinrinderfeld
+09;6;79;0155;155;Kleinrinderfeld
+09;6;79;0156;;Kürnach
+09;6;79;0156;156;Kürnach
+09;6;79;0164;;Neubrunn, M
+09;6;79;0164;164;Neubrunn, M
+09;6;79;0170;;Ochsenfurt, St
+09;6;79;0170;170;Ochsenfurt, St
+09;6;79;0175;;Randersacker, M
+09;6;79;0175;175;Randersacker, M
+09;6;79;0176;;Reichenberg, M
+09;6;79;0176;176;Reichenberg, M
+09;6;79;0180;;Rimpar, M
+09;6;79;0180;180;Rimpar, M
+09;6;79;0185;;Rottendorf
+09;6;79;0185;185;Rottendorf
+09;6;79;0193;;Theilheim
+09;6;79;0193;193;Theilheim
+09;6;79;0194;;Thüngersheim
+09;6;79;0194;194;Thüngersheim
+09;6;79;0200;;Leinach
+09;6;79;0200;200;Leinach
+09;6;79;0201;;Unterpleichfeld
+09;6;79;0201;201;Unterpleichfeld
+09;6;79;0202;;Veitshöchheim
+09;6;79;0202;202;Veitshöchheim
+09;6;79;0204;;Waldbrunn
+09;6;79;0204;204;Waldbrunn
+09;6;79;0205;;Waldbüttelbrunn
+09;6;79;0205;205;Waldbüttelbrunn
+09;6;79;0209;;Zell a.Main, M
+09;6;79;0209;209;Zell a.Main, M
+09;6;79;5644;;Aub (VGem)
+09;6;79;5644;114;Aub, St
+09;6;79;5644;135;Gelchsheim, M
+09;6;79;5644;188;Sonderhofen
+09;6;79;5645;;Bergtheim (VGem)
+09;6;79;5645;117;Bergtheim
+09;6;79;5645;169;Oberpleichfeld
+09;6;79;5646;;Eibelstadt (VGem)
+09;6;79;5646;124;Eibelstadt, St
+09;6;79;5646;131;Frickenhausen a.Main, M
+09;6;79;5646;187;Sommerhausen, M
+09;6;79;5646;206;Winterhausen, M
+09;6;79;5647;;Estenfeld (VGem)
+09;6;79;5647;130;Estenfeld
+09;6;79;5647;167;Eisenheim, M
+09;6;79;5647;174;Prosselsheim
+09;6;79;5648;;Giebelstadt (VGem)
+09;6;79;5648;122;Bütthard, M
+09;6;79;5648;138;Giebelstadt, M
+09;6;79;5649;;Helmstadt (VGem)
+09;6;79;5649;144;Helmstadt, M
+09;6;79;5649;149;Holzkirchen
+09;6;79;5649;177;Remlingen, M
+09;6;79;5649;196;Uettingen
+09;6;79;5650;;Kirchheim (VGem)
+09;6;79;5650;137;Geroldshausen
+09;6;79;5650;153;Kirchheim
+09;6;79;5651;;Kist (VGem)
+09;6;79;5651;154;Kist
+09;6;79;5651;165;Altertheim
+09;6;79;5652;;Margetshöchheim (VGem)
+09;6;79;5652;128;Erlabrunn
+09;6;79;5652;161;Margetshöchheim
+09;6;79;5654;;Röttingen (VGem)
+09;6;79;5654;118;Bieberehren
+09;6;79;5654;179;Riedenheim
+09;6;79;5654;182;Röttingen, St
+09;6;79;5654;192;Tauberrettersheim
+09;6;79;5655;;Hettstadt (VGem)
+09;6;79;5655;141;Greußenheim
+09;6;79;5655;146;Hettstadt
+09;6;79;9444;;Gdefr. Geb. (Lkr Würzburg)
+09;6;79;9444;444;Gdefr. Geb. (Lkr Würzburg)
+09;7;;;;Schwaben
+09;7;61;;;Augsburg
+09;7;61;0000;;Augsburg
+09;7;61;0000;000;Augsburg
+09;7;62;;;Kaufbeuren
+09;7;62;0000;;Kaufbeuren
+09;7;62;0000;000;Kaufbeuren
+09;7;63;;;Kempten (Allgäu)
+09;7;63;0000;;Kempten (Allgäu)
+09;7;63;0000;000;Kempten (Allgäu)
+09;7;64;;;Memmingen
+09;7;64;0000;;Memmingen
+09;7;64;0000;000;Memmingen
+09;7;71;;;Aichach-Friedberg
+09;7;71;0112;;Affing
+09;7;71;0112;112;Affing
+09;7;71;0113;;Aichach, St
+09;7;71;0113;113;Aichach, St
+09;7;71;0130;;Friedberg, St
+09;7;71;0130;130;Friedberg, St
+09;7;71;0140;;Hollenbach
+09;7;71;0140;140;Hollenbach
+09;7;71;0141;;Inchenhofen, M
+09;7;71;0141;141;Inchenhofen, M
+09;7;71;0142;;Kissing
+09;7;71;0142;142;Kissing
+09;7;71;0145;;Merching
+09;7;71;0145;145;Merching
+09;7;71;0158;;Rehling
+09;7;71;0158;158;Rehling
+09;7;71;0160;;Ried
+09;7;71;0160;160;Ried
+09;7;71;5701;;Aindling (VGem)
+09;7;71;5701;114;Aindling, M
+09;7;71;5701;155;Petersdorf
+09;7;71;5701;169;Todtenweis
+09;7;71;5703;;Kühbach (VGem)
+09;7;71;5703;144;Kühbach, M
+09;7;71;5703;162;Schiltberg
+09;7;71;5704;;Dasing (VGem)
+09;7;71;5704;111;Adelzhausen
+09;7;71;5704;122;Dasing
+09;7;71;5704;129;Eurasburg
+09;7;71;5704;149;Obergriesbach
+09;7;71;5704;165;Sielenbach
+09;7;71;5705;;Mering (VGem)
+09;7;71;5705;146;Mering, M
+09;7;71;5705;163;Schmiechen
+09;7;71;5705;168;Steindorf
+09;7;71;5771;;Pöttmes (VGem)
+09;7;71;5771;156;Pöttmes, M
+09;7;71;5771;176;Baar (Schwaben)
+09;7;72;;;Augsburg
+09;7;72;0111;;Adelsried
+09;7;72;0111;111;Adelsried
+09;7;72;0115;;Altenmünster
+09;7;72;0115;115;Altenmünster
+09;7;72;0117;;Aystetten
+09;7;72;0117;117;Aystetten
+09;7;72;0121;;Biberbach, M
+09;7;72;0121;121;Biberbach, M
+09;7;72;0125;;Bobingen, St
+09;7;72;0125;125;Bobingen, St
+09;7;72;0130;;Diedorf, M
+09;7;72;0130;130;Diedorf, M
+09;7;72;0131;;Dinkelscherben, M
+09;7;72;0131;131;Dinkelscherben, M
+09;7;72;0141;;Fischach, M
+09;7;72;0141;141;Fischach, M
+09;7;72;0145;;Gablingen
+09;7;72;0145;145;Gablingen
+09;7;72;0147;;Gersthofen, St
+09;7;72;0147;147;Gersthofen, St
+09;7;72;0149;;Graben
+09;7;72;0149;149;Graben
+09;7;72;0159;;Horgau
+09;7;72;0159;159;Horgau
+09;7;72;0163;;Königsbrunn, St
+09;7;72;0163;163;Königsbrunn, St
+09;7;72;0167;;Kutzenhausen
+09;7;72;0167;167;Kutzenhausen
+09;7;72;0171;;Langweid a.Lech
+09;7;72;0171;171;Langweid a.Lech
+09;7;72;0177;;Meitingen, M
+09;7;72;0177;177;Meitingen, M
+09;7;72;0184;;Neusäß, St
+09;7;72;0184;184;Neusäß, St
+09;7;72;0200;;Schwabmünchen, St
+09;7;72;0200;200;Schwabmünchen, St
+09;7;72;0202;;Stadtbergen, St
+09;7;72;0202;202;Stadtbergen, St
+09;7;72;0207;;Thierhaupten, M
+09;7;72;0207;207;Thierhaupten, M
+09;7;72;0215;;Wehringen
+09;7;72;0215;215;Wehringen
+09;7;72;0223;;Zusmarshausen, M
+09;7;72;0223;223;Zusmarshausen, M
+09;7;72;5706;;Nordendorf (VGem)
+09;7;72;5706;114;Allmannshofen
+09;7;72;5706;134;Ehingen
+09;7;72;5706;136;Ellgau
+09;7;72;5706;166;Kühlenthal
+09;7;72;5706;185;Nordendorf
+09;7;72;5706;217;Westendorf
+09;7;72;5707;;Welden (VGem)
+09;7;72;5707;126;Bonstetten
+09;7;72;5707;137;Emersacker
+09;7;72;5707;156;Heretsried
+09;7;72;5707;216;Welden, M
+09;7;72;5708;;Gessertshausen (VGem)
+09;7;72;5708;148;Gessertshausen
+09;7;72;5708;211;Ustersbach
+09;7;72;5709;;Stauden (VGem)
+09;7;72;5709;168;Langenneufnach
+09;7;72;5709;178;Mickhausen
+09;7;72;5709;179;Mittelneufnach
+09;7;72;5709;197;Scherstetten
+09;7;72;5709;214;Walkertshofen
+09;7;72;5710;;Großaitingen (VGem)
+09;7;72;5710;151;Großaitingen
+09;7;72;5710;160;Kleinaitingen
+09;7;72;5710;186;Oberottmarshausen
+09;7;72;5711;;Lechfeld (VGem)
+09;7;72;5711;162;Klosterlechfeld
+09;7;72;5711;209;Untermeitingen
+09;7;72;5712;;Langerringen (VGem)
+09;7;72;5712;157;Hiltenfingen
+09;7;72;5712;170;Langerringen
+09;7;72;9444;;Gdefr. Geb. (Lkr Augsburg)
+09;7;72;9444;444;Gdefr. Geb. (Lkr Augsburg)
+09;7;73;;;Dillingen a.d.Donau
+09;7;73;0117;;Bissingen, M
+09;7;73;0117;117;Bissingen, M
+09;7;73;0122;;Buttenwiesen
+09;7;73;0122;122;Buttenwiesen
+09;7;73;0125;;Dillingen a.d.Donau, GKSt
+09;7;73;0125;125;Dillingen a.d.Donau, GKSt
+09;7;73;0144;;Lauingen (Donau), St
+09;7;73;0144;144;Lauingen (Donau), St
+09;7;73;5713;;Gundelfingen a.d.Donau (VGem)
+09;7;73;5713;113;Bächingen a.d.Brenz
+09;7;73;5713;136;Gundelfingen a.d.Donau, St
+09;7;73;5713;137;Haunsheim
+09;7;73;5713;153;Medlingen
+09;7;73;5714;;Syrgenstein (VGem)
+09;7;73;5714;112;Bachhagel
+09;7;73;5714;170;Syrgenstein
+09;7;73;5714;187;Zöschingen
+09;7;73;5715;;Wittislingen (VGem)
+09;7;73;5715;147;Mödingen
+09;7;73;5715;183;Wittislingen, M
+09;7;73;5715;186;Ziertheim
+09;7;73;5716;;Höchstädt a.d.Donau (VGem)
+09;7;73;5716;119;Blindheim
+09;7;73;5716;139;Höchstädt a.d.Donau, St
+09;7;73;5716;146;Lutzingen
+09;7;73;5716;150;Finningen
+09;7;73;5716;164;Schwenningen
+09;7;73;5718;;Wertingen (VGem)
+09;7;73;5718;116;Binswangen
+09;7;73;5718;143;Laugna
+09;7;73;5718;179;Villenbach
+09;7;73;5718;182;Wertingen, St
+09;7;73;5718;188;Zusamaltheim
+09;7;73;5719;;Holzheim (VGem)
+09;7;73;5719;111;Aislingen, M
+09;7;73;5719;133;Glött
+09;7;73;5719;140;Holzheim
+09;7;74;;;Günzburg
+09;7;74;0116;;Ursberg
+09;7;74;0116;116;Ursberg
+09;7;74;0119;;Bibertal
+09;7;74;0119;119;Bibertal
+09;7;74;0121;;Burgau, St
+09;7;74;0121;121;Burgau, St
+09;7;74;0122;;Burtenbach, M
+09;7;74;0122;122;Burtenbach, M
+09;7;74;0135;;Günzburg, GKSt
+09;7;74;0135;135;Günzburg, GKSt
+09;7;74;0144;;Jettingen-Scheppach, M
+09;7;74;0144;144;Jettingen-Scheppach, M
+09;7;74;0145;;Kammeltal
+09;7;74;0145;145;Kammeltal
+09;7;74;0150;;Krumbach (Schwaben), St
+09;7;74;0150;150;Krumbach (Schwaben), St
+09;7;74;0155;;Leipheim, St
+09;7;74;0155;155;Leipheim, St
+09;7;74;0162;;Neuburg a.d.Kammel, M
+09;7;74;0162;162;Neuburg a.d.Kammel, M
+09;7;74;5727;;Offingen (VGem)
+09;7;74;5727;136;Gundremmingen
+09;7;74;5727;171;Offingen, M
+09;7;74;5727;174;Rettenbach
+09;7;74;5728;;Haldenwang (VGem)
+09;7;74;5728;127;Dürrlauingen
+09;7;74;5728;140;Haldenwang
+09;7;74;5728;151;Landensberg
+09;7;74;5728;178;Röfingen
+09;7;74;5728;196;Winterbach
+09;7;74;5729;;Kötz (VGem)
+09;7;74;5729;118;Bubesheim
+09;7;74;5729;148;Kötz
+09;7;74;5730;;Ichenhausen (VGem)
+09;7;74;5730;133;Ellzee
+09;7;74;5730;143;Ichenhausen, St
+09;7;74;5730;191;Waldstetten, M
+09;7;74;5731;;Krumbach (Schwaben) (VGem)
+09;7;74;5731;111;Aletshausen
+09;7;74;5731;117;Breitenthal
+09;7;74;5731;124;Deisenhausen
+09;7;74;5731;129;Ebershausen
+09;7;74;5731;189;Wiesenbach
+09;7;74;5731;192;Waltenhausen
+09;7;74;5732;;Thannhausen (VGem)
+09;7;74;5732;115;Balzhausen
+09;7;74;5732;160;Münsterhausen, M
+09;7;74;5732;185;Thannhausen, St
+09;7;74;5733;;Ziemetshausen (VGem)
+09;7;74;5733;166;Aichen
+09;7;74;5733;198;Ziemetshausen, M
+09;7;74;9444;;Gdefr. Geb. (Lkr Günzburg)
+09;7;74;9444;444;Gdefr. Geb. (Lkr Günzburg)
+09;7;75;;;Neu-Ulm
+09;7;75;0115;;Bellenberg
+09;7;75;0115;115;Bellenberg
+09;7;75;0129;;Illertissen, St
+09;7;75;0129;129;Illertissen, St
+09;7;75;0134;;Nersingen
+09;7;75;0134;134;Nersingen
+09;7;75;0135;;Neu-Ulm, GKSt
+09;7;75;0135;135;Neu-Ulm, GKSt
+09;7;75;0139;;Elchingen
+09;7;75;0139;139;Elchingen
+09;7;75;0149;;Roggenburg
+09;7;75;0149;149;Roggenburg
+09;7;75;0152;;Senden, St
+09;7;75;0152;152;Senden, St
+09;7;75;0162;;Vöhringen, St
+09;7;75;0162;162;Vöhringen, St
+09;7;75;0164;;Weißenhorn, St
+09;7;75;0164;164;Weißenhorn, St
+09;7;75;5739;;Pfaffenhofen a.d.Roth (VGem)
+09;7;75;5739;126;Holzheim
+09;7;75;5739;143;Pfaffenhofen a.d.Roth, M
+09;7;75;5740;;Altenstadt (VGem)
+09;7;75;5740;111;Altenstadt, M
+09;7;75;5740;132;Kellmünz a.d.Iller, M
+09;7;75;5740;142;Osterberg
+09;7;75;5741;;Buch (VGem)
+09;7;75;5741;118;Buch, M
+09;7;75;5741;141;Oberroth
+09;7;75;5741;161;Unterroth
+09;7;75;9444;;Gdefr. Geb. (Lkr Neu-Ulm)
+09;7;75;9444;444;Gdefr. Geb. (Lkr Neu-Ulm)
+09;7;76;;;Lindau (Bodensee)
+09;7;76;0111;;Bodolz
+09;7;76;0111;111;Bodolz
+09;7;76;0114;;Heimenkirch, M
+09;7;76;0114;114;Heimenkirch, M
+09;7;76;0116;;Lindau (Bodensee), GKSt
+09;7;76;0116;116;Lindau (Bodensee), GKSt
+09;7;76;0117;;Lindenberg i.Allgäu, St
+09;7;76;0117;117;Lindenberg i.Allgäu, St
+09;7;76;0120;;Nonnenhorn
+09;7;76;0120;120;Nonnenhorn
+09;7;76;0122;;Opfenbach
+09;7;76;0122;122;Opfenbach
+09;7;76;0125;;Scheidegg, M
+09;7;76;0125;125;Scheidegg, M
+09;7;76;0128;;Wasserburg (Bodensee)
+09;7;76;0128;128;Wasserburg (Bodensee)
+09;7;76;0129;;Weiler-Simmerberg, M
+09;7;76;0129;129;Weiler-Simmerberg, M
+09;7;76;0131;;Hergatz
+09;7;76;0131;131;Hergatz
+09;7;76;5735;;Sigmarszell (VGem)
+09;7;76;5735;115;Hergensweiler
+09;7;76;5735;126;Sigmarszell
+09;7;76;5735;130;Weißensberg
+09;7;76;5737;;Argental (VGem)
+09;7;76;5737;112;Gestratz
+09;7;76;5737;113;Grünenbach
+09;7;76;5737;118;Maierhöfen
+09;7;76;5737;124;Röthenbach (Allgäu)
+09;7;76;5738;;Stiefenhofen (VGem)
+09;7;76;5738;121;Oberreute
+09;7;76;5738;127;Stiefenhofen
+09;7;77;;;Ostallgäu
+09;7;77;0129;;Füssen, St
+09;7;77;0129;129;Füssen, St
+09;7;77;0130;;Germaringen
+09;7;77;0130;130;Germaringen
+09;7;77;0147;;Lechbruck am See
+09;7;77;0147;147;Lechbruck am See
+09;7;77;0151;;Marktoberdorf, St
+09;7;77;0151;151;Marktoberdorf, St
+09;7;77;0152;;Mauerstetten
+09;7;77;0152;152;Mauerstetten
+09;7;77;0153;;Nesselwang, M
+09;7;77;0153;153;Nesselwang, M
+09;7;77;0159;;Pfronten
+09;7;77;0159;159;Pfronten
+09;7;77;0165;;Ronsberg, M
+09;7;77;0165;165;Ronsberg, M
+09;7;77;0169;;Schwangau
+09;7;77;0169;169;Schwangau
+09;7;77;0173;;Halblech
+09;7;77;0173;173;Halblech
+09;7;77;5748;;Buchloe (VGem)
+09;7;77;5748;121;Buchloe, St
+09;7;77;5748;140;Jengen
+09;7;77;5748;145;Lamerdingen
+09;7;77;5748;177;Waal, M
+09;7;77;5749;;Pforzen (VGem)
+09;7;77;5749;139;Irsee, M
+09;7;77;5749;158;Pforzen
+09;7;77;5749;164;Rieden
+09;7;77;5751;;Westendorf (VGem)
+09;7;77;5751;141;Kaltental, M
+09;7;77;5751;155;Oberostendorf
+09;7;77;5751;157;Osterzell
+09;7;77;5751;172;Stöttwang
+09;7;77;5751;182;Westendorf
+09;7;77;5752;;Biessenhofen (VGem)
+09;7;77;5752;111;Aitrang
+09;7;77;5752;112;Biessenhofen
+09;7;77;5752;118;Bidingen
+09;7;77;5752;167;Ruderatshofen
+09;7;77;5753;;Eggenthal (VGem)
+09;7;77;5753;114;Baisweil
+09;7;77;5753;124;Eggenthal
+09;7;77;5753;128;Friesenried
+09;7;77;5754;;Obergünzburg (VGem)
+09;7;77;5754;138;Günzach
+09;7;77;5754;154;Obergünzburg, M
+09;7;77;5754;176;Untrasried
+09;7;77;5755;;Unterthingau (VGem)
+09;7;77;5755;131;Görisried
+09;7;77;5755;144;Kraftisried
+09;7;77;5755;175;Unterthingau, M
+09;7;77;5756;;Seeg (VGem)
+09;7;77;5756;125;Eisenberg
+09;7;77;5756;135;Hopferau
+09;7;77;5756;149;Lengenwang
+09;7;77;5756;168;Rückholz
+09;7;77;5756;170;Seeg
+09;7;77;5756;179;Wald
+09;7;77;5770;;Roßhaupten (VGem)
+09;7;77;5770;163;Rieden am Forggensee
+09;7;77;5770;166;Roßhaupten
+09;7;77;5772;;Stötten a.Auerberg (VGem)
+09;7;77;5772;171;Stötten a.Auerberg
+09;7;77;5772;183;Rettenbach a.Auerberg
+09;7;78;;;Unterallgäu
+09;7;78;0116;;Bad Wörishofen, St
+09;7;78;0116;116;Bad Wörishofen, St
+09;7;78;0123;;Buxheim
+09;7;78;0123;123;Buxheim
+09;7;78;0137;;Ettringen
+09;7;78;0137;137;Ettringen
+09;7;78;0168;;Markt Rettenbach, M
+09;7;78;0168;168;Markt Rettenbach, M
+09;7;78;0169;;Markt Wald, M
+09;7;78;0169;169;Markt Wald, M
+09;7;78;0173;;Mindelheim, St
+09;7;78;0173;173;Mindelheim, St
+09;7;78;0196;;Sontheim
+09;7;78;0196;196;Sontheim
+09;7;78;0204;;Tussenhausen, M
+09;7;78;0204;204;Tussenhausen, M
+09;7;78;5757;;Ottobeuren (VGem)
+09;7;78;5757;119;Böhen
+09;7;78;5757;149;Hawangen
+09;7;78;5757;186;Ottobeuren, M
+09;7;78;5758;;Babenhausen (VGem)
+09;7;78;5758;115;Babenhausen, M
+09;7;78;5758;130;Egg a.d.Günz
+09;7;78;5758;157;Kirchhaslach
+09;7;78;5758;184;Oberschönegg
+09;7;78;5758;217;Winterrieden
+09;7;78;5758;221;Kettershausen
+09;7;78;5759;;Pfaffenhausen (VGem)
+09;7;78;5759;121;Breitenbrunn
+09;7;78;5759;183;Oberrieden
+09;7;78;5759;187;Pfaffenhausen, M
+09;7;78;5759;190;Salgen
+09;7;78;5760;;Kirchheim i.Schw. (VGem)
+09;7;78;5760;134;Eppishausen
+09;7;78;5760;158;Kirchheim i.Schw., M
+09;7;78;5761;;Boos (VGem)
+09;7;78;5761;120;Boos
+09;7;78;5761;139;Fellheim
+09;7;78;5761;150;Heimertingen
+09;7;78;5761;177;Niederrieden
+09;7;78;5761;188;Pleß
+09;7;78;5762;;Erkheim (VGem)
+09;7;78;5762;136;Erkheim, M
+09;7;78;5762;163;Lauben
+09;7;78;5762;180;Kammlach
+09;7;78;5762;214;Westerheim
+09;7;78;5764;;Türkheim (VGem)
+09;7;78;5764;111;Amberg
+09;7;78;5764;203;Türkheim, M
+09;7;78;5764;209;Rammingen
+09;7;78;5764;216;Wiedergeltingen
+09;7;78;5765;;Memmingerberg (VGem)
+09;7;78;5765;118;Benningen
+09;7;78;5765;151;Holzgünz
+09;7;78;5765;162;Lachen
+09;7;78;5765;171;Memmingerberg
+09;7;78;5765;202;Trunkelsberg
+09;7;78;5765;205;Ungerhausen
+09;7;78;5766;;Dirlewang (VGem)
+09;7;78;5766;113;Apfeltrach
+09;7;78;5766;127;Dirlewang, M
+09;7;78;5766;199;Stetten
+09;7;78;5766;207;Unteregg
+09;7;78;5767;;Illerwinkel (VGem)
+09;7;78;5767;161;Kronburg
+09;7;78;5767;164;Lautrach
+09;7;78;5767;165;Legau, M
+09;7;78;5768;;Bad Grönenbach (VGem)
+09;7;78;5768;144;Bad Grönenbach, M
+09;7;78;5768;218;Wolfertschwenden
+09;7;78;5768;219;Woringen
+09;7;78;9444;;Gdefr. Geb. (Lkr Unterallgäu)
+09;7;78;9444;444;Gdefr. Geb. (Lkr Unterallgäu)
+09;7;79;;;Donau-Ries
+09;7;79;0115;;Asbach-Bäumenheim
+09;7;79;0115;115;Asbach-Bäumenheim
+09;7;79;0131;;Donauwörth, GKSt
+09;7;79;0131;131;Donauwörth, GKSt
+09;7;79;0147;;Fremdingen
+09;7;79;0147;147;Fremdingen
+09;7;79;0155;;Harburg (Schwaben), St
+09;7;79;0155;155;Harburg (Schwaben), St
+09;7;79;0169;;Kaisheim, M
+09;7;79;0169;169;Kaisheim, M
+09;7;79;0178;;Marxheim
+09;7;79;0178;178;Marxheim
+09;7;79;0181;;Mertingen
+09;7;79;0181;181;Mertingen
+09;7;79;0185;;Möttingen
+09;7;79;0185;185;Möttingen
+09;7;79;0194;;Nördlingen, GKSt
+09;7;79;0194;194;Nördlingen, GKSt
+09;7;79;0196;;Oberndorf a.Lech
+09;7;79;0196;196;Oberndorf a.Lech
+09;7;79;0218;;Tapfheim
+09;7;79;0218;218;Tapfheim
+09;7;79;5720;;Wallerstein (VGem)
+09;7;79;5720;176;Maihingen
+09;7;79;5720;177;Marktoffingen
+09;7;79;5720;224;Wallerstein, M
+09;7;79;5721;;Oettingen i.Bay. (VGem)
+09;7;79;5721;117;Auhausen
+09;7;79;5721;138;Ehingen a.Ries
+09;7;79;5721;154;Hainsfarth
+09;7;79;5721;180;Megesheim
+09;7;79;5721;188;Munningen
+09;7;79;5721;197;Oettingen i.Bay., St
+09;7;79;5722;;Ries (VGem)
+09;7;79;5722;111;Alerheim
+09;7;79;5722;112;Amerdingen
+09;7;79;5722;130;Deiningen
+09;7;79;5722;136;Ederheim
+09;7;79;5722;146;Forheim
+09;7;79;5722;162;Hohenaltheim
+09;7;79;5722;184;Mönchsdeggingen
+09;7;79;5722;203;Reimlingen
+09;7;79;5722;226;Wechingen
+09;7;79;5723;;Wemding (VGem)
+09;7;79;5723;148;Fünfstetten
+09;7;79;5723;167;Huisheim
+09;7;79;5723;198;Otting
+09;7;79;5723;228;Wemding, St
+09;7;79;5723;231;Wolferstadt
+09;7;79;5724;;Monheim (VGem)
+09;7;79;5724;126;Buchdorf
+09;7;79;5724;129;Daiting
+09;7;79;5724;186;Monheim, St
+09;7;79;5724;206;Rögling
+09;7;79;5724;217;Tagmersheim
+09;7;79;5725;;Rain (VGem)
+09;7;79;5725;149;Genderkingen
+09;7;79;5725;163;Holzheim
+09;7;79;5725;187;Münster
+09;7;79;5725;192;Niederschönenfeld
+09;7;79;5725;201;Rain, St
+09;7;79;9444;;Gdefr. Geb. (Lkr Donau-Ries)
+09;7;79;9444;444;Gdefr. Geb. (Lkr Donau-Ries)
+09;7;80;;;Oberallgäu
+09;7;80;0112;;Altusried, M
+09;7;80;0112;112;Altusried, M
+09;7;80;0114;;Betzigau
+09;7;80;0114;114;Betzigau
+09;7;80;0115;;Blaichach
+09;7;80;0115;115;Blaichach
+09;7;80;0117;;Buchenberg, M
+09;7;80;0117;117;Buchenberg, M
+09;7;80;0118;;Burgberg i.Allgäu
+09;7;80;0118;118;Burgberg i.Allgäu
+09;7;80;0119;;Dietmannsried, M
+09;7;80;0119;119;Dietmannsried, M
+09;7;80;0120;;Durach
+09;7;80;0120;120;Durach
+09;7;80;0122;;Haldenwang
+09;7;80;0122;122;Haldenwang
+09;7;80;0123;;Bad Hindelang, M
+09;7;80;0123;123;Bad Hindelang, M
+09;7;80;0124;;Immenstadt i.Allgäu, St
+09;7;80;0124;124;Immenstadt i.Allgäu, St
+09;7;80;0125;;Lauben
+09;7;80;0125;125;Lauben
+09;7;80;0128;;Oy-Mittelberg
+09;7;80;0128;128;Oy-Mittelberg
+09;7;80;0132;;Oberstaufen, M
+09;7;80;0132;132;Oberstaufen, M
+09;7;80;0133;;Oberstdorf, M
+09;7;80;0133;133;Oberstdorf, M
+09;7;80;0137;;Rettenberg
+09;7;80;0137;137;Rettenberg
+09;7;80;0139;;Sonthofen, St
+09;7;80;0139;139;Sonthofen, St
+09;7;80;0140;;Sulzberg, M
+09;7;80;0140;140;Sulzberg, M
+09;7;80;0143;;Waltenhofen
+09;7;80;0143;143;Waltenhofen
+09;7;80;0145;;Wertach, M
+09;7;80;0145;145;Wertach, M
+09;7;80;0146;;Wiggensbach, M
+09;7;80;0146;146;Wiggensbach, M
+09;7;80;0147;;Wildpoldsried
+09;7;80;0147;147;Wildpoldsried
+09;7;80;5742;;Hörnergruppe (VGem)
+09;7;80;5742;113;Balderschwang
+09;7;80;5742;116;Bolsterlang
+09;7;80;5742;121;Fischen i.Allgäu
+09;7;80;5742;131;Obermaiselstein
+09;7;80;5742;134;Ofterschwang
+09;7;80;5745;;Weitnau (VGem)
+09;7;80;5745;127;Missen-Wilhams
+09;7;80;5745;144;Weitnau, M
+09;7;80;9444;;Gdefr. Geb. (Lkr Oberallgäu)
+09;7;80;9444;444;Gdefr. Geb. (Lkr Oberallgäu)

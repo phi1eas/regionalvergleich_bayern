@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1541964486444.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A1EA736A",
+    "lastKnownWriteTime" : 1542062995,
+    "last_content_update" : 1542062995173,
+    "path" : "~/GoogleDrive/Dokumente/regionalvergleich_bayern/analysis.R",
+    "project_path" : "analysis.R",
+    "properties" : {
+        "cursorPosition" : "56,0",
+        "scrollLine" : "30"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
