@@ -2,21 +2,19 @@
 library(dplyr)
 library(ggplot2)
 
-# Load files for colname <-> colnumber conversion -------------------------
-headers = read.csv('spaltennr_labels.csv', sep=',', header = F, stringsAsFactors = F)
-COLLABELS = as.list(headers[2, ])
-names(COLLABELS) = as.character(headers[2, ])
-get_colnr_by_label <- function(label) {
-  return(as.numeric(headers[1, headers[2, ] == label]))
-}
-# get_colnr_by_label(COLLABELS$bevoelkerung.1987)
-
-
-
 # Load and clean data -----------------------------------------------------
 raw_data = read.csv('GDH2016_Daten_xlsx.csv', sep=';', stringsAsFactors = F)
 colnames(raw_data)[2:4] = c('Regional.Schluessel', 'Gemeinde.Schluessel.Nr', 'Vgem.Schluessel')
 data = raw_data[!is.na(raw_data$Gemeinde.Schluessel.Nr), ]
+
+rm(raw_data)
+
+# Load column names and insert them into data -----------------------------
+headers = read.csv('spaltennr_labels.csv', sep=',', header = F, stringsAsFactors = F)
+COLLABELS = as.list(headers[2, ])
+colnames(data)[startsWith(colnames(data), 'Spalte')] <- COLLABELS
+
+rm(headers, COLLABELS)
 
 
 # Add information about regions -------------------------------------------
@@ -51,9 +49,6 @@ get_lk_by_regschl <- function(regschl) {
 
 data$Landkreis <- data$Regional.Schluessel %>%
   sapply(get_lk_by_regschl)
-
-
-# test2
 
 # Development -------------------------------------------------------------
 ggplot(data %>%
