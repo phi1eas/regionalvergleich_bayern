@@ -12,9 +12,10 @@ rm(raw_data)
 # Load column names and insert them into data -----------------------------
 headers = read.csv('spaltennr_labels.csv', sep=',', header = F, stringsAsFactors = F)
 COLLABELS = as.list(headers[2, ])
+names(COLLABELS) = as.character(headers[2, ])
 colnames(data)[startsWith(colnames(data), 'Spalte')] <- COLLABELS
 
-rm(headers, COLLABELS)
+rm(headers)
 
 
 # Add information about regions -------------------------------------------
@@ -51,6 +52,38 @@ data$Landkreis <- data$Regional.Schluessel %>%
   sapply(get_lk_by_regschl)
 
 # Development -------------------------------------------------------------
-ggplot(data %>%
-         filter(Landkreis == 'Traunstein'), aes_string(x = 'Spalte014')) +
+
+highlight = "Engelsberg"
+v = COLLABELS[5]
+Landkreis = "Traunstein"
+# myplot <- function(v, highlight, Landkreis = NULL) {
+v = as.character(v)
+
+data.vector = data %>%
+  filter(Landkreis == Landkreis) %>%
+  select(v)
+
+lower_break = data.vector %>%
+  pull(1) %>%
+  min()
+upper_break <- data.vector %>%
+  pull(1) %>%
+  quantile(0.99)
+  # quantile(1)
+breaks = seq(lower_break, upper_break, length.out = 30)
+
+
+data %>%
+  filter(Landkreis == Landkreis) %>%
+  select(v) %>%
+  mutate(!!v := ifelse(.[[v]] > upper_break, upper_break, .[[v]])) %>%
+  ggplot(aes_string(x = v)) +
   geom_histogram()
+
+
+# ggplot(data %>% filter(Landkreis == Landkreis), aes_string(x = v)) +
+#   geom_histogram(breaks = breaks) +
+#   geom_vline(xintercept = data %>%
+#              filter(Bezeichnung == highlight) %>%
+#              select(v) %>%
+#              as.numeric())
