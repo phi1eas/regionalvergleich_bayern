@@ -1,24 +1,29 @@
 # Libraries ---------------------------------------------------------------
 library(dplyr)
+library(tidyr)
 library(ggplot2)
 
 # Load and clean data -----------------------------------------------------
 raw_data = read.csv('GDH2016_Daten_xlsx.csv', sep=';', stringsAsFactors = F)
 colnames(raw_data)[2:4] = c('Regional.Schluessel', 'Gemeinde.Schluessel.Nr', 'Vgem.Schluessel')
-data = raw_data[!is.na(raw_data$Gemeinde.Schluessel.Nr), ]
+data = raw_data[!is.na(raw_data$Gemeinde.Schluessel.Nr) & raw_data$Bezeichnung != "Gemeindefreie Gebiete", ]
 
 rm(raw_data)
 
 # Convert non-alphanumeric values to NA
 data[data == '•'] = NA
 
-# Load column names and insert them into data -----------------------------
+# Load column names and insert them into data. Filter ---------------------
 headers = read.csv('spaltennr_labels.csv', sep=',', header = F, stringsAsFactors = F)
 COLLABELS = as.list(headers[2, ])
 names(COLLABELS) = as.character(headers[2, ])
 colnames(data)[startsWith(colnames(data), 'Spalte')] <- COLLABELS
 
-rm(headers)
+# Filter variables
+vars = headers[3, ] %>% as.numeric() %>% as.logical()
+vars = COLLABELS[vars] %>% as.character()
+data = data %>%
+  select(c("Laufende.Nummer", "Regional.Schluessel", "Gemeinde.Schluessel.Nr", "Bezeichnung", vars)) %>%
 
 
 # Add information about regions -------------------------------------------
@@ -54,40 +59,35 @@ get_lk_by_regschl <- function(regschl) {
 data$Landkreis <- data$Regional.Schluessel %>%
   sapply(get_lk_by_regschl)
 
-# Development -------------------------------------------------------------
 
-highlight = "Engelsberg"
-# v = COLLABELS[5]
-v = COLLABELS$bevoelkerung.insgesamt
-Landkreis = "Traunstein"
-# myplot <- function(v, highlight, Landkreis = NULL) {
-v = as.character(v)
+# Prepare variables -------------------------------------------------------
+collabels = COLLABELS %>% as.character()
 
-data.vector = data %>%
-  filter(Landkreis == Landkreis) %>%
-  select(v)
-
-lower_break = data.vector %>%
-  pull(1) %>%
-  min()
-upper_break <- data.vector %>%
-  pull(1) %>%
-  quantile(0.99)
-  # quantile(1)
-breaks = seq(lower_break, upper_break, length.out = 30)
+# Altersstruktur
+vars.altersstruktur = collabels[collabels %>% startsWith("bevoelkerung.altersstruktur")]
+vars.altersstruktur.rel = sapply(vars.altersstruktur, paste, ".rel", sep='')
+for(altersgruppe in vars.altersstruktur) {
+  data[, paste0(altersgruppe, ".rel")] = data[, altersgruppe]/rowSums(data[, vars.altersstruktur])
+}
 
 
+# Plots -------------------------------------------------------------------
+# Altersstruktur
 data %>%
-  filter(Landkreis == Landkreis) %>%
-  select(v) %>%
-  mutate(!!v := ifelse(.[[v]] > upper_break, upper_break, .[[v]])) %>%
-  ggplot(aes_string(x = v)) +
-  geom_histogram() +
-  geom_vline(xintercept = data %>%
-    filter(Bezeichnung == highlight) %>%
-    select(v) %>%
-    as.numeric())
-
+  filter(Landkreis == "Traunstein") %>%
+  select(c("Bezeichnung", vars.altersstruktur.rel)) %>%
+  gather("Gruppe", "Anteil", -Bezeichnung) %>%
+  filter(Bezeichnung == "Engelsberg") %>%
+  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.unter6.rel", "unter 6")) %>%
+  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.6bis14.rel", "6 bis 14")) %>%
+  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.15bis17.rel", "15 bis 17")) %>%
+  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.18bis24.rel", "18 bis 24")) %>%
+  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.25bis29.rel", "25 bis 29")) %>%
+  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.30bis49.rel", "30 bis 49")) %>%
+  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.50bis64.rel", "50 bis 64")) %>%
+  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.65bis.rel", "ab 65")) %>%
+  ggplot(aes(x = Gruppe, y = Anteil)) +
+  geom_bar(stat = "identity")
 
 
 # loop --------------------------------------------------------------------
