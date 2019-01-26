@@ -23,7 +23,7 @@ colnames(data)[startsWith(colnames(data), 'Spalte')] <- COLLABELS
 vars = headers[3, ] %>% as.numeric() %>% as.logical()
 vars = COLLABELS[vars] %>% as.character()
 data = data %>%
-  select(c("Laufende.Nummer", "Regional.Schluessel", "Gemeinde.Schluessel.Nr", "Bezeichnung", vars)) %>%
+  select(c("Laufende.Nummer", "Regional.Schluessel", "Gemeinde.Schluessel.Nr", "Bezeichnung", vars))
 
 
 # Add information about regions -------------------------------------------
@@ -71,23 +71,53 @@ for(altersgruppe in vars.altersstruktur) {
 }
 
 
-# Plots -------------------------------------------------------------------
-# Altersstruktur
-data %>%
+# Plot Altersstruktur -----------------------------------------------------
+bayern.altersstruktur.rel = data %>%
+  select(vars.altersstruktur.rel) %>%
+  colMeans() %>%
+  append(c(Bezeichnung = "Bayern"), .)
+oberbayern.altersstruktur.rel = data %>%
+  filter(Regierungsbezirk == "Oberbayern") %>%
+  select(vars.altersstruktur.rel) %>%
+  colMeans() %>%
+  append(c(Bezeichnung = "Oberbayern"), .)
+traunstein.altersstruktur.rel = data %>%
   filter(Landkreis == "Traunstein") %>%
-  select(c("Bezeichnung", vars.altersstruktur.rel)) %>%
-  gather("Gruppe", "Anteil", -Bezeichnung) %>%
+  select(vars.altersstruktur.rel) %>%
+  colMeans() %>%
+  append(c(Bezeichnung = "LK Traunstein"), .)
+
+data.altersstruktur = data %>%
   filter(Bezeichnung == "Engelsberg") %>%
-  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.unter6.rel", "unter 6")) %>%
-  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.6bis14.rel", "6 bis 14")) %>%
-  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.15bis17.rel", "15 bis 17")) %>%
-  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.18bis24.rel", "18 bis 24")) %>%
-  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.25bis29.rel", "25 bis 29")) %>%
-  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.30bis49.rel", "30 bis 49")) %>%
-  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.50bis64.rel", "50 bis 64")) %>%
-  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.65bis.rel", "ab 65")) %>%
+  select(c("Bezeichnung", vars.altersstruktur.rel)) %>%
+  rbind(bayern.altersstruktur.rel, oberbayern.altersstruktur.rel, traunstein.altersstruktur.rel)
+
+data.altersstruktur[, colnames(data.altersstruktur) != "Bezeichnung"] = data.altersstruktur[, colnames(data.altersstruktur) != "Bezeichnung"] %>%
+  sapply(as.numeric)
+
+data.altersstruktur = data.altersstruktur %>%
+  gather("Gruppe", "Anteil", -Bezeichnung) %>%
+  # filter(Bezeichnung %in% c("Engelsberg", "Bayern")) %>%
+  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.unter6.rel", "< 6")) %>%
+  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.6bis14.rel", "6-14")) %>%
+  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.15bis17.rel", "15-17")) %>%
+  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.18bis24.rel", "18-24")) %>%
+  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.25bis29.rel", "25-29")) %>%
+  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.30bis49.rel", "30-49")) %>%
+  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.50bis64.rel", "50-64")) %>%
+  mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.65bis.rel", "ab 65"))
+
+data.altersstruktur %>%
+  filter(Bezeichnung == "Engelsberg") %>%
   ggplot(aes(x = Gruppe, y = Anteil)) +
-  geom_bar(stat = "identity")
+  geom_bar(stat = 'identity') +
+  geom_line(data = data.altersstruktur %>% filter(Bezeichnung == "LK Traunstein"), aes(group = 1, color = "blue")) +
+  geom_line(data = data.altersstruktur %>% filter(Bezeichnung == "Oberbayern"), aes(group = 1, color = "red")) +
+  geom_line(data = data.altersstruktur %>% filter(Bezeichnung == "Bayern"), aes(group = 1, color = "green")) +
+  scale_colour_manual(name = 'Vergleichswerte', values = c('blue' = 'blue', 'red' = 'red', 'green' = 'green'), labels = c('LK Traunstein', 'Oberbayern', 'Bayern')) +
+  scale_y_continuous(labels = scales::percent) +
+  ggtitle("Altersstruktur")
+  
 
 
 # loop --------------------------------------------------------------------
