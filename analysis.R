@@ -13,7 +13,7 @@ rm(raw_data)
 # Convert non-alphanumeric values to NA
 data[data == '•'] = NA
 
-# Load column names and insert them into data. Filter ---------------------
+# Load column names and insert them into data. Filter. Numerize -----------
 headers = read.csv('spaltennr_labels.csv', sep=',', header = F, stringsAsFactors = F)
 COLLABELS = as.list(headers[2, ])
 names(COLLABELS) = as.character(headers[2, ])
@@ -25,6 +25,12 @@ vars = COLLABELS[vars] %>% as.character()
 data = data %>%
   select(c("Laufende.Nummer", "Regional.Schluessel", "Gemeinde.Schluessel.Nr", "Bezeichnung", vars))
 
+# Numerize
+for(var in vars) {
+  data[, var] <- as.numeric(data[, var])
+}
+
+collabels = COLLABELS %>% as.character()
 
 # Add information about regions -------------------------------------------
 # Regierungsbezirke
@@ -60,9 +66,23 @@ data$Landkreis <- data$Regional.Schluessel %>%
   sapply(get_lk_by_regschl)
 
 
-# Prepare variables -------------------------------------------------------
-collabels = COLLABELS %>% as.character()
+# Plot Settings -----------------------------------------------------------
+HIGHLIGHT = "Engelsberg"
+REGIERUNGSBEZIRK = "Oberbayern"
+LANDKREIS = NULL # set to NULL to use REGIERUNGSBEZIRK instead
 
+data.filtered = data %>%
+  filter(
+    if(is.null(LANDKREIS)) {
+      Regierungsbezirk == REGIERUNGSBEZIRK
+    } else {
+      Landkreis == LANDKREIS
+    }
+  )
+plot.subtitle = paste0(HIGHLIGHT, " im Vergleich zu Gemeinden im ", ifelse(is.null(LANDKREIS), paste0("Regierungsbezirk ", REGIERUNGSBEZIRK), paste0("Landkreis ", LANDKREIS)))
+
+
+# Plot Altersstruktur -----------------------------------------------------
 # Altersstruktur
 vars.altersstruktur = collabels[collabels %>% startsWith("bevoelkerung.altersstruktur")]
 vars.altersstruktur.rel = sapply(vars.altersstruktur, paste, ".rel", sep='')
@@ -70,8 +90,6 @@ for(altersgruppe in vars.altersstruktur) {
   data[, paste0(altersgruppe, ".rel")] = data[, altersgruppe]/rowSums(data[, vars.altersstruktur])
 }
 
-
-# Plot Altersstruktur -----------------------------------------------------
 bayern.altersstruktur.rel = data %>%
   select(vars.altersstruktur.rel) %>%
   colMeans() %>%
@@ -107,6 +125,9 @@ data.altersstruktur = data.altersstruktur %>%
   mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.50bis64.rel", "50-64")) %>%
   mutate(Gruppe = replace(Gruppe, Gruppe == "bevoelkerung.altersstruktur.65bis.rel", "ab 65"))
 
+data.altersstruktur$Gruppe = factor(data.altersstruktur$Gruppe)
+data.altersstruktur$Gruppe = factor(data.altersstruktur$Gruppe, levels(data.altersstruktur$Gruppe)[c(1,7,2:6,8)])
+
 data.altersstruktur %>%
   filter(Bezeichnung == "Engelsberg") %>%
   ggplot(aes(x = Gruppe, y = Anteil)) +
@@ -120,37 +141,62 @@ data.altersstruktur %>%
   
 
 
-# loop --------------------------------------------------------------------
-highlight = "Engelsberg"
-Landkreis = "Traunstein"
+# Plot Kinderbetreuungsplätze ---------------------------------------------
+data %>%
+  filter(Bezeichnung == "Engelsberg") %>%
+  select(COLLABELS$bildung.kindertages.plaetze)
 
-for(v in COLLABELS[52]) {
-  v = as.character(v)
-  
-  data.vector = data %>%
-    filter(Landkreis == Landkreis) %>%
-    select(v)
-  
-  data.vector = data.vector[!is.na(data.vector)] %>%
-    as.numeric
-  
-  lower_break = data.vector %>%
-    min()
-  upper_break <- data.vector %>%
-    quantile(0.99)
-  # quantile(1)
-  breaks = seq(lower_break, upper_break, length.out = 30)
-  
-  image = data %>%
-    filter(Landkreis == Landkreis) %>%
-    select(v) %>%
-    mutate(!!v := ifelse(.[[v]] > upper_break, upper_break, .[[v]])) %>%
-    ggplot(aes_string(x = v)) +
-    geom_histogram() +
-    geom_vline(xintercept = data %>%
-                 filter(Bezeichnung == highlight) %>%
-                 select(v) %>%
-                 as.numeric())
-  
-  ggsave(filename = paste0('plots/plot_', v, '.png'), plot = image, width = 10, height = 8)
-}
+data.kinderbetr = data %>%
+  mutate(bildung.kindertages.plaetze.pro100 = bildung.kindertages.plaetze/bevoelkerung.insgesamt*100)
+
+data.kinderbetr %>%
+  filter(
+    if(is.null(LANDKREIS)) {
+      Regierungsbezirk == REGIERUNGSBEZIRK
+    } else {
+      Landkreis == LANDKREIS
+    }
+  ) %>%
+  ggplot(aes(x = bildung.kindertages.plaetze.pro100)) +
+  geom_histogram() +
+  ggtitle("Kindertageseinrichtungen: Plätze pro 100 Einwohner", paste0(HIGHLIGHT, " im Vergleich zu Gemeinden im ", ifelse(is.null(LANDKREIS), paste0("Regierungsbezirk ", REGIERUNGSBEZIRK), paste0("Landkreis ", LANDKREIS)))) +
+  geom_vline(xintercept = data.kinderbetr %>%
+               filter(Bezeichnung == "Engelsberg") %>%
+               select(bildung.kindertages.plaetze.pro100) %>%
+               as.numeric())
+
+
+# Schüler -----------------------------------------------------------------
+c(COLLABELS$bildung.grundmittelhauptschulen.schueler, COLLABELS$bildung.realschulen.schueler, COLLABELS$bildung.gymnasien.schueler, COLLABELS$bildung.gymnasien.schueler)
+data.schueler = data %>%
+  mutate(schueler.insg.rel = (bildung.grundmittelhauptschulen.schueler +
+           bildung.realschulen.schueler +
+           bildung.gymnasien.schueler +
+           bildung.gymnasien.schueler)/bevoelkerung.insgesamt)
+
+data.schueler %>%
+  filter(
+    if(is.null(LANDKREIS)) {
+      Regierungsbezirk == REGIERUNGSBEZIRK
+    } else {
+      Landkreis == LANDKREIS
+    }
+  ) %>%
+  ggplot(aes(x = schueler.insg.rel)) +
+  geom_histogram() +
+  scale_x_continuous(labels = scales::percent) +
+  ggtitle("Anteil Schüler an Gesamtbevölkerung", paste0(HIGHLIGHT, " im Vergleich zu Gemeinden im ", ifelse(is.null(LANDKREIS), paste0("Regierungsbezirk ", REGIERUNGSBEZIRK), paste0("Landkreis ", LANDKREIS))))
+
+# Sozialhilfeempfänger ----------------------------------------------------
+data.sozhilfe = data.filtered %>%
+  mutate(sozialhilfe_empf.kapitel3.rel = sozialhilfe_empf.kapitel3/bevoelkerung.insgesamt)
+
+data.sozhilfe %>%
+  ggplot(aes(x = sozialhilfe_empf.kapitel3.rel)) +
+  geom_histogram() +
+  geom_vline(xintercept = data.sozhilfe %>%
+               filter(Bezeichnung == HIGHLIGHT) %>%
+               select(sozialhilfe_empf.kapitel3.rel) %>%
+               as.numeric())
+
+# Todo: sum, then relativize
