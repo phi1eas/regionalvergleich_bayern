@@ -82,6 +82,67 @@ data.filtered = data %>%
 plot.subtitle = paste0(HIGHLIGHT, " im Vergleich zu Gemeinden im ", ifelse(is.null(LANDKREIS), paste0("Regierungsbezirk ", REGIERUNGSBEZIRK), paste0("Landkreis ", LANDKREIS)))
 
 
+# Flächen -----------------------------------------------------------------
+data.flaechen = data.filtered %>%
+  mutate(gebfreifl.rel = gebiet.davon.geb.und.freiflaeche/gebiet.flaeche.gesamt,
+         betrfl.rel = gebiet.davon.bietriebsflaeche/gebiet.flaeche.gesamt,
+         erholfl.rel = gebiet.davon.erholung/gebiet.flaeche.gesamt,
+         landwfl.rel = gebiet.davon.landwirtschaft/gebiet.flaeche.gesamt,
+         waldfl.rel = gebiet.davon.wald/gebiet.flaeche.gesamt)
+
+data.flaechen %>%
+  ggplot(aes(x = gebfreifl.rel)) +
+  geom_histogram() +
+  geom_vline(xintercept = data.flaechen %>%
+               filter(Bezeichnung == HIGHLIGHT) %>%
+               select(gebfreifl.rel) %>%
+               as.numeric()) +
+  scale_x_continuous(labels = scales::percent) +
+  ggtitle("Anteil Gebäude- und Freifläche", plot.subtitle)
+
+data.flaechen %>%
+  ggplot(aes(x = betrfl.rel)) +
+  geom_histogram() +
+  geom_vline(xintercept = data.flaechen %>%
+               filter(Bezeichnung == HIGHLIGHT) %>%
+               select(betrfl.rel) %>%
+               as.numeric()) +
+  scale_x_continuous(labels = scales::percent) +
+  ggtitle("Anteil Betriebsfläche", plot.subtitle)
+
+data.flaechen %>%
+  ggplot(aes(x = erholfl.rel)) +
+  geom_histogram() +
+  geom_vline(xintercept = data.flaechen %>%
+               filter(Bezeichnung == HIGHLIGHT) %>%
+               select(erholfl.rel) %>%
+               as.numeric()) +
+  scale_x_continuous(labels = scales::percent) +
+  ggtitle("Anteil Erholungsfläche", plot.subtitle)
+
+data.flaechen %>%
+  ggplot(aes(x = landwfl.rel)) +
+  geom_histogram() +
+  geom_vline(xintercept = data.flaechen %>%
+               filter(Bezeichnung == HIGHLIGHT) %>%
+               select(landwfl.rel) %>%
+               as.numeric()) +
+  scale_x_continuous(labels = scales::percent) +
+  ggtitle("Anteil Landwirtschaftsfläche", plot.subtitle)
+
+data.flaechen %>%
+  ggplot(aes(x = waldfl.rel)) +
+  geom_histogram() +
+  geom_vline(xintercept = data.flaechen %>%
+               filter(Bezeichnung == HIGHLIGHT) %>%
+               select(waldfl.rel) %>%
+               as.numeric()) +
+  scale_x_continuous(labels = scales::percent) +
+  ggtitle("Anteil Waldfläche", plot.subtitle)
+  
+  
+
+
 # Plot Altersstruktur -----------------------------------------------------
 # Altersstruktur
 vars.altersstruktur = collabels[collabels %>% startsWith("bevoelkerung.altersstruktur")]
@@ -189,14 +250,15 @@ data.schueler %>%
 
 # Sozialhilfeempfänger ----------------------------------------------------
 data.sozhilfe = data.filtered %>%
-  mutate(sozialhilfe_empf.kapitel3.rel = sozialhilfe_empf.kapitel3/bevoelkerung.insgesamt)
+  mutate_all(funs(replace(., is.na(.), 0))) %>%
+  mutate(sozialhilfe_empf.insg.rel = (sozialhilfe_empf.kapitel3 + sozialhilfe_empf.kapitel4 + sozialhilfe_empf.kapitel5bis9) /bevoelkerung.insgesamt)
 
 data.sozhilfe %>%
-  ggplot(aes(x = sozialhilfe_empf.kapitel3.rel)) +
+  ggplot(aes(x = sozialhilfe_empf.insg.rel)) +
   geom_histogram() +
   geom_vline(xintercept = data.sozhilfe %>%
                filter(Bezeichnung == HIGHLIGHT) %>%
-               select(sozialhilfe_empf.kapitel3.rel) %>%
-               as.numeric())
-
-# Todo: sum, then relativize
+               select(sozialhilfe_empf.insg.rel) %>%
+               as.numeric()) +
+  scale_x_continuous(labels = scales::percent) +
+  ggtitle("Anteil Sozialhilfeempfänger", plot.subtitle)
