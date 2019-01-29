@@ -81,6 +81,22 @@ data.filtered = data %>%
   )
 plot.subtitle = paste0(HIGHLIGHT, " im Vergleich zu Gemeinden im ", ifelse(is.null(LANDKREIS), paste0("Regierungsbezirk ", REGIERUNGSBEZIRK), paste0("Landkreis ", LANDKREIS)))
 
+std.plot = function(var.name, var.title, upper_break = NULL, binsize = 30) {
+  min.val = min(data.filtered[, var.name], na.rm = T)
+  max.val = max(data.filtered[, var.name], na.rm = T)
+  breaks = if(!is.null(upper_break)) c(seq(min.val, upper_break, (upper_break-min.val)/30), max.val) else NULL
+  
+  data.filtered %>%
+    ggplot(aes_string(x = var.name)) +
+    geom_histogram(breaks = breaks) +
+    { if(!is.null(upper_break)) coord_cartesian(xlim = c(min.val, upper_break)) } +
+    geom_vline(xintercept = data.filtered %>%
+                 filter(Bezeichnung == HIGHLIGHT) %>%
+                 select_(var.name) %>%
+                 as.numeric()) +
+    ggtitle(var.title, plot.subtitle) %>%
+    return()
+}
 
 # Flächen -----------------------------------------------------------------
 data.flaechen = data.filtered %>%
@@ -262,3 +278,47 @@ data.sozhilfe %>%
                as.numeric()) +
   scale_x_continuous(labels = scales::percent) +
   ggtitle("Anteil Sozialhilfeempfänger", plot.subtitle)
+
+# Bevölkerung -------------------------------------------------------------
+std.plot(COLLABELS$bevoelkerung.insgesamt, "Bevölkerung 2015")
+# Bevölkerungszuabnahme 2015 vs 1987/2011 ---------------------------------
+std.plot(COLLABELS$bevoelkerung.veraenderung.vs.1987, "Bevölkerungsveränderung im Vgl. zu 1987")
+std.plot(COLLABELS$bevoelkerung.veraenderung.vs.2011, "Bevölkerungsveränderung im Vgl. zu 2011")
+
+# Bevölkerungsdichte ------------------------------------------------------
+std.plot(COLLABELS$bevoelkerung.je_km2, "Einwohner je km2", upper_break = 800)
+
+# Bevölkerungsbewegung Zugezogene -----------------------------------------
+std.plot(COLLABELS$bevoelkerung.bewegung.zugezogene, "Bevölkerungsbewegung Zugezogene", upper_break = 3000)
+std.plot(COLLABELS$bevoelkerung.bewegung.fortgezogene, "Bevölkerungsbewegung Fortgezogene", upper_break = 2000)
+std.plot(COLLABELS$bevoelkerung.bewegung.wanderungsgewinn, "Bevölkerungsbewegung Wanderungsgewinn", upper_break = 500)
+
+
+# Beschäftigte ------------------------------------------------------------
+std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.insgesamt, "Beschäftigte am Arbeitsort", upper_break = 10000)
+std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent, "Beschäftigte am Wohnort, darunter Auspendler in Prozent")
+std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent, "Beschäftigte am Arbeitsort, darunter Einpendler in Prozent")
+std.plot(COLLABELS$erwerb.pendlersaldo, "Pendlersaldo", upper_break = 7000)
+
+
+# Landwirtschaft ----------------------------------------------------------
+std.plot(COLLABELS$landforst.betriebe_von_flaeche_ha.insgesamt, "Anzahl land- und forstwirtschaftlicher Betriebe", upper_break = 200)
+
+
+# Wasser pro Kopf Verbrauch -----------------------------------------------
+std.plot(COLLABELS$umwelt.wasser_pro_kopf_verbrauch, "Wasserverbrauch in Litern pro Person")
+
+
+# Wohnungen ---------------------------------------------------------------
+std.plot(COLLABELS$bauwohn.baugenehmigungen.wohnungen, "Erteilte Baugenehmigungen: Wohnungen", upper_break = 150)
+std.plot(COLLABELS$bauwohn.bestand_wohnungen.insgesamt, "Bestand an Wohnungen", upper_break = 10000)
+
+
+# Finanzen ----------------------------------------------------------------
+std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.insgesamt, "Lohn- und Eink.-St.: Gesamtbetrag der Einkünfte in 1000€", upper_break = 500000)
+std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.je_steuerpfl, "Lohn- und Eink.-St.: Einkünfte je Steuerpflichtiger in 1000€", upper_break = 60000)
+std.plot(COLLABELS$lohneinksteuer.bruttolohn.je_arbeitnehmer, "Lohn- und Eink.-St.: Bruttolohn je Arbeitnehmer", upper_break = 50000)
+std.plot(COLLABELS$kommunale_finanzen.gemeindesteuereinnahmen.insgesamt, "Gemeindesteuereinnahmen insgesamt in 1000€", upper_break = 30000)
+std.plot(COLLABELS$kommunale_finanzen.steuereinnahmen_insgesamt, "Steuereinnahmen insgesamt, € je Einwohner", upper_break = 2500)
+std.plot(COLLABELS$kommunale_finanzen.realsteueraufbringungskraft, "Realsteueraufbringungskraft, € je Einwohner", upper_break = 2500)
+std.plot(COLLABELS$kommunale_finanzen.steuereinnahmekraft.je_einwohner, "Steuereinnahmekraft, € je Einwohner", upper_break = 3000)
