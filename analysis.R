@@ -66,7 +66,7 @@ data$Landkreis <- data$Regional.Schluessel %>%
   sapply(get_lk_by_regschl)
 
 
-# Plot Settings -----------------------------------------------------------
+# Prepare Plots -----------------------------------------------------------
 HIGHLIGHT = "Engelsberg"
 REGIERUNGSBEZIRK = "Oberbayern"
 LANDKREIS = NULL # set to NULL to use REGIERUNGSBEZIRK instead
@@ -81,16 +81,28 @@ data.filtered = data %>%
   )
 plot.subtitle = paste0(HIGHLIGHT, " im Vergleich zu Gemeinden im ", ifelse(is.null(LANDKREIS), paste0("Regierungsbezirk ", REGIERUNGSBEZIRK), paste0("Landkreis ", LANDKREIS)))
 
-std.plot = function(var.name, var.title, upper_break = NULL, binsize = 30) {
-  min.val = min(data.filtered[, var.name], na.rm = T)
-  max.val = max(data.filtered[, var.name], na.rm = T)
-  breaks = if(!is.null(upper_break)) c(seq(min.val, upper_break, (upper_break-min.val)/30), max.val) else NULL
+std.plot = function(var.name, var.title, d = data.filtered, lower_break = NULL, upper_break = NULL, binsize = 30) {
+  min.val = min(d[, var.name], na.rm = T)
+  max.val = max(d[, var.name], na.rm = T)
+  breaks = if(is.null(lower_break) & !is.null(upper_break)) {
+    c(seq(min.val, upper_break, (upper_break-min.val)/binsize), max.val)
+  } else if(!is.null(lower_break) & is.null(upper_break)) {
+    c(min.val, seq(lower_break, max.val, (max.val-lower_break)/binsize))
+  } else if(!is.null(lower_break) & !is.null(upper_break)) {
+    c(min.val, seq(lower_break, upper_break, (upper_break-lower_break)/binsize), max.val)
+  } else {
+    NULL
+  }
   
-  data.filtered %>%
+  # breaks = if(!is.null(upper_break)) c(seq(min.val, upper_break, (upper_break-min.val)/30), max.val) else NULL
+  
+  d %>%
     ggplot(aes_string(x = var.name)) +
     geom_histogram(breaks = breaks) +
-    { if(!is.null(upper_break)) coord_cartesian(xlim = c(min.val, upper_break)) } +
-    geom_vline(xintercept = data.filtered %>%
+    { if(is.null(lower_break) & !is.null(upper_break)) coord_cartesian(xlim = c(min.val, upper_break)) } +
+    { if(!is.null(lower_break) & is.null(upper_break)) coord_cartesian(xlim = c(lower_break, max.val)) } +
+    { if(!is.null(lower_break) & !is.null(upper_break)) coord_cartesian(xlim = c(lower_break, upper_break)) } +
+    geom_vline(xintercept = d %>%
                  filter(Bezeichnung == HIGHLIGHT) %>%
                  select_(var.name) %>%
                  as.numeric()) +
@@ -98,7 +110,7 @@ std.plot = function(var.name, var.title, upper_break = NULL, binsize = 30) {
     return()
 }
 
-# Flächen -----------------------------------------------------------------
+# Flächen
 data.flaechen = data.filtered %>%
   mutate(gebfreifl.rel = gebiet.davon.geb.und.freiflaeche/gebiet.flaeche.gesamt,
          betrfl.rel = gebiet.davon.bietriebsflaeche/gebiet.flaeche.gesamt,
@@ -106,60 +118,6 @@ data.flaechen = data.filtered %>%
          landwfl.rel = gebiet.davon.landwirtschaft/gebiet.flaeche.gesamt,
          waldfl.rel = gebiet.davon.wald/gebiet.flaeche.gesamt)
 
-data.flaechen %>%
-  ggplot(aes(x = gebfreifl.rel)) +
-  geom_histogram() +
-  geom_vline(xintercept = data.flaechen %>%
-               filter(Bezeichnung == HIGHLIGHT) %>%
-               select(gebfreifl.rel) %>%
-               as.numeric()) +
-  scale_x_continuous(labels = scales::percent) +
-  ggtitle("Anteil Gebäude- und Freifläche", plot.subtitle)
-
-data.flaechen %>%
-  ggplot(aes(x = betrfl.rel)) +
-  geom_histogram() +
-  geom_vline(xintercept = data.flaechen %>%
-               filter(Bezeichnung == HIGHLIGHT) %>%
-               select(betrfl.rel) %>%
-               as.numeric()) +
-  scale_x_continuous(labels = scales::percent) +
-  ggtitle("Anteil Betriebsfläche", plot.subtitle)
-
-data.flaechen %>%
-  ggplot(aes(x = erholfl.rel)) +
-  geom_histogram() +
-  geom_vline(xintercept = data.flaechen %>%
-               filter(Bezeichnung == HIGHLIGHT) %>%
-               select(erholfl.rel) %>%
-               as.numeric()) +
-  scale_x_continuous(labels = scales::percent) +
-  ggtitle("Anteil Erholungsfläche", plot.subtitle)
-
-data.flaechen %>%
-  ggplot(aes(x = landwfl.rel)) +
-  geom_histogram() +
-  geom_vline(xintercept = data.flaechen %>%
-               filter(Bezeichnung == HIGHLIGHT) %>%
-               select(landwfl.rel) %>%
-               as.numeric()) +
-  scale_x_continuous(labels = scales::percent) +
-  ggtitle("Anteil Landwirtschaftsfläche", plot.subtitle)
-
-data.flaechen %>%
-  ggplot(aes(x = waldfl.rel)) +
-  geom_histogram() +
-  geom_vline(xintercept = data.flaechen %>%
-               filter(Bezeichnung == HIGHLIGHT) %>%
-               select(waldfl.rel) %>%
-               as.numeric()) +
-  scale_x_continuous(labels = scales::percent) +
-  ggtitle("Anteil Waldfläche", plot.subtitle)
-  
-  
-
-
-# Plot Altersstruktur -----------------------------------------------------
 # Altersstruktur
 vars.altersstruktur = collabels[collabels %>% startsWith("bevoelkerung.altersstruktur")]
 vars.altersstruktur.rel = sapply(vars.altersstruktur, paste, ".rel", sep='')
@@ -205,6 +163,33 @@ data.altersstruktur = data.altersstruktur %>%
 data.altersstruktur$Gruppe = factor(data.altersstruktur$Gruppe)
 data.altersstruktur$Gruppe = factor(data.altersstruktur$Gruppe, levels(data.altersstruktur$Gruppe)[c(1,7,2:6,8)])
 
+# Kinderbetreuungsplätze pro 100 Einwohner
+data.kinderbetr = data.filtered %>%
+  mutate(bildung.kindertages.plaetze.pro100 = bildung.kindertages.plaetze/bevoelkerung.insgesamt*100)
+
+# Schüler, relativ zu Bevölkerung
+data.schueler = data.filtered %>%
+  mutate(schueler.insg.rel = (bildung.grundmittelhauptschulen.schueler +
+                                bildung.realschulen.schueler +
+                                bildung.gymnasien.schueler +
+                                bildung.gymnasien.schueler)/bevoelkerung.insgesamt)
+
+# Sozialhilfeempfänger
+data.sozhilfe = data.filtered %>%
+  mutate_all(funs(replace(., is.na(.), 0))) %>%
+  mutate(sozialhilfe_empf.insg.rel = (sozialhilfe_empf.kapitel3 + sozialhilfe_empf.kapitel4 + sozialhilfe_empf.kapitel5bis9) /bevoelkerung.insgesamt)
+
+
+# Plots -------------------------------------------------------------------
+
+# Flächen
+std.plot(d = data.flaechen, "gebfreifl.rel", var.title = "Anteil Gebäude- und Freifläche")
+std.plot(d = data.flaechen, "betrfl.rel", var.title = "Anteil Betriebsfläche")
+std.plot(d = data.flaechen, "erholfl.rel", var.title = "Anteil Erholungsfläche")
+std.plot(d = data.flaechen, "landwfl.rel", var.title = "Anteil Landwirtschaftsfläche")
+std.plot(d = data.flaechen, "waldfl.rel", var.title = "Anteil Waldfläche")
+
+# Altersstruktur
 data.altersstruktur %>%
   filter(Bezeichnung == "Engelsberg") %>%
   ggplot(aes(x = Gruppe, y = Anteil)) +
@@ -216,105 +201,47 @@ data.altersstruktur %>%
   scale_y_continuous(labels = scales::percent) +
   ggtitle("Altersstruktur")
   
+# Kinderbetreuungsplätze
+std.plot(d = data.kinderbetr, "bildung.kindertages.plaetze.pro100", "Kindertageseinrichtungen: Plätze pro 100 Einwohner")
 
+# Schüler
+std.plot(d = data.schueler, "schueler.insg.rel", "Anteil Schüler an Bevölkerung")
 
-# Plot Kinderbetreuungsplätze ---------------------------------------------
-data %>%
-  filter(Bezeichnung == "Engelsberg") %>%
-  select(COLLABELS$bildung.kindertages.plaetze)
+# Sozialhilfeempfänger
+std.plot(d = data.sozhilfe, "sozialhilfe_empf.insg.rel", "Anteil Sozialhilfeempfänger an Bevölkerung")
 
-data.kinderbetr = data %>%
-  mutate(bildung.kindertages.plaetze.pro100 = bildung.kindertages.plaetze/bevoelkerung.insgesamt*100)
+# Bevölkerung
+std.plot(COLLABELS$bevoelkerung.insgesamt, var.title = "Bevölkerung 2015", upper_break = 20000)
 
-data.kinderbetr %>%
-  filter(
-    if(is.null(LANDKREIS)) {
-      Regierungsbezirk == REGIERUNGSBEZIRK
-    } else {
-      Landkreis == LANDKREIS
-    }
-  ) %>%
-  ggplot(aes(x = bildung.kindertages.plaetze.pro100)) +
-  geom_histogram() +
-  ggtitle("Kindertageseinrichtungen: Plätze pro 100 Einwohner", paste0(HIGHLIGHT, " im Vergleich zu Gemeinden im ", ifelse(is.null(LANDKREIS), paste0("Regierungsbezirk ", REGIERUNGSBEZIRK), paste0("Landkreis ", LANDKREIS)))) +
-  geom_vline(xintercept = data.kinderbetr %>%
-               filter(Bezeichnung == "Engelsberg") %>%
-               select(bildung.kindertages.plaetze.pro100) %>%
-               as.numeric())
+# Bevölkerungszuabnahme 2015 vs 1987/2011
+std.plot(COLLABELS$bevoelkerung.veraenderung.vs.1987, var.title = "Bevölkerungsveränderung im Vgl. zu 1987")
+std.plot(COLLABELS$bevoelkerung.veraenderung.vs.2011, var.title = "Bevölkerungsveränderung im Vgl. zu 2011")
 
+# Bevölkerungsdichte
+std.plot(COLLABELS$bevoelkerung.je_km2, var.title = "Einwohner je km2", upper_break = 1000)
 
-# Schüler -----------------------------------------------------------------
-c(COLLABELS$bildung.grundmittelhauptschulen.schueler, COLLABELS$bildung.realschulen.schueler, COLLABELS$bildung.gymnasien.schueler, COLLABELS$bildung.gymnasien.schueler)
-data.schueler = data %>%
-  mutate(schueler.insg.rel = (bildung.grundmittelhauptschulen.schueler +
-           bildung.realschulen.schueler +
-           bildung.gymnasien.schueler +
-           bildung.gymnasien.schueler)/bevoelkerung.insgesamt)
-
-data.schueler %>%
-  filter(
-    if(is.null(LANDKREIS)) {
-      Regierungsbezirk == REGIERUNGSBEZIRK
-    } else {
-      Landkreis == LANDKREIS
-    }
-  ) %>%
-  ggplot(aes(x = schueler.insg.rel)) +
-  geom_histogram() +
-  scale_x_continuous(labels = scales::percent) +
-  ggtitle("Anteil Schüler an Gesamtbevölkerung", paste0(HIGHLIGHT, " im Vergleich zu Gemeinden im ", ifelse(is.null(LANDKREIS), paste0("Regierungsbezirk ", REGIERUNGSBEZIRK), paste0("Landkreis ", LANDKREIS))))
-
-# Sozialhilfeempfänger ----------------------------------------------------
-data.sozhilfe = data.filtered %>%
-  mutate_all(funs(replace(., is.na(.), 0))) %>%
-  mutate(sozialhilfe_empf.insg.rel = (sozialhilfe_empf.kapitel3 + sozialhilfe_empf.kapitel4 + sozialhilfe_empf.kapitel5bis9) /bevoelkerung.insgesamt)
-
-data.sozhilfe %>%
-  ggplot(aes(x = sozialhilfe_empf.insg.rel)) +
-  geom_histogram() +
-  geom_vline(xintercept = data.sozhilfe %>%
-               filter(Bezeichnung == HIGHLIGHT) %>%
-               select(sozialhilfe_empf.insg.rel) %>%
-               as.numeric()) +
-  scale_x_continuous(labels = scales::percent) +
-  ggtitle("Anteil Sozialhilfeempfänger", plot.subtitle)
-
-# Bevölkerung -------------------------------------------------------------
-std.plot(COLLABELS$bevoelkerung.insgesamt, "Bevölkerung 2015")
-# Bevölkerungszuabnahme 2015 vs 1987/2011 ---------------------------------
-std.plot(COLLABELS$bevoelkerung.veraenderung.vs.1987, "Bevölkerungsveränderung im Vgl. zu 1987")
-std.plot(COLLABELS$bevoelkerung.veraenderung.vs.2011, "Bevölkerungsveränderung im Vgl. zu 2011")
-
-# Bevölkerungsdichte ------------------------------------------------------
-std.plot(COLLABELS$bevoelkerung.je_km2, "Einwohner je km2", upper_break = 800)
-
-# Bevölkerungsbewegung Zugezogene -----------------------------------------
+# Bevölkerungsbewegung Zugezogene
 std.plot(COLLABELS$bevoelkerung.bewegung.zugezogene, "Bevölkerungsbewegung Zugezogene", upper_break = 3000)
 std.plot(COLLABELS$bevoelkerung.bewegung.fortgezogene, "Bevölkerungsbewegung Fortgezogene", upper_break = 2000)
 std.plot(COLLABELS$bevoelkerung.bewegung.wanderungsgewinn, "Bevölkerungsbewegung Wanderungsgewinn", upper_break = 500)
 
-
-# Beschäftigte ------------------------------------------------------------
+# Beschäftigte
 std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.insgesamt, "Beschäftigte am Arbeitsort", upper_break = 10000)
 std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent, "Beschäftigte am Wohnort, darunter Auspendler in Prozent")
 std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent, "Beschäftigte am Arbeitsort, darunter Einpendler in Prozent")
-std.plot(COLLABELS$erwerb.pendlersaldo, "Pendlersaldo", upper_break = 7000)
+std.plot(COLLABELS$erwerb.pendlersaldo, "Pendlersaldo", lower_break = -3000, upper_break = 3000)
 
-
-# Landwirtschaft ----------------------------------------------------------
+# Landwirtschaft
 std.plot(COLLABELS$landforst.betriebe_von_flaeche_ha.insgesamt, "Anzahl land- und forstwirtschaftlicher Betriebe", upper_break = 200)
 
-
-# Wasser pro Kopf Verbrauch -----------------------------------------------
+# Wasser pro Kopf Verbrauch
 std.plot(COLLABELS$umwelt.wasser_pro_kopf_verbrauch, "Wasserverbrauch in Litern pro Person")
 
-
-# Wohnungen ---------------------------------------------------------------
+# Wohnungen
 std.plot(COLLABELS$bauwohn.baugenehmigungen.wohnungen, "Erteilte Baugenehmigungen: Wohnungen", upper_break = 150)
 std.plot(COLLABELS$bauwohn.bestand_wohnungen.insgesamt, "Bestand an Wohnungen", upper_break = 10000)
 
-
-# Finanzen ----------------------------------------------------------------
+# Finanzen
 std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.insgesamt, "Lohn- und Eink.-St.: Gesamtbetrag der Einkünfte in 1000€", upper_break = 500000)
 std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.je_steuerpfl, "Lohn- und Eink.-St.: Einkünfte je Steuerpflichtiger in 1000€", upper_break = 60000)
 std.plot(COLLABELS$lohneinksteuer.bruttolohn.je_arbeitnehmer, "Lohn- und Eink.-St.: Bruttolohn je Arbeitnehmer", upper_break = 50000)
@@ -322,3 +249,4 @@ std.plot(COLLABELS$kommunale_finanzen.gemeindesteuereinnahmen.insgesamt, "Gemein
 std.plot(COLLABELS$kommunale_finanzen.steuereinnahmen_insgesamt, "Steuereinnahmen insgesamt, € je Einwohner", upper_break = 2500)
 std.plot(COLLABELS$kommunale_finanzen.realsteueraufbringungskraft, "Realsteueraufbringungskraft, € je Einwohner", upper_break = 2500)
 std.plot(COLLABELS$kommunale_finanzen.steuereinnahmekraft.je_einwohner, "Steuereinnahmekraft, € je Einwohner", upper_break = 3000)
+
