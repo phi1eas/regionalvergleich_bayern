@@ -67,21 +67,7 @@ data$Landkreis <- data$Regional.Schluessel %>%
 
 
 # Prepare Plots -----------------------------------------------------------
-HIGHLIGHT = "Engelsberg"
-REGIERUNGSBEZIRK = "Oberbayern"
-LANDKREIS = NULL # set to NULL to use REGIERUNGSBEZIRK instead
-
-data.filtered = data %>%
-  filter(
-    if(is.null(LANDKREIS)) {
-      Regierungsbezirk == REGIERUNGSBEZIRK
-    } else {
-      Landkreis == LANDKREIS
-    }
-  )
-plot.subtitle = paste0(HIGHLIGHT, " im Vergleich zu Gemeinden im ", ifelse(is.null(LANDKREIS), paste0("Regierungsbezirk ", REGIERUNGSBEZIRK), paste0("Landkreis ", LANDKREIS)))
-
-std.plot = function(var.name, var.title, d = data.filtered, lower_break = NULL, upper_break = NULL, binsize = 30) {
+std.plot = function(var.name, plot.title, xlab = var.name, d = data.filtered, lower_break = NULL, upper_break = NULL, binsize = 30, percent = F, x.ticks.n = 8) {
   min.val = min(d[, var.name], na.rm = T)
   max.val = max(d[, var.name], na.rm = T)
   breaks = if(is.null(lower_break) & !is.null(upper_break)) {
@@ -94,29 +80,60 @@ std.plot = function(var.name, var.title, d = data.filtered, lower_break = NULL, 
     NULL
   }
   
-  # breaks = if(!is.null(upper_break)) c(seq(min.val, upper_break, (upper_break-min.val)/30), max.val) else NULL
+  highlight.x = d %>%
+    filter(Bezeichnung == HIGHLIGHT) %>%
+    select_(var.name) %>%
+    as.numeric()
   
-  d %>%
+  x = d %>%
+    select_(var.name) %>%
+    .[[1]]
+  
+  upper_break.y = if(!is.null(upper_break)) sum(x >= upper_break) else NULL
+  
+  print(sum(x < highlight.x, na.rm = T)/length(x))
+  
+  percent.lower = scales::percent(sum(x < highlight.x, na.rm = T)/length(x), accuracy = 1)
+  percent.greater = scales::percent(sum(x > highlight.x, na.rm = T)/length(x), accuracy = 1)
+  
+  plt = d %>%
     ggplot(aes_string(x = var.name)) +
-    geom_histogram(breaks = breaks) +
+    geom_histogram(breaks = breaks, color='black', fill='#F2B134') +
     { if(is.null(lower_break) & !is.null(upper_break)) coord_cartesian(xlim = c(min.val, upper_break)) } +
     { if(!is.null(lower_break) & is.null(upper_break)) coord_cartesian(xlim = c(lower_break, max.val)) } +
     { if(!is.null(lower_break) & !is.null(upper_break)) coord_cartesian(xlim = c(lower_break, upper_break)) } +
-    geom_vline(xintercept = d %>%
-                 filter(Bezeichnung == HIGHLIGHT) %>%
-                 select_(var.name) %>%
-                 as.numeric()) +
-    ggtitle(var.title, plot.subtitle) %>%
-    return()
+    { if(!is.null(upper_break)) geom_text(x = upper_break, y = 0, hjust = -.15, vjust = -.5, size = 4, label = '>=') } + # paste0('>= ', if(!percent) upper_break else scales::percent(upper_break))
+    { if(!is.null(lower_break)) geom_text(x = lower_break, y = 0, hjust = 1.1, vjust = -.5, size = 4, label = '<=') } +
+    geom_text(x = highlight.x, y = 0, vjust = -37, hjust = 1.2, label = percent.lower) +
+    geom_text(x = highlight.x, y = 0, vjust = -37, hjust = -.3, label = percent.greater) +
+    # geom_segment(x = highlight.x, y = 0, xend = highlight.x-1, yend = 0, arrow = arrow(length = unit(0.5, "cm"))) +
+    geom_vline(xintercept = highlight.x, linetype = 'dashed', col='#ED553B', size = 1) +
+    ggtitle(plot.title, plot.subtitle) +
+    scale_x_continuous(breaks = unique(sort(c(pretty(if(is.null(upper_break)) x else x[x <= upper_break], n = x.ticks.n), round(highlight.x)))), labels = if(percent == T) scales::percent(accuracy = 1, unique(c(pretty(if(is.null(upper_break)) x else x[x <= upper_break], n = x.ticks.n), round(highlight.x)))) else waiver()) +
+    ylab("Anzahl Gemeinden") +
+    xlab(xlab) +
+    theme_bw() +
+    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+          axis.text = element_text(colour = 'black', size = '10'),
+          axis.title = element_text(color = 'black', size = '12'))
+  
+  if(SAVE.PLOTS) {
+    ggsave(filename = paste0("plots/", var.name, ".png"), plot = plt, device = "png")
+  } else {
+    return(plt)
+  }
 }
 
-# Flächen
+# std.plot(COLLABELS$erwerb.pendlersaldo, "Pendlersaldo", lower_break = -3000, upper_break = 3000)
+
+
+# Flächen - Fläche gesamt is in km2, Fläche.davon is in ha
 data.flaechen = data.filtered %>%
-  mutate(gebfreifl.rel = gebiet.davon.geb.und.freiflaeche/gebiet.flaeche.gesamt,
-         betrfl.rel = gebiet.davon.bietriebsflaeche/gebiet.flaeche.gesamt,
-         erholfl.rel = gebiet.davon.erholung/gebiet.flaeche.gesamt,
-         landwfl.rel = gebiet.davon.landwirtschaft/gebiet.flaeche.gesamt,
-         waldfl.rel = gebiet.davon.wald/gebiet.flaeche.gesamt)
+  mutate(gebfreifl.rel = gebiet.davon.geb.und.freiflaeche*0.01/gebiet.flaeche.gesamt,
+         betrfl.rel = gebiet.davon.bietriebsflaeche*0.01/gebiet.flaeche.gesamt,
+         erholfl.rel = gebiet.davon.erholung*0.01/gebiet.flaeche.gesamt,
+         landwfl.rel = gebiet.davon.landwirtschaft*0.01/gebiet.flaeche.gesamt,
+         waldfl.rel = gebiet.davon.wald*0.01/gebiet.flaeche.gesamt)
 
 # Altersstruktur
 vars.altersstruktur = collabels[collabels %>% startsWith("bevoelkerung.altersstruktur")]
@@ -179,74 +196,108 @@ data.sozhilfe = data.filtered %>%
   mutate_all(funs(replace(., is.na(.), 0))) %>%
   mutate(sozialhilfe_empf.insg.rel = (sozialhilfe_empf.kapitel3 + sozialhilfe_empf.kapitel4 + sozialhilfe_empf.kapitel5bis9) /bevoelkerung.insgesamt)
 
+# Bevölkerungsveränderung: in Prozent hinterlegt
+data$bevoelkerung.veraenderung.vs.1987 = data$bevoelkerung.veraenderung.vs.1987/100
+data$bevoelkerung.veraenderung.vs.2011 = data$bevoelkerung.veraenderung.vs.2011/100
 
-# Plots -------------------------------------------------------------------
+# Anteil Pendler an Beschäftigten am Wohnort: in Prozent hinterlegt
+data$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent = data$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent/100
+data$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent = data$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent/100
+
+# Plots: Compare with Oberbayern ------------------------------------------
+
+# Settings
+HIGHLIGHT = "Engelsberg"
+REGIERUNGSBEZIRK = "Oberbayern"
+LANDKREIS = NULL # set to NULL to use REGIERUNGSBEZIRK instead
+
+data.filtered = data %>%
+  filter(
+    if(is.null(LANDKREIS)) {
+      Regierungsbezirk == REGIERUNGSBEZIRK
+    } else {
+      Landkreis == LANDKREIS
+    }
+  )
+plot.subtitle = paste0(HIGHLIGHT, " im Vergleich zu Gemeinden im ", ifelse(is.null(LANDKREIS), paste0("Regierungsbezirk ", REGIERUNGSBEZIRK), paste0("Landkreis ", LANDKREIS)))
+
+
+
+SAVE.PLOTS = T
 
 # Flächen
-std.plot(d = data.flaechen, "gebfreifl.rel", var.title = "Anteil Gebäude- und Freifläche")
-std.plot(d = data.flaechen, "betrfl.rel", var.title = "Anteil Betriebsfläche")
-std.plot(d = data.flaechen, "erholfl.rel", var.title = "Anteil Erholungsfläche")
-std.plot(d = data.flaechen, "landwfl.rel", var.title = "Anteil Landwirtschaftsfläche")
-std.plot(d = data.flaechen, "waldfl.rel", var.title = "Anteil Waldfläche")
+std.plot(d = data.flaechen, "gebfreifl.rel", plot.title = "Anteil Gebäude- und Freifläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T, upper_break = 0.3)
+std.plot(d = data.flaechen, "betrfl.rel", plot.title = "Anteil Betriebsfläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T, upper_break = 0.03)
+std.plot(d = data.flaechen, "erholfl.rel", plot.title = "Anteil Erholungsfläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T, upper_break = 0.04)
+std.plot(d = data.flaechen, "landwfl.rel", plot.title = "Anteil Landwirtschaftsfläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T)
+std.plot(d = data.flaechen, "waldfl.rel", plot.title = "Anteil Waldfläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T)
 
 # Altersstruktur
 data.altersstruktur %>%
   filter(Bezeichnung == "Engelsberg") %>%
   ggplot(aes(x = Gruppe, y = Anteil)) +
-  geom_bar(stat = 'identity') +
-  geom_line(data = data.altersstruktur %>% filter(Bezeichnung == "LK Traunstein"), aes(group = 1, color = "blue")) +
-  geom_line(data = data.altersstruktur %>% filter(Bezeichnung == "Oberbayern"), aes(group = 1, color = "red")) +
-  geom_line(data = data.altersstruktur %>% filter(Bezeichnung == "Bayern"), aes(group = 1, color = "green")) +
-  scale_colour_manual(name = 'Vergleichswerte', values = c('blue' = 'blue', 'red' = 'red', 'green' = 'green'), labels = c('LK Traunstein', 'Oberbayern', 'Bayern')) +
+  geom_bar(stat = 'identity', color='black', fill='#F2B134') +
+  geom_point(data = data.altersstruktur %>% filter(Bezeichnung == "LK Traunstein"), aes(group = 1, color = "blue")) +
+  geom_point(data = data.altersstruktur %>% filter(Bezeichnung == "Oberbayern"), aes(group = 1, color = "red")) +
+  geom_point(data = data.altersstruktur %>% filter(Bezeichnung == "Bayern"), aes(group = 1, color = "green")) +
+  guides(color=guide_legend(title="Vergleichsgruppen")) +
+  # scale_colour_manual(name = 'Vergleichswerte', values = c('blue' = 'blue', 'red' = 'red', 'green' = 'green'), labels = c('LK Traunstein', 'Oberbayern', 'Bayern')) +
+  scale_color_brewer(palette = 'Set1', labels = c('LK Traunstein', 'Oberbayern', 'Bayern')) +
   scale_y_continuous(labels = scales::percent) +
+  xlab("Altersgruppe") +
+  ylab("Anteil an Gesamtbevölkerung") +
+  theme_bw() +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        axis.text = element_text(colour = 'black', size = '10'),
+        axis.title = element_text(color = 'black', size = '12')) +
   ggtitle("Altersstruktur")
   
 # Kinderbetreuungsplätze
-std.plot(d = data.kinderbetr, "bildung.kindertages.plaetze.pro100", "Kindertageseinrichtungen: Plätze pro 100 Einwohner")
+std.plot(d = data.kinderbetr, "bildung.kindertages.plaetze.pro100", "Kindertageseinrichtungen", xlab = "Plätze pro 100 Einwohner", upper_break = 9)
 
 # Schüler
-std.plot(d = data.schueler, "schueler.insg.rel", "Anteil Schüler an Bevölkerung")
+std.plot(d = data.schueler, "schueler.insg.rel", "Schüler", xlab = "Anteil an Bevölkerung", percent = T, upper_break = 0.4)
 
 # Sozialhilfeempfänger
-std.plot(d = data.sozhilfe, "sozialhilfe_empf.insg.rel", "Anteil Sozialhilfeempfänger an Bevölkerung")
+std.plot(d = data.sozhilfe, "sozialhilfe_empf.insg.rel", "Sozialhilfeempfänger (SGB XII Kap. 3-9)", xlab = "Anteil an Bevölkerung", upper_break = 0.1, percent = T)
 
 # Bevölkerung
-std.plot(COLLABELS$bevoelkerung.insgesamt, var.title = "Bevölkerung 2015", upper_break = 20000)
+std.plot(COLLABELS$bevoelkerung.insgesamt, plot.title = "Bevölkerung 2015", xlab = "Bevölkerung", upper_break = 20000, x.ticks.n = 5)
 
 # Bevölkerungszuabnahme 2015 vs 1987/2011
-std.plot(COLLABELS$bevoelkerung.veraenderung.vs.1987, var.title = "Bevölkerungsveränderung im Vgl. zu 1987")
-std.plot(COLLABELS$bevoelkerung.veraenderung.vs.2011, var.title = "Bevölkerungsveränderung im Vgl. zu 2011")
+std.plot(COLLABELS$bevoelkerung.veraenderung.vs.1987, plot.title = "Bevölkerungsveränderung im Vgl. zu 1987", xlab = "Veränderung in %", x.ticks.n = 4, percent = T)
+std.plot(COLLABELS$bevoelkerung.veraenderung.vs.2011, plot.title = "Bevölkerungsveränderung im Vgl. zu 2011", xlab = "Veränderung in %", percent = T)
 
 # Bevölkerungsdichte
-std.plot(COLLABELS$bevoelkerung.je_km2, var.title = "Einwohner je km2", upper_break = 1000)
+std.plot(COLLABELS$bevoelkerung.je_km2, plot.title = "Bevölkerungsdichte", xlab = "Einwohner je km²", upper_break = 1000)
 
 # Bevölkerungsbewegung Zugezogene
-std.plot(COLLABELS$bevoelkerung.bewegung.zugezogene, "Bevölkerungsbewegung Zugezogene", upper_break = 3000)
-std.plot(COLLABELS$bevoelkerung.bewegung.fortgezogene, "Bevölkerungsbewegung Fortgezogene", upper_break = 2000)
-std.plot(COLLABELS$bevoelkerung.bewegung.wanderungsgewinn, "Bevölkerungsbewegung Wanderungsgewinn", upper_break = 500)
+std.plot(COLLABELS$bevoelkerung.bewegung.zugezogene, "Bevölkerungsbewegung: Zugezogene (2015)", xlab = "Anzahl Zugezogener", upper_break = 2500)
+std.plot(COLLABELS$bevoelkerung.bewegung.fortgezogene, "Bevölkerungsbewegung: Fortgezogene (2015)", xlab = "Anzahl Fortgezogener", upper_break = 2000, x.ticks.n = 6)
+std.plot(COLLABELS$bevoelkerung.bewegung.wanderungsgewinn, "Bevölkerungsbewegung: Wanderungsgewinn (2015)", xlab = "Wanderungsgewinn", upper_break = 500)
 
 # Beschäftigte
-std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.insgesamt, "Beschäftigte am Arbeitsort", upper_break = 10000)
-std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent, "Beschäftigte am Wohnort, darunter Auspendler in Prozent")
-std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent, "Beschäftigte am Arbeitsort, darunter Einpendler in Prozent")
-std.plot(COLLABELS$erwerb.pendlersaldo, "Pendlersaldo", lower_break = -3000, upper_break = 3000)
+std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.insgesamt, "Beschäftigte am Arbeitsort", xlab = "Anzahl Beschäftigter", upper_break = 9000, x.ticks.n = 6)
+std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent, "Beschäftigte am Wohnort, darunter Auspendler in Prozent", xlab = "Anteil Auspendler in %", percent = T)
+std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent, "Beschäftigte am Arbeitsort, darunter Einpendler in Prozent", xlab = "Anteil Einpendler in %", percent = T)
+std.plot(COLLABELS$erwerb.pendlersaldo, "Pendlersaldo", xlab = "Pendlersaldo", lower_break = -3000, upper_break = 3000)
 
 # Landwirtschaft
-std.plot(COLLABELS$landforst.betriebe_von_flaeche_ha.insgesamt, "Anzahl land- und forstwirtschaftlicher Betriebe", upper_break = 200)
+std.plot(COLLABELS$landforst.betriebe_von_flaeche_ha.insgesamt, "Land- und forstwirtschaftliche Betriebe", xlab = "Anzahl Betriebe", upper_break = 200, x.ticks.n = 6)
 
 # Wasser pro Kopf Verbrauch
-std.plot(COLLABELS$umwelt.wasser_pro_kopf_verbrauch, "Wasserverbrauch in Litern pro Person")
+std.plot(COLLABELS$umwelt.wasser_pro_kopf_verbrauch, "Wasserverbrauch", xlab = "Liter pro Person")
 
 # Wohnungen
-std.plot(COLLABELS$bauwohn.baugenehmigungen.wohnungen, "Erteilte Baugenehmigungen: Wohnungen", upper_break = 150)
-std.plot(COLLABELS$bauwohn.bestand_wohnungen.insgesamt, "Bestand an Wohnungen", upper_break = 10000)
+std.plot(COLLABELS$bauwohn.baugenehmigungen.wohnungen, "Erteilte Baugenehmigungen: Wohnungen (2015)", xlab = "Anzahl", upper_break = 150)
+std.plot(COLLABELS$bauwohn.bestand_wohnungen.insgesamt, "Wohnungsbestand", xlab = "Anzahl", upper_break = 10000, x.ticks.n = 6)
 
 # Finanzen
-std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.insgesamt, "Lohn- und Eink.-St.: Gesamtbetrag der Einkünfte in 1000€", upper_break = 500000)
-std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.je_steuerpfl, "Lohn- und Eink.-St.: Einkünfte je Steuerpflichtiger in 1000€", upper_break = 60000)
-std.plot(COLLABELS$lohneinksteuer.bruttolohn.je_arbeitnehmer, "Lohn- und Eink.-St.: Bruttolohn je Arbeitnehmer", upper_break = 50000)
-std.plot(COLLABELS$kommunale_finanzen.gemeindesteuereinnahmen.insgesamt, "Gemeindesteuereinnahmen insgesamt in 1000€", upper_break = 30000)
-std.plot(COLLABELS$kommunale_finanzen.steuereinnahmen_insgesamt, "Steuereinnahmen insgesamt, € je Einwohner", upper_break = 2500)
-std.plot(COLLABELS$kommunale_finanzen.realsteueraufbringungskraft, "Realsteueraufbringungskraft, € je Einwohner", upper_break = 2500)
-std.plot(COLLABELS$kommunale_finanzen.steuereinnahmekraft.je_einwohner, "Steuereinnahmekraft, € je Einwohner", upper_break = 3000)
+std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.insgesamt, "Lohn- und Einkommensteuer: Gesamtbetrag der Einkünfte", xlab = "in 1000€", upper_break = 500000, x.ticks.n = 6)
+std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.je_steuerpfl, "Lohn- und Einkommensteuer: Einkünfte je Steuerpflichtiger", xlab = "in 1000€", upper_break = 60000, x.ticks.n = 2)
+std.plot(COLLABELS$lohneinksteuer.bruttolohn.je_arbeitnehmer, "Lohn- und Einkommensteuer: Bruttolohn je Arbeitnehmer", xlab = "in €", upper_break = 50000, x.ticks.n = 4)
+std.plot(COLLABELS$kommunale_finanzen.gemeindesteuereinnahmen.insgesamt, "Gemeindesteuereinnahmen: insgesamt", xlab = "in 1000€", upper_break = 30000, x.ticks.n = 4)
+std.plot(COLLABELS$kommunale_finanzen.steuereinnahmen_insgesamt, "Steuereinnahmen: insgesamt", xlab = "in € je Einwohner", upper_break = 2500, x.ticks.n = 2)
+std.plot(COLLABELS$kommunale_finanzen.realsteueraufbringungskraft, "Realsteueraufbringungskraft", xlab = "in € je Einwohner", upper_break = 3000, x.ticks.n = 2)
+std.plot(COLLABELS$kommunale_finanzen.steuereinnahmekraft.je_einwohner, "Steuereinnahmekraft", xlab = "in € je Einwohner", upper_break = 3000)
 
