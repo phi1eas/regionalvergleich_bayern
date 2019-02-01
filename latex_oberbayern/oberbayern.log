@@ -1,0 +1,592 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.1.31)  1 FEB 2019 19:24
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**oberbayern.tex
+(./oberbayern.tex
+LaTeX2e <2018-04-01> patch level 5
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/share/texmf-dist/tex/latex/grid-system/grid-system.sty
+Package: grid-system 2014/02/16 v. 0.3.0 LaTeX Grid System
+
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count91
+\calc@Bcount=\count92
+\calc@Adimen=\dimen111
+\calc@Bdimen=\dimen112
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count93
+\calc@Cskip=\skip45
+)
+(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+)
+\XKV@depth=\count94
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks18
+)
+(/usr/share/texmf-dist/tex/latex/forloop/forloop.sty
+Package: forloop 2006/09/18 v3.0 For Loops for LaTeX
+)
+\gridsystem@cellsep=\skip46
+\gridsystem@one@cellwidth=\skip47
+\c@gridsystem@cellinrow=\count95
+\c@gridsystem@cellcount=\count96
+\c@gridsystem@stripecount=\count97
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+) (./oberbayern.aux)
+\openout1 = `oberbayern.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=542.02501pt
+* \textheight=722.7pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-73.135pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count98
+\scratchdimen=\dimen115
+\scratchbox=\box26
+\nofMPsegments=\count99
+\nofMParguments=\count100
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count101
+\MPscratchDim=\dimen116
+\MPnumerator=\count102
+\makeMPintoPDFobject=\count103
+\everyMPtoPDFconversion=\toks20
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+<../plot_explanations.pdf, id=1, 869.09152pt x 463.57881pt>
+File: ../plot_explanations.pdf Graphic file (type pdf)
+<use ../plot_explanations.pdf>
+Package pdftex.def Info: ../plot_explanations.pdf  used on input line 31.
+(pdftex.def)             Requested size: 542.02501pt x 289.12772pt.
+<../plots_oberbayern/bevoelkerung.insgesamt.pdf, id=2, 505.89pt x 505.89pt>
+File: ../plots_oberbayern/bevoelkerung.insgesamt.pdf Graphic file (type pdf)
+<use ../plots_oberbayern/bevoelkerung.insgesamt.pdf>
+Package pdftex.def Info: ../plots_oberbayern/bevoelkerung.insgesamt.pdf  used o
+n input line 36.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/bevoelkerung.je_km2.pdf, id=3, 505.89pt x 505.89pt>
+File: ../plots_oberbayern/bevoelkerung.je_km2.pdf Graphic file (type pdf)
+<use ../plots_oberbayern/bevoelkerung.je_km2.pdf>
+Package pdftex.def Info: ../plots_oberbayern/bevoelkerung.je_km2.pdf  used on i
+nput line 36.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/bevoelkerung.veraenderung.vs.1987.pdf, id=4, 505.89pt x 50
+5.89pt>
+File: ../plots_oberbayern/bevoelkerung.veraenderung.vs.1987.pdf Graphic file (t
+ype pdf)
+<use ../plots_oberbayern/bevoelkerung.veraenderung.vs.1987.pdf>
+Package pdftex.def Info: ../plots_oberbayern/bevoelkerung.veraenderung.vs.1987.
+pdf  used on input line 37.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/bevoelkerung.veraenderung.vs.2011.pdf, id=5, 505.89pt x 50
+5.89pt>
+File: ../plots_oberbayern/bevoelkerung.veraenderung.vs.2011.pdf Graphic file (t
+ype pdf)
+<use ../plots_oberbayern/bevoelkerung.veraenderung.vs.2011.pdf>
+Package pdftex.def Info: ../plots_oberbayern/bevoelkerung.veraenderung.vs.2011.
+pdf  used on input line 37.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/bevoelkerung.bewegung.zugezogene.pdf, id=6, 505.89pt x 505
+.89pt>
+File: ../plots_oberbayern/bevoelkerung.bewegung.zugezogene.pdf Graphic file (ty
+pe pdf)
+<use ../plots_oberbayern/bevoelkerung.bewegung.zugezogene.pdf>
+Package pdftex.def Info: ../plots_oberbayern/bevoelkerung.bewegung.zugezogene.p
+df  used on input line 38.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/bevoelkerung.bewegung.fortgezogene.pdf, id=7, 505.89pt x 5
+05.89pt>
+File: ../plots_oberbayern/bevoelkerung.bewegung.fortgezogene.pdf Graphic file (
+type pdf)
+<use ../plots_oberbayern/bevoelkerung.bewegung.fortgezogene.pdf>
+Package pdftex.def Info: ../plots_oberbayern/bevoelkerung.bewegung.fortgezogene
+.pdf  used on input line 38.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/bevoelkerung.bewegung.wanderungsgewinn.pdf, id=8, 505.89pt
+ x 505.89pt>
+File: ../plots_oberbayern/bevoelkerung.bewegung.wanderungsgewinn.pdf Graphic fi
+le (type pdf)
+<use ../plots_oberbayern/bevoelkerung.bewegung.wanderungsgewinn.pdf>
+Package pdftex.def Info: ../plots_oberbayern/bevoelkerung.bewegung.wanderungsge
+winn.pdf  used on input line 39.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/altersstruktur.pdf, id=9, 505.89pt x 505.89pt>
+File: ../plots_oberbayern/altersstruktur.pdf Graphic file (type pdf)
+<use ../plots_oberbayern/altersstruktur.pdf>
+Package pdftex.def Info: ../plots_oberbayern/altersstruktur.pdf  used on input 
+line 39.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../plot_explanations.pdf>]
+ [2 <../plots_oberbayern/bevoelkerung.insgesamt.pdf> <../plots_oberbayern/bevoe
+lkerung.je_km2.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern/bevoelkerung.je_km2
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <../plots_oberbayern/bevoelkerung.veraenderung.vs.1987.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern/bevoelkerung.veraen
+derung.vs.1987.pdf): PDF inclusion: multiple pdfs with page group included in a
+ single page
+> <../plots_oberbayern/bevoelkerung.veraenderung.vs.2011.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern/bevoelkerung.veraen
+derung.vs.2011.pdf): PDF inclusion: multiple pdfs with page group included in a
+ single page
+> <../plots_oberbayern/bevoelkerung.bewegung.zugezogene.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern/bevoelkerung.bewegu
+ng.zugezogene.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+> <../plots_oberbayern/bevoelkerung.bewegung.fortgezogene.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern/bevoelkerung.bewegu
+ng.fortgezogene.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
+>]
+<../plots_oberbayern/gebfreifl.rel.pdf, id=139, 434.62375pt x 404.51125pt>
+File: ../plots_oberbayern/gebfreifl.rel.pdf Graphic file (type pdf)
+<use ../plots_oberbayern/gebfreifl.rel.pdf>
+Package pdftex.def Info: ../plots_oberbayern/gebfreifl.rel.pdf  used on input l
+ine 42.
+(pdftex.def)             Requested size: 209.81079pt x 195.2742pt.
+<../plots_oberbayern/betrfl.rel.pdf, id=140, 434.62375pt x 404.51125pt>
+File: ../plots_oberbayern/betrfl.rel.pdf Graphic file (type pdf)
+<use ../plots_oberbayern/betrfl.rel.pdf>
+Package pdftex.def Info: ../plots_oberbayern/betrfl.rel.pdf  used on input line
+ 42.
+(pdftex.def)             Requested size: 209.81079pt x 195.2742pt.
+<../plots_oberbayern/landwfl.rel.pdf, id=141, 434.62375pt x 404.51125pt>
+File: ../plots_oberbayern/landwfl.rel.pdf Graphic file (type pdf)
+<use ../plots_oberbayern/landwfl.rel.pdf>
+Package pdftex.def Info: ../plots_oberbayern/landwfl.rel.pdf  used on input lin
+e 43.
+(pdftex.def)             Requested size: 209.81079pt x 195.2742pt.
+<../plots_oberbayern/waldfl.rel.pdf, id=142, 434.62375pt x 404.51125pt>
+File: ../plots_oberbayern/waldfl.rel.pdf Graphic file (type pdf)
+<use ../plots_oberbayern/waldfl.rel.pdf>
+Package pdftex.def Info: ../plots_oberbayern/waldfl.rel.pdf  used on input line
+ 43.
+(pdftex.def)             Requested size: 209.81079pt x 195.2742pt.
+<../plots_oberbayern/erholfl.rel.pdf, id=143, 434.62375pt x 404.51125pt>
+File: ../plots_oberbayern/erholfl.rel.pdf Graphic file (type pdf)
+<use ../plots_oberbayern/erholfl.rel.pdf>
+Package pdftex.def Info: ../plots_oberbayern/erholfl.rel.pdf  used on input lin
+e 44.
+(pdftex.def)             Requested size: 209.81079pt x 195.2742pt.
+ [3 <../plots_oberbayern/bevoelkerung.bewegung.wanderungsgewinn.pdf> <../plots_
+oberbayern/altersstruktur.pdf> <../plots_oberbayern/gebfreifl.rel.pdf> <../plot
+s_oberbayern/betrfl.rel.pdf> <../plots_oberbayern/landwfl.rel.pdf> <../plots_ob
+erbayern/waldfl.rel.pdf>]
+<../plots_oberbayern/bauwohn.bestand_wohnungen.insgesamt.pdf, id=193, 505.89pt 
+x 505.89pt>
+File: ../plots_oberbayern/bauwohn.bestand_wohnungen.insgesamt.pdf Graphic file 
+(type pdf)
+<use ../plots_oberbayern/bauwohn.bestand_wohnungen.insgesamt.pdf>
+Package pdftex.def Info: ../plots_oberbayern/bauwohn.bestand_wohnungen.insgesam
+t.pdf  used on input line 47.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/bauwohn.baugenehmigungen.wohnungen.pdf, id=194, 505.89pt x
+ 505.89pt>
+File: ../plots_oberbayern/bauwohn.baugenehmigungen.wohnungen.pdf Graphic file (
+type pdf)
+<use ../plots_oberbayern/bauwohn.baugenehmigungen.wohnungen.pdf>
+Package pdftex.def Info: ../plots_oberbayern/bauwohn.baugenehmigungen.wohnungen
+.pdf  used on input line 47.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/bildung.kindertages.plaetze.pro100.pdf, id=195, 434.62375p
+t x 404.51125pt>
+File: ../plots_oberbayern/bildung.kindertages.plaetze.pro100.pdf Graphic file (
+type pdf)
+<use ../plots_oberbayern/bildung.kindertages.plaetze.pro100.pdf>
+Package pdftex.def Info: ../plots_oberbayern/bildung.kindertages.plaetze.pro100
+.pdf  used on input line 50.
+(pdftex.def)             Requested size: 209.81079pt x 195.2742pt.
+<../plots_oberbayern/schueler.insg.rel.pdf, id=196, 434.62375pt x 404.51125pt>
+File: ../plots_oberbayern/schueler.insg.rel.pdf Graphic file (type pdf)
+<use ../plots_oberbayern/schueler.insg.rel.pdf>
+Package pdftex.def Info: ../plots_oberbayern/schueler.insg.rel.pdf  used on inp
+ut line 50.
+(pdftex.def)             Requested size: 209.81079pt x 195.2742pt.
+<../plots_oberbayern/landforst.betriebe_von_flaeche_ha.insgesamt.pdf, id=197, 5
+05.89pt x 505.89pt>
+File: ../plots_oberbayern/landforst.betriebe_von_flaeche_ha.insgesamt.pdf Graph
+ic file (type pdf)
+<use ../plots_oberbayern/landforst.betriebe_von_flaeche_ha.insgesamt.pdf>
+Package pdftex.def Info: ../plots_oberbayern/landforst.betriebe_von_flaeche_ha.
+insgesamt.pdf  used on input line 53.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/umwelt.wasser_pro_kopf_verbrauch.pdf, id=198, 505.89pt x 5
+05.89pt>
+File: ../plots_oberbayern/umwelt.wasser_pro_kopf_verbrauch.pdf Graphic file (ty
+pe pdf)
+<use ../plots_oberbayern/umwelt.wasser_pro_kopf_verbrauch.pdf>
+Package pdftex.def Info: ../plots_oberbayern/umwelt.wasser_pro_kopf_verbrauch.p
+df  used on input line 53.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+ [4 <../plots_oberbayern/erholfl.rel.pdf> <../plots_oberbayern/bauwohn.bestand_
+wohnungen.insgesamt.pdf> <../plots_oberbayern/bauwohn.baugenehmigungen.wohnunge
+n.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern/bauwohn.baugenehmig
+ungen.wohnungen.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
+> <../plots_oberbayern/bildung.kindertages.plaetze.pro100.pdf> <../plots_oberba
+yern/schueler.insg.rel.pdf>]
+<../plots_oberbayern/erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.insgesamt
+.pdf, id=247, 505.89pt x 505.89pt>
+File: ../plots_oberbayern/erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.insg
+esamt.pdf Graphic file (type pdf)
+<use ../plots_oberbayern/erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.insge
+samt.pdf>
+Package pdftex.def Info: ../plots_oberbayern/erwerb.sozialverspfl_beschaeftigte
+_am_arbeitsort.insgesamt.pdf  used on input line 56.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_
+einpendler.prozent.pdf, id=248, 505.89pt x 505.89pt>
+File: ../plots_oberbayern/erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.daru
+nter_einpendler.prozent.pdf Graphic file (type pdf)
+<use ../plots_oberbayern/erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darun
+ter_einpendler.prozent.pdf>
+Package pdftex.def Info: ../plots_oberbayern/erwerb.sozialverspfl_beschaeftigte
+_am_arbeitsort.darunter_einpendler.prozent.pdf  used on input line 56.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_aus
+pendler.prozent.pdf, id=249, 505.89pt x 505.89pt>
+File: ../plots_oberbayern/erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunte
+r_auspendler.prozent.pdf Graphic file (type pdf)
+<use ../plots_oberbayern/erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter
+_auspendler.prozent.pdf>
+Package pdftex.def Info: ../plots_oberbayern/erwerb.sozialverspfl_beschaeftigte
+_am_wohnort.darunter_auspendler.prozent.pdf  used on input line 57.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/erwerb.pendlersaldo.pdf, id=250, 505.89pt x 505.89pt>
+File: ../plots_oberbayern/erwerb.pendlersaldo.pdf Graphic file (type pdf)
+<use ../plots_oberbayern/erwerb.pendlersaldo.pdf>
+Package pdftex.def Info: ../plots_oberbayern/erwerb.pendlersaldo.pdf  used on i
+nput line 57.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/lohneinksteuer.bruttolohn.je_arbeitnehmer.pdf, id=251, 505
+.89pt x 505.89pt>
+File: ../plots_oberbayern/lohneinksteuer.bruttolohn.je_arbeitnehmer.pdf Graphic
+ file (type pdf)
+<use ../plots_oberbayern/lohneinksteuer.bruttolohn.je_arbeitnehmer.pdf>
+Package pdftex.def Info: ../plots_oberbayern/lohneinksteuer.bruttolohn.je_arbei
+tnehmer.pdf  used on input line 58.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/lohneinksteuer.gesamtbetrag_einkuenfte.insgesamt.pdf, id=2
+52, 505.89pt x 505.89pt>
+File: ../plots_oberbayern/lohneinksteuer.gesamtbetrag_einkuenfte.insgesamt.pdf 
+Graphic file (type pdf)
+<use ../plots_oberbayern/lohneinksteuer.gesamtbetrag_einkuenfte.insgesamt.pdf>
+Package pdftex.def Info: ../plots_oberbayern/lohneinksteuer.gesamtbetrag_einkue
+nfte.insgesamt.pdf  used on input line 58.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/lohneinksteuer.gesamtbetrag_einkuenfte.je_steuerpfl.pdf, i
+d=253, 505.89pt x 505.89pt>
+File: ../plots_oberbayern/lohneinksteuer.gesamtbetrag_einkuenfte.je_steuerpfl.p
+df Graphic file (type pdf)
+<use ../plots_oberbayern/lohneinksteuer.gesamtbetrag_einkuenfte.je_steuerpfl.pd
+f>
+Package pdftex.def Info: ../plots_oberbayern/lohneinksteuer.gesamtbetrag_einkue
+nfte.je_steuerpfl.pdf  used on input line 59.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/sozialhilfe_empf.insg.rel.pdf, id=254, 434.62375pt x 404.5
+1125pt>
+File: ../plots_oberbayern/sozialhilfe_empf.insg.rel.pdf Graphic file (type pdf)
+
+<use ../plots_oberbayern/sozialhilfe_empf.insg.rel.pdf>
+Package pdftex.def Info: ../plots_oberbayern/sozialhilfe_empf.insg.rel.pdf  use
+d on input line 59.
+(pdftex.def)             Requested size: 209.81079pt x 195.2742pt.
+ [5 <../plots_oberbayern/landforst.betriebe_von_flaeche_ha.insgesamt.pdf> <../p
+lots_oberbayern/umwelt.wasser_pro_kopf_verbrauch.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern/umwelt.wasser_pro_k
+opf_verbrauch.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+> <../plots_oberbayern/erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.insgesa
+mt.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern/erwerb.sozialverspf
+l_beschaeftigte_am_arbeitsort.insgesamt.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+> <../plots_oberbayern/erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunte
+r_einpendler.prozent.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern/erwerb.sozialverspf
+l_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <../plots_oberbayern/erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_a
+uspendler.prozent.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern/erwerb.sozialverspf
+l_beschaeftigte_am_wohnort.darunter_auspendler.prozent.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+> <../plots_oberbayern/erwerb.pendlersaldo.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern/erwerb.pendlersaldo
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<../plots_oberbayern/kommunale_finanzen.steuereinnahmen_insgesamt.pdf, id=338, 
+505.89pt x 505.89pt>
+File: ../plots_oberbayern/kommunale_finanzen.steuereinnahmen_insgesamt.pdf Grap
+hic file (type pdf)
+<use ../plots_oberbayern/kommunale_finanzen.steuereinnahmen_insgesamt.pdf>
+Package pdftex.def Info: ../plots_oberbayern/kommunale_finanzen.steuereinnahmen
+_insgesamt.pdf  used on input line 62.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/kommunale_finanzen.gemeindesteuereinnahmen.insgesamt.pdf, 
+id=339, 505.89pt x 505.89pt>
+File: ../plots_oberbayern/kommunale_finanzen.gemeindesteuereinnahmen.insgesamt.
+pdf Graphic file (type pdf)
+<use ../plots_oberbayern/kommunale_finanzen.gemeindesteuereinnahmen.insgesamt.p
+df>
+Package pdftex.def Info: ../plots_oberbayern/kommunale_finanzen.gemeindesteuere
+innahmen.insgesamt.pdf  used on input line 62.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/kommunale_finanzen.steuereinnahmekraft.je_einwohner.pdf, i
+d=340, 505.89pt x 505.89pt>
+File: ../plots_oberbayern/kommunale_finanzen.steuereinnahmekraft.je_einwohner.p
+df Graphic file (type pdf)
+<use ../plots_oberbayern/kommunale_finanzen.steuereinnahmekraft.je_einwohner.pd
+f>
+Package pdftex.def Info: ../plots_oberbayern/kommunale_finanzen.steuereinnahmek
+raft.je_einwohner.pdf  used on input line 63.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+<../plots_oberbayern/kommunale_finanzen.realsteueraufbringungskraft.pdf, id=341
+, 505.89pt x 505.89pt>
+File: ../plots_oberbayern/kommunale_finanzen.realsteueraufbringungskraft.pdf Gr
+aphic file (type pdf)
+<use ../plots_oberbayern/kommunale_finanzen.realsteueraufbringungskraft.pdf>
+Package pdftex.def Info: ../plots_oberbayern/kommunale_finanzen.realsteueraufbr
+ingungskraft.pdf  used on input line 63.
+(pdftex.def)             Requested size: 209.81079pt x 209.8092pt.
+ [6 <../plots_oberbayern/lohneinksteuer.bruttolohn.je_arbeitnehmer.pdf> <../plo
+ts_oberbayern/lohneinksteuer.gesamtbetrag_einkuenfte.insgesamt.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern/lohneinksteuer.gesa
+mtbetrag_einkuenfte.insgesamt.pdf): PDF inclusion: multiple pdfs with page grou
+p included in a single page
+> <../plots_oberbayern/lohneinksteuer.gesamtbetrag_einkuenfte.je_steuerpfl.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern/lohneinksteuer.gesa
+mtbetrag_einkuenfte.je_steuerpfl.pdf): PDF inclusion: multiple pdfs with page g
+roup included in a single page
+> <../plots_oberbayern/sozialhilfe_empf.insg.rel.pdf>] [7 <../plots_oberbayern/
+kommunale_finanzen.steuereinnahmen_insgesamt.pdf> <../plots_oberbayern/kommunal
+e_finanzen.gemeindesteuereinnahmen.insgesamt.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern/kommunale_finanzen.
+gemeindesteuereinnahmen.insgesamt.pdf): PDF inclusion: multiple pdfs with page 
+group included in a single page
+> <../plots_oberbayern/kommunale_finanzen.steuereinnahmekraft.je_einwohner.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern/kommunale_finanzen.
+steuereinnahmekraft.je_einwohner.pdf): PDF inclusion: multiple pdfs with page g
+roup included in a single page
+> <../plots_oberbayern/kommunale_finanzen.realsteueraufbringungskraft.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern/kommunale_finanzen.
+realsteueraufbringungskraft.pdf): PDF inclusion: multiple pdfs with page group 
+included in a single page
+>] (./oberbayern.aux) ) 
+Here is how much of TeX's memory you used:
+ 2499 strings out of 492639
+ 43332 string characters out of 6135497
+ 105454 words of memory out of 5000000
+ 6328 multiletter control sequences out of 15000+600000
+ 4544 words of font info for 17 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,6n,37p,280b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+bx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on oberbayern.pdf (7 pages, 549583 bytes).
+PDF statistics:
+ 468 PDF objects out of 1000 (max. 8388607)
+ 309 compressed objects within 4 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+
