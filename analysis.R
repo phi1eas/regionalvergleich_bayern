@@ -106,8 +106,8 @@ std.plot = function(var.name, plot.title, xlab = var.name, d = data.filtered, lo
     { if(!is.null(lower_break)) geom_text(x = lower_break, y = 0, hjust = 1.1, vjust = -.5, size = 4, label = '<=') } +
     # geom_text(x = highlight.x, y = 0, vjust = -37, hjust = 1.2, label = percent.lower) +
     # geom_text(x = highlight.x, y = 0, vjust = -37, hjust = -.3, label = percent.greater) +
-    annotate("text", x = highlight.x, y = 0, vjust = -38, hjust = 1.2, label = percent.lower) +
-    annotate("text", x = highlight.x, y = 0, vjust = -38, hjust = -.3, label = percent.greater) +
+    annotate("text", x = highlight.x, y = 0, vjust = -43.4, hjust = 1.2, label = percent.lower) +
+    annotate("text", x = highlight.x, y = 0, vjust = -43.4, hjust = -.3, label = percent.greater) +
     # geom_segment(x = highlight.x, y = 0, xend = highlight.x-1, yend = 0, arrow = arrow(length = unit(0.5, "cm"))) +
     geom_vline(xintercept = highlight.x, linetype = 'dashed', col='#ED553B', size = 1) +
     ggtitle(plot.title, plot.subtitle) +
@@ -128,8 +128,8 @@ std.plot = function(var.name, plot.title, xlab = var.name, d = data.filtered, lo
   }
 }
 
-# SAVE.PLOTS = F
-# std.plot(COLLABELS$erwerb.pendlersaldo, "Pendlersaldo", lower_break = -3000, upper_break = 3000)
+# SAVE.PLOTS = T
+# std.plot(d = data.flaechen, "gebfreifl.rel", plot.title = "Anteil Gebäude- und Freifläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T, upper_break = 0.3)
 
 
 # Flächen - Fläche gesamt is in km2, Fläche.davon is in ha
@@ -283,12 +283,12 @@ std.plot(COLLABELS$bevoelkerung.je_km2, plot.title = "Bevölkerungsdichte", xlab
 # Bevölkerungsbewegung Zugezogene
 std.plot(COLLABELS$bevoelkerung.bewegung.zugezogene, "Bevölkerungsbewegung: Zugezogene (2015)", xlab = "Anzahl Zugezogener", upper_break = 2500)
 std.plot(COLLABELS$bevoelkerung.bewegung.fortgezogene, "Bevölkerungsbewegung: Fortgezogene (2015)", xlab = "Anzahl Fortgezogener", upper_break = 2000, x.ticks.n = 6)
-std.plot(COLLABELS$bevoelkerung.bewegung.wanderungsgewinn, "Bevölkerungsbewegung:\nWanderungsgewinn (2015)", xlab = "Wanderungsgewinn", upper_break = 500)
+std.plot(COLLABELS$bevoelkerung.bewegung.wanderungsgewinn, "Bevölkerungsbew.: Wanderungsgewinn (2015)", xlab = "Wanderungsgewinn", upper_break = 500)
 
 # Beschäftigte
 std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.insgesamt, "Beschäftigte am Arbeitsort", xlab = "Anzahl Beschäftigter", upper_break = 9000, x.ticks.n = 6)
-std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent, "Beschäftigte am Wohnort,\ndarunter Auspendler in Prozent", xlab = "Anteil Auspendler in %", percent = T)
-std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent, "Beschäftigte am Arbeitsort,\ndarunter Einpendler in Prozent", xlab = "Anteil Einpendler in %", percent = T)
+std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent, "Beschäftigte am Wohnort, darunter Auspendler", xlab = "Anteil Auspendler in %", percent = T)
+std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent, "Beschäftigte am Arbeitsort, dar. Einpendler", xlab = "Anteil Einpendler in %", percent = T)
 std.plot(COLLABELS$erwerb.pendlersaldo, "Pendlersaldo", xlab = "Pendlersaldo", lower_break = -3000, upper_break = 3000)
 
 # Landwirtschaft
@@ -302,9 +302,9 @@ std.plot(COLLABELS$bauwohn.baugenehmigungen.wohnungen, "Erteilte Baugenehmigunge
 std.plot(COLLABELS$bauwohn.bestand_wohnungen.insgesamt, "Wohnungsbestand", xlab = "Anzahl", upper_break = 10000, x.ticks.n = 6)
 
 # Finanzen
-std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.insgesamt, "Lohn- und Einkommensteuer:\nGesamtbetrag der Einkünfte", xlab = "in 1000€", upper_break = 500000, x.ticks.n = 6)
-std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.je_steuerpfl, "Lohn- und Einkommensteuer:\nEinkünfte je Steuerpflichtiger", xlab = "in 1000€", upper_break = 60000, x.ticks.n = 2)
-std.plot(COLLABELS$lohneinksteuer.bruttolohn.je_arbeitnehmer, "Lohn- und Einkommensteuer:\nBruttolohn je Arbeitnehmer", xlab = "in €", upper_break = 50000, x.ticks.n = 4)
+std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.insgesamt, "Lohn- und Eink.-st.: Gesamtbetrag der Einkünfte", xlab = "in 1000€", upper_break = 500000, x.ticks.n = 6)
+std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.je_steuerpfl, "Lohn- und Eink.-st.: Einkünfte je Steuerpflichtiger", xlab = "in 1000€", upper_break = 60000, x.ticks.n = 2)
+std.plot(COLLABELS$lohneinksteuer.bruttolohn.je_arbeitnehmer, "Lohn- und Eink.-st.: Bruttolohn je Arbeitnehmer", xlab = "in €", upper_break = 50000, x.ticks.n = 4)
 std.plot(COLLABELS$kommunale_finanzen.gemeindesteuereinnahmen.insgesamt, "Gemeindesteuereinnahmen: insgesamt", xlab = "in 1000€", upper_break = 30000, x.ticks.n = 4)
 std.plot(COLLABELS$kommunale_finanzen.steuereinnahmen_insgesamt, "Steuereinnahmen: insgesamt", xlab = "in € je Einwohner", upper_break = 2500, x.ticks.n = 2)
 std.plot(COLLABELS$kommunale_finanzen.realsteueraufbringungskraft, "Realsteueraufbringungskraft", xlab = "in € je Einwohner", upper_break = 3000, x.ticks.n = 2)
