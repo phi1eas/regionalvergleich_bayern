@@ -98,7 +98,7 @@ std.plot = function(var.name, plot.title, xlab = var.name, d = data.filtered, lo
   
   plt = d %>%
     ggplot(aes_string(x = var.name)) +
-    geom_histogram(breaks = breaks, color='black', fill='#F2B134') +
+    geom_histogram(breaks = breaks, color='black', fill = COMPARISON.COLOR) +
     { if(is.null(lower_break) & !is.null(upper_break)) coord_cartesian(xlim = c(min.val, upper_break)) } +
     { if(!is.null(lower_break) & is.null(upper_break)) coord_cartesian(xlim = c(lower_break, max.val)) } +
     { if(!is.null(lower_break) & !is.null(upper_break)) coord_cartesian(xlim = c(lower_break, upper_break)) } +
@@ -106,10 +106,10 @@ std.plot = function(var.name, plot.title, xlab = var.name, d = data.filtered, lo
     { if(!is.null(lower_break)) geom_text(x = lower_break, y = 0, hjust = 1.1, vjust = -.5, size = 4, label = '<=') } +
     # geom_text(x = highlight.x, y = 0, vjust = -37, hjust = 1.2, label = percent.lower) +
     # geom_text(x = highlight.x, y = 0, vjust = -37, hjust = -.3, label = percent.greater) +
-    annotate("text", x = highlight.x, y = 0, vjust = -43.4, hjust = 1.2, label = percent.lower) +
-    annotate("text", x = highlight.x, y = 0, vjust = -43.4, hjust = -.3, label = percent.greater) +
+    annotate("text", x = highlight.x, y = Inf, vjust = 1.5, hjust = 1.2, label = percent.lower) + # vjust = -43.4
+    annotate("text", x = highlight.x, y = Inf, vjust = 1.5, hjust = -.3, label = percent.greater) +
     # geom_segment(x = highlight.x, y = 0, xend = highlight.x-1, yend = 0, arrow = arrow(length = unit(0.5, "cm"))) +
-    geom_vline(xintercept = highlight.x, linetype = 'dashed', col='#ED553B', size = 1) +
+    geom_vline(xintercept = highlight.x, linetype = 'dashed', col=HIGHLIGHT.COLOR, size = 2) +
     ggtitle(plot.title, plot.subtitle) +
     scale_x_continuous(breaks = unique(sort(c(pretty(if(is.null(upper_break)) x else x[x <= upper_break], n = x.ticks.n), round(highlight.x)))), labels = if(percent == T) scales::percent(accuracy = 1, unique(c(pretty(if(is.null(upper_break)) x else x[x <= upper_break], n = x.ticks.n), round(highlight.x)))) else waiver()) +
     ylab("Anzahl Gemeinden") +
@@ -226,7 +226,8 @@ data.filtered = data %>%
   )
 plot.subtitle = paste0(HIGHLIGHT, " im Vergleich zu Gemeinden im ", ifelse(is.null(LANDKREIS), paste0("Regierungsbezirk ", REGIERUNGSBEZIRK), paste0("Landkreis ", LANDKREIS)))
 
-
+COMPARISON.COLOR = "#F2B134"
+HIGHLIGHT.COLOR = "#ED553B"
 
 SAVE.PLOTS = T
 PLOT.FOLDER = 'plots_oberbayern/'
@@ -239,16 +240,39 @@ std.plot(d = data.flaechen, "landwfl.rel", plot.title = "Anteil Landwirtschaftsf
 std.plot(d = data.flaechen, "waldfl.rel", plot.title = "Anteil Waldfläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T)
 
 # Altersstruktur
+# altersstruktur.plt = data.altersstruktur %>%
+#   filter(Bezeichnung == "Engelsberg") %>%
+#   ggplot(aes(x = Gruppe, y = Anteil)) +
+#   geom_bar(stat = 'identity', color='black', fill='#F2B134') +
+#   geom_point(data = data.altersstruktur %>% filter(Bezeichnung == "LK Traunstein"), aes(group = 1, color = "blue")) +
+#   geom_point(data = data.altersstruktur %>% filter(Bezeichnung == "Oberbayern"), aes(group = 1, color = "red")) +
+#   geom_point(data = data.altersstruktur %>% filter(Bezeichnung == "Bayern"), aes(group = 1, color = "green")) +
+#   guides(color=guide_legend(title="Vergleichsgruppen")) +
+#   # scale_colour_manual(name = 'Vergleichswerte', values = c('blue' = 'blue', 'red' = 'red', 'green' = 'green'), labels = c('LK Traunstein', 'Oberbayern', 'Bayern')) +
+#   scale_color_brewer(palette = 'Set1', labels = c('LK Traunstein', 'Oberbayern', 'Bayern')) +
+#   scale_y_continuous(labels = scales::percent) +
+#   xlab("Altersgruppe") +
+#   ylab("Anteil an Gesamtbevölkerung") +
+#   theme_bw() +
+#   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+#         axis.text = element_text(colour = 'black', size = '10'),
+#         axis.title = element_text(color = 'black', size = '12'),
+#         plot.title = element_text(size = 17, face = 'bold'),
+#         plot.subtitle = element_text(size = 12)) +
+#   ggtitle("Altersstruktur")
+# if(SAVE.PLOTS) ggsave(filename = paste0(PLOT.FOLDER, "altersstruktur.pdf"), plot = altersstruktur.plt, device = "pdf") else altersstruktur.plt
+
 altersstruktur.plt = data.altersstruktur %>%
-  filter(Bezeichnung == "Engelsberg") %>%
+  filter(Bezeichnung %in% c("Engelsberg", "Oberbayern")) %>%
   ggplot(aes(x = Gruppe, y = Anteil)) +
-  geom_bar(stat = 'identity', color='black', fill='#F2B134') +
-  geom_point(data = data.altersstruktur %>% filter(Bezeichnung == "LK Traunstein"), aes(group = 1, color = "blue")) +
-  geom_point(data = data.altersstruktur %>% filter(Bezeichnung == "Oberbayern"), aes(group = 1, color = "red")) +
-  geom_point(data = data.altersstruktur %>% filter(Bezeichnung == "Bayern"), aes(group = 1, color = "green")) +
+  geom_bar(aes(fill = Bezeichnung), stat = 'identity', position = position_dodge2()) +
+  # geom_point(data = data.altersstruktur %>% filter(Bezeichnung == "LK Traunstein"), aes(group = 1, color = "blue")) +
+  # geom_point(data = data.altersstruktur %>% filter(Bezeichnung == "Oberbayern"), aes(group = 1, color = "red")) +
+  # geom_point(data = data.altersstruktur %>% filter(Bezeichnung == "Bayern"), aes(group = 1, color = "green")) +
   guides(color=guide_legend(title="Vergleichsgruppen")) +
   # scale_colour_manual(name = 'Vergleichswerte', values = c('blue' = 'blue', 'red' = 'red', 'green' = 'green'), labels = c('LK Traunstein', 'Oberbayern', 'Bayern')) +
-  scale_color_brewer(palette = 'Set1', labels = c('LK Traunstein', 'Oberbayern', 'Bayern')) +
+  # scale_color_brewer(palette = 'Set1', labels = c('LK Traunstein', 'Oberbayern', 'Bayern')) +
+  scale_fill_manual(values = c(HIGHLIGHT.COLOR, COMPARISON.COLOR)) +
   scale_y_continuous(labels = scales::percent) +
   xlab("Altersgruppe") +
   ylab("Anteil an Gesamtbevölkerung") +
