@@ -288,7 +288,7 @@ std.plot(COLLABELS$bevoelkerung.bewegung.wanderungsgewinn, "Bevölkerungsbew.: W
 # Beschäftigte
 std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.insgesamt, "Beschäftigte am Arbeitsort", xlab = "Anzahl Beschäftigter", upper_break = 9000, x.ticks.n = 6)
 std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent, "Beschäftigte am Wohnort, darunter Auspendler", xlab = "Anteil Auspendler in %", percent = T)
-std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent, "Beschäftigte am Arbeitsort, dar. Einpendler", xlab = "Anteil Einpendler in %", percent = T)
+std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent, "Beschäftigte am Arbeitsort, darunter Einpendler", xlab = "Anteil Einpendler in %", percent = T)
 std.plot(COLLABELS$erwerb.pendlersaldo, "Pendlersaldo", xlab = "Pendlersaldo", lower_break = -3000, upper_break = 3000)
 
 # Landwirtschaft
@@ -302,9 +302,9 @@ std.plot(COLLABELS$bauwohn.baugenehmigungen.wohnungen, "Erteilte Baugenehmigunge
 std.plot(COLLABELS$bauwohn.bestand_wohnungen.insgesamt, "Wohnungsbestand", xlab = "Anzahl", upper_break = 10000, x.ticks.n = 6)
 
 # Finanzen
-std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.insgesamt, "Lohn- und Eink.-st.: Gesamtbetrag der Einkünfte", xlab = "in 1000€", upper_break = 500000, x.ticks.n = 6)
-std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.je_steuerpfl, "Lohn- und Eink.-st.: Einkünfte je Steuerpflichtiger", xlab = "in 1000€", upper_break = 60000, x.ticks.n = 2)
-std.plot(COLLABELS$lohneinksteuer.bruttolohn.je_arbeitnehmer, "Lohn- und Eink.-st.: Bruttolohn je Arbeitnehmer", xlab = "in €", upper_break = 50000, x.ticks.n = 4)
+std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.insgesamt, "Lohn- und Eink.-St.: Gesamtbetrag der Einkünfte", xlab = "in 1000€", upper_break = 500000, x.ticks.n = 6)
+std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.je_steuerpfl, "Lohn- und Eink.-St.: Einkünfte je Steuerpflichtiger", xlab = "in 1000€", upper_break = 60000, x.ticks.n = 2)
+std.plot(COLLABELS$lohneinksteuer.bruttolohn.je_arbeitnehmer, "Lohn- und Eink.-St.: Bruttolohn je Arbeitnehmer", xlab = "in €", upper_break = 50000, x.ticks.n = 4)
 std.plot(COLLABELS$kommunale_finanzen.gemeindesteuereinnahmen.insgesamt, "Gemeindesteuereinnahmen: insgesamt", xlab = "in 1000€", upper_break = 30000, x.ticks.n = 4)
 std.plot(COLLABELS$kommunale_finanzen.steuereinnahmen_insgesamt, "Steuereinnahmen: insgesamt", xlab = "in € je Einwohner", upper_break = 2500, x.ticks.n = 2)
 std.plot(COLLABELS$kommunale_finanzen.realsteueraufbringungskraft, "Realsteueraufbringungskraft", xlab = "in € je Einwohner", upper_break = 3000, x.ticks.n = 2)
