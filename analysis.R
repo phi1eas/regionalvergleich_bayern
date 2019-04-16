@@ -32,6 +32,7 @@ for(var in vars) {
 
 collabels = COLLABELS %>% as.character()
 
+
 # Add information about regions -------------------------------------------
 # Regierungsbezirke
 data$Regierungsbezirk = data$Regional.Schluessel %>%
@@ -65,6 +66,15 @@ get_lk_by_regschl <- function(regschl) {
 data$Landkreis <- data$Regional.Schluessel %>%
   sapply(get_lk_by_regschl)
 
+
+
+# Filter for population ---------------------------------------------------
+FILTER_MAXIMUM_POPULATION = 5000
+
+if(is.integer(FILTER_MAXIMUM_POPULATION)) {
+  data.population_filtered = data[data$bevoelkerung.insgesamt <= FILTER_MAXIMUM_POPULATION, ]
+  dim(data.population_filtered)
+}
 
 # Prepare Plots -----------------------------------------------------------
 std.plot = function(var.name, plot.title, xlab = var.name, d = data.filtered, lower_break = NULL, upper_break = NULL, binsize = 30, percent = F, x.ticks.n = 8, plot.folder = PLOT.FOLDER) {
@@ -128,7 +138,7 @@ std.plot = function(var.name, plot.title, xlab = var.name, d = data.filtered, lo
   }
 }
 
-# SAVE.PLOTS = T
+SAVE.PLOTS = T
 # std.plot(d = data.flaechen, "gebfreifl.rel", plot.title = "Anteil Gebäude- und Freifläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T, upper_break = 0.3)
 
 
@@ -230,7 +240,11 @@ COMPARISON.COLOR = "#F2B134"
 HIGHLIGHT.COLOR = "#ED553B"
 
 SAVE.PLOTS = T
-PLOT.FOLDER = 'plots_oberbayern/'
+if(is.integer(FILTER_MAXIMUM_POPULATION)) {
+  PLOT.FOLDER = paste0('plots_oberbayern_MAXPOP', FILTER_MAXIMUM_POPULATION, '/')
+} else {
+  PLOT.FOLDER = 'plots_oberbayern/'
+}
 
 # Flächen
 std.plot(d = data.flaechen, "gebfreifl.rel", plot.title = "Anteil Gebäude- und Freifläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T, upper_break = 0.3)
