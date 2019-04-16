@@ -68,12 +68,37 @@ data$Landkreis <- data$Regional.Schluessel %>%
 
 
 
-# Filter for population ---------------------------------------------------
-FILTER_MAXIMUM_POPULATION = 5000
 
-if(is.integer(FILTER_MAXIMUM_POPULATION)) {
-  data.population_filtered = data[data$bevoelkerung.insgesamt <= FILTER_MAXIMUM_POPULATION, ]
+# SETTINGS ----------------------------------------------------------------
+HIGHLIGHT = "Engelsberg"
+REGIERUNGSBEZIRK = "Oberbayern"
+LANDKREIS = NULL # set to NULL to use REGIERUNGSBEZIRK instead
+
+FILTER_MAXIMUM_POPULATION = NULL
+
+data.filtered = data %>%
+  filter(
+    if(is.null(LANDKREIS)) {
+      Regierungsbezirk == REGIERUNGSBEZIRK
+    } else {
+      Landkreis == LANDKREIS
+    }
+  )
+plot.subtitle = paste0(HIGHLIGHT, " im Vergleich zu Gemeinden im ", ifelse(is.null(LANDKREIS), paste0("Regierungsbezirk ", REGIERUNGSBEZIRK), paste0("Landkreis ", LANDKREIS)))
+
+if(is.numeric(FILTER_MAXIMUM_POPULATION)) {
+  data.filtered = data[data$bevoelkerung.insgesamt <= FILTER_MAXIMUM_POPULATION, ]
   dim(data.population_filtered)
+}
+
+COMPARISON.COLOR = "#F2B134"
+HIGHLIGHT.COLOR = "#ED553B"
+
+SAVE.PLOTS = F
+if(is.integer(FILTER_MAXIMUM_POPULATION)) {
+  PLOT.FOLDER = paste0('plots_oberbayern_MAXPOP', FILTER_MAXIMUM_POPULATION, '/')
+} else {
+  PLOT.FOLDER = 'plots_oberbayern/'
 }
 
 # Prepare Plots -----------------------------------------------------------
@@ -137,9 +162,6 @@ std.plot = function(var.name, plot.title, xlab = var.name, d = data.filtered, lo
     return(plt)
   }
 }
-
-SAVE.PLOTS = T
-# std.plot(d = data.flaechen, "gebfreifl.rel", plot.title = "Anteil Gebäude- und Freifläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T, upper_break = 0.3)
 
 
 # Flächen - Fläche gesamt is in km2, Fläche.davon is in ha
@@ -219,33 +241,10 @@ data$bevoelkerung.veraenderung.vs.2011 = data$bevoelkerung.veraenderung.vs.2011/
 data$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent = data$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent/100
 data$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent = data$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent/100
 
+
+
+
 # Plots: Compare with Oberbayern ------------------------------------------
-
-# Settings
-HIGHLIGHT = "Engelsberg"
-REGIERUNGSBEZIRK = "Oberbayern"
-LANDKREIS = NULL # set to NULL to use REGIERUNGSBEZIRK instead
-
-data.filtered = data %>%
-  filter(
-    if(is.null(LANDKREIS)) {
-      Regierungsbezirk == REGIERUNGSBEZIRK
-    } else {
-      Landkreis == LANDKREIS
-    }
-  )
-plot.subtitle = paste0(HIGHLIGHT, " im Vergleich zu Gemeinden im ", ifelse(is.null(LANDKREIS), paste0("Regierungsbezirk ", REGIERUNGSBEZIRK), paste0("Landkreis ", LANDKREIS)))
-
-COMPARISON.COLOR = "#F2B134"
-HIGHLIGHT.COLOR = "#ED553B"
-
-SAVE.PLOTS = T
-if(is.integer(FILTER_MAXIMUM_POPULATION)) {
-  PLOT.FOLDER = paste0('plots_oberbayern_MAXPOP', FILTER_MAXIMUM_POPULATION, '/')
-} else {
-  PLOT.FOLDER = 'plots_oberbayern/'
-}
-
 # Flächen
 std.plot(d = data.flaechen, "gebfreifl.rel", plot.title = "Anteil Gebäude- und Freifläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T, upper_break = 0.3)
 std.plot(d = data.flaechen, "betrfl.rel", plot.title = "Anteil Betriebsfläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T, upper_break = 0.03, x.ticks.n = 4)
