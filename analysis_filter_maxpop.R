@@ -357,5 +357,7 @@ std.plot(COLLABELS$kommunale_finanzen.gemeindesteuereinnahmen.insgesamt, "Gemein
 std.plot(COLLABELS$kommunale_finanzen.steuereinnahmen_insgesamt, "Steuereinnahmen: insgesamt", xlab = "in € je Einwohner", upper_break = 2500, x.ticks.n = 2)
 std.plot(COLLABELS$kommunale_finanzen.realsteueraufbringungskraft, "Realsteueraufbringungskraft", xlab = "in € je Einwohner", upper_break = 3000, x.ticks.n = 2)
 std.plot(COLLABELS$kommunale_finanzen.steuereinnahmekraft.je_einwohner, "Steuereinnahmekraft", xlab = "in € je Einwohner", upper_break = 2500)
+std.plot(COLLABELS$kommunale_finanzen.gemeindesteuereinnahmen.darunter.grundsteuer.a, plot.title = "Gemeindesteuereinnahmen: Grundsteuer A", xlab = "in 1000€", upper_break = 120)
+std.plot(COLLABELS$kommunale_finanzen.gemeindesteuereinnahmen.darunter.grundsteuer.b, plot.title = "Gemeindesteuereinnahmen: Grundsteuer B", xlab = "in 1000€", upper_break = 700)
 
 
