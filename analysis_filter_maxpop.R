@@ -1,3 +1,5 @@
+### THIS IS FOR POPULATION FILTERED ANALYSIS
+
 # Libraries ---------------------------------------------------------------
 library(dplyr)
 library(tidyr)
@@ -74,7 +76,7 @@ HIGHLIGHT = "Engelsberg"
 REGIERUNGSBEZIRK = "Oberbayern"
 LANDKREIS = NULL # set to NULL to use REGIERUNGSBEZIRK instead
 
-FILTER_MAXIMUM_POPULATION = NULL
+FILTER_MAXIMUM_POPULATION = 5000
 
 data.filtered = data %>%
   filter(
@@ -86,9 +88,10 @@ data.filtered = data %>%
   )
 plot.subtitle = paste0(HIGHLIGHT, " im Vergleich zu Gemeinden im ", ifelse(is.null(LANDKREIS), paste0("Regierungsbezirk ", REGIERUNGSBEZIRK), paste0("Landkreis ", LANDKREIS)))
 
+data.filtered.pre_maxpop = data.filtered
 if(is.numeric(FILTER_MAXIMUM_POPULATION)) {
   data.filtered = data[data$bevoelkerung.insgesamt <= FILTER_MAXIMUM_POPULATION, ]
-  dim(data.population_filtered)
+  dim(data.filtered)
 }
 
 COMPARISON.COLOR = "#F2B134"
@@ -96,8 +99,9 @@ HIGHLIGHT.COLOR = "#ED553B"
 
 SAVE.PLOTS = T
 PLOT.HEIGHT=4.7
-if(is.integer(FILTER_MAXIMUM_POPULATION)) {
+if(is.numeric(FILTER_MAXIMUM_POPULATION)) {
   PLOT.FOLDER = paste0('plots_oberbayern_MAXPOP', FILTER_MAXIMUM_POPULATION, '/')
+  dir.create(PLOT.FOLDER)
 } else {
   PLOT.FOLDER = 'plots_oberbayern/'
 }
@@ -115,23 +119,23 @@ std.plot = function(var.name, plot.title, xlab = var.name, d = data.filtered, lo
   } else {
     NULL
   }
-
+  
   highlight.x = d %>%
     filter(Bezeichnung == HIGHLIGHT) %>%
     select_(var.name) %>%
     as.numeric()
-
+  
   x = d %>%
     select_(var.name) %>%
     .[[1]]
-
+  
   upper_break.y = if(!is.null(upper_break)) sum(x >= upper_break) else NULL
-
+  
   print(sum(x < highlight.x, na.rm = T)/length(x))
-
+  
   percent.lower = scales::percent(sum(x < highlight.x, na.rm = T)/length(x), accuracy = 1)
   percent.greater = scales::percent(sum(x > highlight.x, na.rm = T)/length(x), accuracy = 1)
-
+  
   plt = d %>%
     ggplot(aes_string(x = var.name)) +
     geom_histogram(breaks = breaks, color='black', fill = COMPARISON.COLOR) +
@@ -156,9 +160,9 @@ std.plot = function(var.name, plot.title, xlab = var.name, d = data.filtered, lo
           axis.title = element_text(color = 'black', size = '12'),
           plot.title = element_text(size = 14, face = 'bold'),
           plot.subtitle = element_text(size = 9))
-
+  
   if(SAVE.PLOTS) {
-    ggsave(filename = paste0(plot.folder, var.name, ".pdf"), plot = plt, device = cairo_pdf, height=PLOT.HEIGHT)
+    ggsave(filename = paste0(PLOT.FOLDER, var.name, ".pdf"), plot = plt, device = cairo_pdf, height = PLOT.HEIGHT)
   } else {
     return(plt)
   }
@@ -195,6 +199,11 @@ traunstein.altersstruktur.rel = data %>%
   colMeans() %>%
   append(c(Bezeichnung = "LK Traunstein"), .)
 
+if(is.numeric(FILTER_MAXIMUM_POPULATION)) {
+  data.altersstruktur = data[data$bevoelkerung.insgesamt <= FILTER_MAXIMUM_POPULATION, ]
+} else {
+  data.altersstruktur = data
+}
 data.altersstruktur = data %>%
   filter(Bezeichnung == "Engelsberg") %>%
   select(c("Bezeichnung", vars.altersstruktur.rel)) %>%
@@ -235,21 +244,21 @@ data.sozhilfe = data.filtered %>%
   mutate(sozialhilfe_empf.insg.rel = (sozialhilfe_empf.kapitel3 + sozialhilfe_empf.kapitel4 + sozialhilfe_empf.kapitel5bis9) /bevoelkerung.insgesamt)
 
 # Bevölkerungsveränderung: in Prozent hinterlegt
-data$bevoelkerung.veraenderung.vs.1987 = data$bevoelkerung.veraenderung.vs.1987/100
-data$bevoelkerung.veraenderung.vs.2011 = data$bevoelkerung.veraenderung.vs.2011/100
+# data$bevoelkerung.veraenderung.vs.1987 = data$bevoelkerung.veraenderung.vs.1987/100
+# data$bevoelkerung.veraenderung.vs.2011 = data$bevoelkerung.veraenderung.vs.2011/100
 
 # Anteil Pendler an Beschäftigten am Wohnort: in Prozent hinterlegt
-# data$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent = data$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent/100
-# data$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent = data$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent/100
+data$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent = data$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent/100
+data$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent = data$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent/100
 
 
 
 
 # Plots: Compare with Oberbayern ------------------------------------------
 # Flächen
-std.plot(d = data.flaechen, "gebfreifl.rel", plot.title = "Anteil Gebäude- und Freifläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T, upper_break = 0.3)
+std.plot(d = data.flaechen, "gebfreifl.rel", plot.title = "Anteil Gebäude- und Freifläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T, upper_break = 0.2)
 std.plot(d = data.flaechen, "betrfl.rel", plot.title = "Anteil Betriebsfläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T, upper_break = 0.03, x.ticks.n = 4)
-std.plot(d = data.flaechen, "erholfl.rel", plot.title = "Anteil Erholungsfläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T, upper_break = 0.04, x.ticks.n = 4)
+std.plot(d = data.flaechen, "erholfl.rel", plot.title = "Anteil Erholungsfläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T, upper_break = 0.03, x.ticks.n = 4)
 std.plot(d = data.flaechen, "landwfl.rel", plot.title = "Anteil Landwirtschaftsfläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T)
 std.plot(d = data.flaechen, "waldfl.rel", plot.title = "Anteil Waldfläche an Gesamtfläche", xlab = "Flächenanteil",  percent = T)
 
@@ -296,7 +305,7 @@ altersstruktur.plt = data.altersstruktur %>%
         axis.text.x = element_text(angle = -90, hjust = 1, colour = 'black', size = '10'),
         axis.title = element_text(color = 'black', size = '12'),
         plot.title = element_text(size = 14, face = 'bold'),
-        plot.subtitle = element_text(size = 12)) +
+        plot.subtitle = element_text(size = 9)) +
   ggtitle("Altersstruktur")
 if(SAVE.PLOTS) ggsave(filename = paste0(PLOT.FOLDER, "altersstruktur.pdf"), plot = altersstruktur.plt, device = "pdf", height = PLOT.HEIGHT) else altersstruktur.plt
 
@@ -304,49 +313,49 @@ if(SAVE.PLOTS) ggsave(filename = paste0(PLOT.FOLDER, "altersstruktur.pdf"), plot
 std.plot(d = data.kinderbetr, "bildung.kindertages.plaetze.pro100", "Kindertageseinrichtungen", xlab = "Plätze pro 100 Einwohner", upper_break = 9)
 
 # Schüler
-std.plot(d = data.schueler, "schueler.insg.rel", "Schüler", xlab = "Anteil an Bevölkerung", percent = T, upper_break = 0.4)
+std.plot(d = data.schueler, "schueler.insg.rel", "Schüler", xlab = "Anteil an Bevölkerung", percent = T, upper_break = 0.15)
 
 # Sozialhilfeempfänger
-std.plot(d = data.sozhilfe, "sozialhilfe_empf.insg.rel", "Sozialhilfeempfänger (SGB XII Kap. 3-9)", xlab = "Anteil an Bevölkerung", upper_break = 0.1, percent = T)
+std.plot(d = data.sozhilfe, "sozialhilfe_empf.insg.rel", "Sozialhilfeempfänger (SGB XII Kap. 3-9)", xlab = "Anteil an Bevölkerung", upper_break = 0.08, percent = T)
 
 # Bevölkerung
-std.plot(COLLABELS$bevoelkerung.insgesamt, plot.title = "Bevölkerung 2015", xlab = "Bevölkerung", upper_break = 30000, x.ticks.n = 5)
+std.plot(d = data.filtered.pre_maxpop, COLLABELS$bevoelkerung.insgesamt, plot.title = "Bevölkerung 2015", xlab = "Bevölkerung", upper_break = 30000)
 
 # Bevölkerungszuabnahme 2015 vs 1987/2011
 std.plot(COLLABELS$bevoelkerung.veraenderung.vs.1987, plot.title = "Bevölkerungsveränderung im Vgl. zu 1987", xlab = "Veränderung in %", x.ticks.n = 4, percent = F)
 std.plot(COLLABELS$bevoelkerung.veraenderung.vs.2011, plot.title = "Bevölkerungsveränderung im Vgl. zu 2011", xlab = "Veränderung in %", percent = F)
 
 # Bevölkerungsdichte
-std.plot(COLLABELS$bevoelkerung.je_km2, plot.title = "Bevölkerungsdichte", xlab = "Einwohner je km²", upper_break = 1000, x.ticks.n = 6)
+std.plot(COLLABELS$bevoelkerung.je_km2, plot.title = "Bevölkerungsdichte", xlab = "Einwohner je km²", upper_break = 600, x.ticks.n = 6)
 
 # Bevölkerungsbewegung Zugezogene
-std.plot(COLLABELS$bevoelkerung.bewegung.zugezogene, "Bevölkerungsbewegung: Zugezogene (2015)", xlab = "Anzahl Zugezogener", upper_break = 2500)
-std.plot(COLLABELS$bevoelkerung.bewegung.fortgezogene, "Bevölkerungsbewegung: Fortgezogene (2015)", xlab = "Anzahl Fortgezogener", upper_break = 2000, x.ticks.n = 6)
-std.plot(COLLABELS$bevoelkerung.bewegung.wanderungsgewinn, "Bevölkerungsbew.: Wanderungsgewinn (2015)", xlab = "Wanderungsgewinn", upper_break = 500)
+std.plot(COLLABELS$bevoelkerung.bewegung.zugezogene, "Bevölkerungsbewegung: Zugezogene (2015)", xlab = "Anzahl Zugezogener", upper_break = 600)
+std.plot(COLLABELS$bevoelkerung.bewegung.fortgezogene, "Bevölkerungsbewegung: Fortgezogene (2015)", xlab = "Anzahl Fortgezogener", upper_break = 600, x.ticks.n = 6)
+std.plot(COLLABELS$bevoelkerung.bewegung.wanderungsgewinn, "Bevölkerungsbew.: Wanderungsgewinn (2015)", xlab = "Wanderungsgewinn", upper_break = 150)
 
 # Beschäftigte
-std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.insgesamt, "Beschäftigte am Arbeitsort", xlab = "Anzahl Beschäftigter", upper_break = 9000, x.ticks.n = 6)
-std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent, "Beschäftigte am Wohnort, darunter Auspendler", xlab = "Anteil Auspendler in %", percent = F, x.ticks.n = 2)
-std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent, "Beschäftigte am Arbeitsort, darunter Einpendler", xlab = "Anteil Einpendler in %", percent = F, x.ticks.n = 3)
-std.plot(COLLABELS$erwerb.pendlersaldo, "Pendlersaldo", xlab = "Pendlersaldo", lower_break = -3000, upper_break = 3000)
+std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.insgesamt, "Beschäftigte am Arbeitsort", xlab = "Anzahl Beschäftigter", upper_break = 2000, x.ticks.n = 6)
+std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent, "Beschäftigte am Wohnort, darunter Auspendler", xlab = "Anteil Auspendler in %", lower_break = 60, percent = F, x.ticks.n = 2)
+std.plot(COLLABELS$erwerb.sozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent, "Beschäftigte am Arbeitsort, darunter Einpendler", xlab = "Anteil Einpendler in %", percent = F)
+std.plot(COLLABELS$erwerb.pendlersaldo, "Pendlersaldo", xlab = "Pendlersaldo", lower_break = -1500, upper_break = 1000)
 
 # Landwirtschaft
-std.plot(COLLABELS$landforst.betriebe_von_flaeche_ha.insgesamt, "Land- und forstwirtschaftliche Betriebe", xlab = "Anzahl Betriebe", upper_break = 200, x.ticks.n = 6)
+std.plot(COLLABELS$landforst.betriebe_von_flaeche_ha.insgesamt, "Land- und forstwirtschaftliche Betriebe", xlab = "Anzahl Betriebe", upper_break = 140, x.ticks.n = 3)
 
 # Wasser pro Kopf Verbrauch
-std.plot(COLLABELS$umwelt.wasser_pro_kopf_verbrauch, "Wasserverbrauch", xlab = "Liter pro Person")
+std.plot(COLLABELS$umwelt.wasser_pro_kopf_verbrauch, "Wasserverbrauch", xlab = "Liter pro Person", upper_break = 190)
 
 # Wohnungen
-std.plot(COLLABELS$bauwohn.baugenehmigungen.wohnungen, "Erteilte Baugenehmigungen: Wohnungen (2015)", xlab = "Anzahl", upper_break = 150)
-std.plot(COLLABELS$bauwohn.bestand_wohnungen.insgesamt, "Wohnungsbestand", xlab = "Anzahl", upper_break = 10000, x.ticks.n = 6)
+std.plot(COLLABELS$bauwohn.baugenehmigungen.wohnungen, "Erteilte Baugenehmigungen: Wohnungen (2015)", xlab = "Anzahl", lower_break = -1, upper_break = 60)
+std.plot(COLLABELS$bauwohn.bestand_wohnungen.insgesamt, "Wohnungsbestand", xlab = "Anzahl", upper_break = 2500, x.ticks.n = 6)
 
 # Finanzen
-std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.insgesamt, "Lohn- und Eink.-St.: Gesamtbetrag der Einkünfte", xlab = "in 1000€", upper_break = 500000, x.ticks.n = 6)
+std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.insgesamt, "Lohn- und Eink.-St.: Gesamtbetrag der Einkünfte", xlab = "in 1000€", upper_break = 100000, x.ticks.n = 3)
 std.plot(COLLABELS$lohneinksteuer.gesamtbetrag_einkuenfte.je_steuerpfl, "Lohn- und Eink.-St.: Einkünfte je Steuerpflichtiger", xlab = "in 1000€", upper_break = 60000, x.ticks.n = 2)
-std.plot(COLLABELS$lohneinksteuer.bruttolohn.je_arbeitnehmer, "Lohn- und Eink.-St.: Bruttolohn je Arbeitnehmer", xlab = "in €", upper_break = 50000, x.ticks.n = 4)
-std.plot(COLLABELS$kommunale_finanzen.gemeindesteuereinnahmen.insgesamt, "Gemeindesteuereinnahmen: insgesamt", xlab = "in 1000€", upper_break = 30000, x.ticks.n = 4)
+std.plot(COLLABELS$lohneinksteuer.bruttolohn.je_arbeitnehmer, "Lohn- und Eink.-St.: Bruttolohn je Arbeitnehmer", xlab = "in €", upper_break = 40000, x.ticks.n = 3)
+std.plot(COLLABELS$kommunale_finanzen.gemeindesteuereinnahmen.insgesamt, "Gemeindesteuereinnahmen: insgesamt", xlab = "in 1000€", upper_break = 7000, x.ticks.n = 2)
 std.plot(COLLABELS$kommunale_finanzen.steuereinnahmen_insgesamt, "Steuereinnahmen: insgesamt", xlab = "in € je Einwohner", upper_break = 2500, x.ticks.n = 2)
 std.plot(COLLABELS$kommunale_finanzen.realsteueraufbringungskraft, "Realsteueraufbringungskraft", xlab = "in € je Einwohner", upper_break = 3000, x.ticks.n = 2)
-std.plot(COLLABELS$kommunale_finanzen.steuereinnahmekraft.je_einwohner, "Steuereinnahmekraft", xlab = "in € je Einwohner", upper_break = 3000)
+std.plot(COLLABELS$kommunale_finanzen.steuereinnahmekraft.je_einwohner, "Steuereinnahmekraft", xlab = "in € je Einwohner", upper_break = 2500)
 
 

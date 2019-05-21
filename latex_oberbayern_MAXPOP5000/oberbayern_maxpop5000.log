@@ -1,0 +1,755 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.5.2)  21 MAY 2019 21:29
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**oberbayern_maxpop5000.tex
+(./oberbayern_maxpop5000.tex
+LaTeX2e <2018-12-01>
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/share/texmf-dist/tex/latex/grid-system/grid-system.sty
+Package: grid-system 2014/02/16 v. 0.3.0 LaTeX Grid System
+
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count91
+\calc@Bcount=\count92
+\calc@Adimen=\dimen111
+\calc@Bdimen=\dimen112
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count93
+\calc@Cskip=\skip45
+)
+(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+)
+\XKV@depth=\count94
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks18
+)
+(/usr/share/texmf-dist/tex/latex/forloop/forloop.sty
+Package: forloop 2006/09/18 v3.0 For Loops for LaTeX
+)
+\gridsystem@cellsep=\skip46
+\gridsystem@one@cellwidth=\skip47
+\c@gridsystem@cellinrow=\count95
+\c@gridsystem@cellcount=\count96
+\c@gridsystem@stripecount=\count97
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+(/usr/share/texmf-dist/tex/latex/cmbright/cmbright.sty
+Package: cmbright 2005/04/13 v8.1 (WaS)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/cmbr/m/n on input line 29.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmbr/m/n on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/cmbrm/m/it on input line 30.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/cmbrm/m/it on input line 30.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmbrm/m/it --> OML/cmbrm/b/it on input line 31.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 32.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/cmbrs/m/n on input line 32.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/cmbrs/m/n on input line 32.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/cmbr/m/sl on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/cmbr/m/sl on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/cmbr/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmbr/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtl/m/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtl/m/n on input line 35.
+LaTeX Font Info:    Redeclaring math symbol \alpha on input line 37.
+LaTeX Font Info:    Redeclaring math symbol \beta on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \gamma on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \delta on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \epsilon on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \zeta on input line 42.
+LaTeX Font Info:    Redeclaring math symbol \eta on input line 43.
+LaTeX Font Info:    Redeclaring math symbol \theta on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \iota on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \kappa on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \lambda on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \mu on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \nu on input line 49.
+LaTeX Font Info:    Redeclaring math symbol \xi on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \pi on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \rho on input line 52.
+LaTeX Font Info:    Redeclaring math symbol \sigma on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \tau on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \upsilon on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \phi on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \chi on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \psi on input line 58.
+LaTeX Font Info:    Redeclaring math symbol \omega on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \varepsilon on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \vartheta on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \varpi on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \varrho on input line 63.
+LaTeX Font Info:    Redeclaring math symbol \varsigma on input line 64.
+LaTeX Font Info:    Redeclaring math symbol \varphi on input line 65.
+LaTeX Info: Redefining \LaTeX on input line 129.
+LaTeX Info: Redefining \LaTeXe on input line 139.
+LaTeX Font Info:    Try loading font information for OT1+cmbr on input line 144
+.
+
+(/usr/share/texmf-dist/tex/latex/cmbright/ot1cmbr.fd
+File: ot1cmbr.fd 2005/04/13 v8.1 (WaS)
+))
+(./oberbayern_maxpop5000.aux)
+\openout1 = `oberbayern_maxpop5000.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=542.02501pt
+* \textheight=650.43001pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count98
+\scratchdimen=\dimen115
+\scratchbox=\box27
+\nofMPsegments=\count99
+\nofMParguments=\count100
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count101
+\MPscratchDim=\dimen116
+\MPnumerator=\count102
+\makeMPintoPDFobject=\count103
+\everyMPtoPDFconversion=\toks20
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(./oberbayern_maxpop5000.toc
+LaTeX Font Info:    Try loading font information for OML+cmbrm on input line 3.
+
+
+(/usr/share/texmf-dist/tex/latex/cmbright/omlcmbrm.fd
+File: omlcmbrm.fd 2005/04/13 v8.1 (WaS)
+)
+LaTeX Font Info:    Try loading font information for OMS+cmbrs on input line 3.
+
+
+(/usr/share/texmf-dist/tex/latex/cmbright/omscmbrs.fd
+File: omscmbrs.fd 2005/04/13 v8.1 (WaS)
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `oberbayern_maxpop5000.toc'.
+
+<../plot_explanations.pdf, id=1, 869.09152pt x 463.57881pt>
+File: ../plot_explanations.pdf Graphic file (type pdf)
+<use ../plot_explanations.pdf>
+Package pdftex.def Info: ../plot_explanations.pdf  used on input line 35.
+(pdftex.def)             Requested size: 542.02501pt x 289.12772pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `OT1/cmbr/m/it' in size <10> not available
+(Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 43.
+<../plots_oberbayern_MAXPOP5000/bevoelkerung.insgesamt.pdf, id=9, 363.3575pt x 
+339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/bevoelkerung.insgesamt.pdf Graphic file (t
+ype pdf)
+<use ../plots_oberbayern_MAXPOP5000/bevoelkerung.insgesamt.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/bevoelkerung.insgesamt.
+pdf  used on input line 51.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/bevoelkerung.je_km2.pdf, id=10, 363.3575pt x 33
+9.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/bevoelkerung.je_km2.pdf Graphic file (type
+ pdf)
+<use ../plots_oberbayern_MAXPOP5000/bevoelkerung.je_km2.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/bevoelkerung.je_km2.pdf
+  used on input line 51.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+ [2 <../plot_explanations.pdf>]
+<../plots_oberbayern_MAXPOP5000/bevoelkerung.veraenderung.vs.1987.pdf, id=54, 3
+63.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/bevoelkerung.veraenderung.vs.1987.pdf Grap
+hic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/bevoelkerung.veraenderung.vs.1987.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/bevoelkerung.veraenderu
+ng.vs.1987.pdf  used on input line 55.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/bevoelkerung.veraenderung.vs.2011.pdf, id=55, 3
+63.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/bevoelkerung.veraenderung.vs.2011.pdf Grap
+hic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/bevoelkerung.veraenderung.vs.2011.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/bevoelkerung.veraenderu
+ng.vs.2011.pdf  used on input line 55.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/bevoelkerung.bewegung.zugezogene.pdf, id=56, 36
+3.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/bevoelkerung.bewegung.zugezogene.pdf Graph
+ic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/bevoelkerung.bewegung.zugezogene.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/bevoelkerung.bewegung.z
+ugezogene.pdf  used on input line 59.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/bevoelkerung.bewegung.fortgezogene.pdf, id=57, 
+363.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/bevoelkerung.bewegung.fortgezogene.pdf Gra
+phic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/bevoelkerung.bewegung.fortgezogene.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/bevoelkerung.bewegung.f
+ortgezogene.pdf  used on input line 59.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/bevoelkerung.bewegung.wanderungsgewinn.pdf, id=
+58, 363.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/bevoelkerung.bewegung.wanderungsgewinn.pdf
+ Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/bevoelkerung.bewegung.wanderungsgewinn.pdf>
+
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/bevoelkerung.bewegung.w
+anderungsgewinn.pdf  used on input line 63.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/altersstruktur.pdf, id=59, 363.3575pt x 339.267
+5pt>
+File: ../plots_oberbayern_MAXPOP5000/altersstruktur.pdf Graphic file (type pdf)
+
+<use ../plots_oberbayern_MAXPOP5000/altersstruktur.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/altersstruktur.pdf  use
+d on input line 63.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+ [3 <../plots_oberbayern_MAXPOP5000/bevoelkerung.insgesamt.pdf> <../plots_oberb
+ayern_MAXPOP5000/bevoelkerung.je_km2.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/bevoelke
+rung.je_km2.pdf): PDF inclusion: multiple pdfs with page group included in a si
+ngle page
+> <../plots_oberbayern_MAXPOP5000/bevoelkerung.veraenderung.vs.1987.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/bevoelke
+rung.veraenderung.vs.1987.pdf): PDF inclusion: multiple pdfs with page group in
+cluded in a single page
+> <../plots_oberbayern_MAXPOP5000/bevoelkerung.veraenderung.vs.2011.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/bevoelke
+rung.veraenderung.vs.2011.pdf): PDF inclusion: multiple pdfs with page group in
+cluded in a single page
+> <../plots_oberbayern_MAXPOP5000/bevoelkerung.bewegung.zugezogene.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/bevoelke
+rung.bewegung.zugezogene.pdf): PDF inclusion: multiple pdfs with page group inc
+luded in a single page
+> <../plots_oberbayern_MAXPOP5000/bevoelkerung.bewegung.fortgezogene.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/bevoelke
+rung.bewegung.fortgezogene.pdf): PDF inclusion: multiple pdfs with page group i
+ncluded in a single page
+>]
+<../plots_oberbayern_MAXPOP5000/gebfreifl.rel.pdf, id=142, 363.3575pt x 339.267
+5pt>
+File: ../plots_oberbayern_MAXPOP5000/gebfreifl.rel.pdf Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/gebfreifl.rel.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/gebfreifl.rel.pdf  used
+ on input line 68.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/betrfl.rel.pdf, id=143, 363.3575pt x 339.2675pt
+>
+File: ../plots_oberbayern_MAXPOP5000/betrfl.rel.pdf Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/betrfl.rel.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/betrfl.rel.pdf  used on
+ input line 68.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/landwfl.rel.pdf, id=144, 363.3575pt x 339.2675p
+t>
+File: ../plots_oberbayern_MAXPOP5000/landwfl.rel.pdf Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/landwfl.rel.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/landwfl.rel.pdf  used o
+n input line 72.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/waldfl.rel.pdf, id=145, 363.3575pt x 339.2675pt
+>
+File: ../plots_oberbayern_MAXPOP5000/waldfl.rel.pdf Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/waldfl.rel.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/waldfl.rel.pdf  used on
+ input line 72.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/erholfl.rel.pdf, id=146, 363.3575pt x 339.2675p
+t>
+File: ../plots_oberbayern_MAXPOP5000/erholfl.rel.pdf Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/erholfl.rel.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/erholfl.rel.pdf  used o
+n input line 75.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+ [4 <../plots_oberbayern_MAXPOP5000/bevoelkerung.bewegung.wanderungsgewinn.pdf>
+ <../plots_oberbayern_MAXPOP5000/altersstruktur.pdf> <../plots_oberbayern_MAXPO
+P5000/gebfreifl.rel.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/gebfreif
+l.rel.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <../plots_oberbayern_MAXPOP5000/betrfl.rel.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/betrfl.r
+el.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
+> <../plots_oberbayern_MAXPOP5000/landwfl.rel.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/landwfl.
+rel.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
+> <../plots_oberbayern_MAXPOP5000/waldfl.rel.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/waldfl.r
+el.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
+>]
+<../plots_oberbayern_MAXPOP5000/bauwohn.bestand_wohnungen.insgesamt.pdf, id=251
+, 363.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/bauwohn.bestand_wohnungen.insgesamt.pdf Gr
+aphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/bauwohn.bestand_wohnungen.insgesamt.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/bauwohn.bestand_wohnung
+en.insgesamt.pdf  used on input line 80.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/bauwohn.baugenehmigungen.wohnungen.pdf, id=252,
+ 363.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/bauwohn.baugenehmigungen.wohnungen.pdf Gra
+phic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/bauwohn.baugenehmigungen.wohnungen.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/bauwohn.baugenehmigunge
+n.wohnungen.pdf  used on input line 80.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/bildung.kindertages.plaetze.pro100.pdf, id=253,
+ 363.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/bildung.kindertages.plaetze.pro100.pdf Gra
+phic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/bildung.kindertages.plaetze.pro100.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/bildung.kindertages.pla
+etze.pro100.pdf  used on input line 85.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/schueler.insg.rel.pdf, id=254, 363.3575pt x 339
+.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/schueler.insg.rel.pdf Graphic file (type p
+df)
+<use ../plots_oberbayern_MAXPOP5000/schueler.insg.rel.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/schueler.insg.rel.pdf  
+used on input line 85.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+ [5 <../plots_oberbayern_MAXPOP5000/erholfl.rel.pdf> <../plots_oberbayern_MAXPO
+P5000/bauwohn.bestand_wohnungen.insgesamt.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/bauwohn.
+bestand_wohnungen.insgesamt.pdf): PDF inclusion: multiple pdfs with page group 
+included in a single page
+> <../plots_oberbayern_MAXPOP5000/bauwohn.baugenehmigungen.wohnungen.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/bauwohn.
+baugenehmigungen.wohnungen.pdf): PDF inclusion: multiple pdfs with page group i
+ncluded in a single page
+>]
+<../plots_oberbayern_MAXPOP5000/landforst.betriebe_von_flaeche_ha.insgesamt.pdf
+, id=305, 363.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/landforst.betriebe_von_flaeche_ha.insgesam
+t.pdf Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/landforst.betriebe_von_flaeche_ha.insgesamt
+.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/landforst.betriebe_von_
+flaeche_ha.insgesamt.pdf  used on input line 90.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/umwelt.wasser_pro_kopf_verbrauch.pdf, id=306, 3
+63.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/umwelt.wasser_pro_kopf_verbrauch.pdf Graph
+ic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/umwelt.wasser_pro_kopf_verbrauch.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/umwelt.wasser_pro_kopf_
+verbrauch.pdf  used on input line 90.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/erwerb.sozialverspfl_beschaeftigte_am_arbeitsor
+t.insgesamt.pdf, id=307, 363.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/erwerb.sozialverspfl_beschaeftigte_am_arbe
+itsort.insgesamt.pdf Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/erwerb.sozialverspfl_beschaeftigte_am_arbei
+tsort.insgesamt.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/erwerb.sozialverspfl_be
+schaeftigte_am_arbeitsort.insgesamt.pdf  used on input line 95.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/erwerb.sozialverspfl_beschaeftigte_am_arbeitsor
+t.darunter_einpendler.prozent.pdf, id=308, 363.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/erwerb.sozialverspfl_beschaeftigte_am_arbe
+itsort.darunter_einpendler.prozent.pdf Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/erwerb.sozialverspfl_beschaeftigte_am_arbei
+tsort.darunter_einpendler.prozent.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/erwerb.sozialverspfl_be
+schaeftigte_am_arbeitsort.darunter_einpendler.prozent.pdf  used on input line 9
+5.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+ [6 <../plots_oberbayern_MAXPOP5000/bildung.kindertages.plaetze.pro100.pdf> <..
+/plots_oberbayern_MAXPOP5000/schueler.insg.rel.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/schueler
+.insg.rel.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
+> <../plots_oberbayern_MAXPOP5000/landforst.betriebe_von_flaeche_ha.insgesamt.p
+df
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/landfors
+t.betriebe_von_flaeche_ha.insgesamt.pdf): PDF inclusion: multiple pdfs with pag
+e group included in a single page
+> <../plots_oberbayern_MAXPOP5000/umwelt.wasser_pro_kopf_verbrauch.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/umwelt.w
+asser_pro_kopf_verbrauch.pdf): PDF inclusion: multiple pdfs with page group inc
+luded in a single page
+>]
+<../plots_oberbayern_MAXPOP5000/erwerb.sozialverspfl_beschaeftigte_am_wohnort.d
+arunter_auspendler.prozent.pdf, id=366, 363.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/erwerb.sozialverspfl_beschaeftigte_am_wohn
+ort.darunter_auspendler.prozent.pdf Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/erwerb.sozialverspfl_beschaeftigte_am_wohno
+rt.darunter_auspendler.prozent.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/erwerb.sozialverspfl_be
+schaeftigte_am_wohnort.darunter_auspendler.prozent.pdf  used on input line 99.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/erwerb.pendlersaldo.pdf, id=367, 363.3575pt x 3
+39.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/erwerb.pendlersaldo.pdf Graphic file (type
+ pdf)
+<use ../plots_oberbayern_MAXPOP5000/erwerb.pendlersaldo.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/erwerb.pendlersaldo.pdf
+  used on input line 99.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/lohneinksteuer.bruttolohn.je_arbeitnehmer.pdf, 
+id=368, 363.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/lohneinksteuer.bruttolohn.je_arbeitnehmer.
+pdf Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/lohneinksteuer.bruttolohn.je_arbeitnehmer.p
+df>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/lohneinksteuer.bruttolo
+hn.je_arbeitnehmer.pdf  used on input line 103.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/lohneinksteuer.gesamtbetrag_einkuenfte.insgesam
+t.pdf, id=369, 363.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/lohneinksteuer.gesamtbetrag_einkuenfte.ins
+gesamt.pdf Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/lohneinksteuer.gesamtbetrag_einkuenfte.insg
+esamt.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/lohneinksteuer.gesamtbe
+trag_einkuenfte.insgesamt.pdf  used on input line 103.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/lohneinksteuer.gesamtbetrag_einkuenfte.je_steue
+rpfl.pdf, id=370, 363.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/lohneinksteuer.gesamtbetrag_einkuenfte.je_
+steuerpfl.pdf Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/lohneinksteuer.gesamtbetrag_einkuenfte.je_s
+teuerpfl.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/lohneinksteuer.gesamtbe
+trag_einkuenfte.je_steuerpfl.pdf  used on input line 107.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/sozialhilfe_empf.insg.rel.pdf, id=371, 363.3575
+pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/sozialhilfe_empf.insg.rel.pdf Graphic file
+ (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/sozialhilfe_empf.insg.rel.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/sozialhilfe_empf.insg.r
+el.pdf  used on input line 107.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+ [7 <../plots_oberbayern_MAXPOP5000/erwerb.sozialverspfl_beschaeftigte_am_arbei
+tsort.insgesamt.pdf> <../plots_oberbayern_MAXPOP5000/erwerb.sozialverspfl_besch
+aeftigte_am_arbeitsort.darunter_einpendler.prozent.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/erwerb.s
+ozialverspfl_beschaeftigte_am_arbeitsort.darunter_einpendler.prozent.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+> <../plots_oberbayern_MAXPOP5000/erwerb.sozialverspfl_beschaeftigte_am_wohnort
+.darunter_auspendler.prozent.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/erwerb.s
+ozialverspfl_beschaeftigte_am_wohnort.darunter_auspendler.prozent.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+> <../plots_oberbayern_MAXPOP5000/erwerb.pendlersaldo.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/erwerb.p
+endlersaldo.pdf): PDF inclusion: multiple pdfs with page group included in a si
+ngle page
+> <../plots_oberbayern_MAXPOP5000/lohneinksteuer.bruttolohn.je_arbeitnehmer.pdf
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/lohneink
+steuer.bruttolohn.je_arbeitnehmer.pdf): PDF inclusion: multiple pdfs with page 
+group included in a single page
+> <../plots_oberbayern_MAXPOP5000/lohneinksteuer.gesamtbetrag_einkuenfte.insges
+amt.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/lohneink
+steuer.gesamtbetrag_einkuenfte.insgesamt.pdf): PDF inclusion: multiple pdfs wit
+h page group included in a single page
+>]
+<../plots_oberbayern_MAXPOP5000/kommunale_finanzen.steuereinnahmen_insgesamt.pd
+f, id=455, 363.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/kommunale_finanzen.steuereinnahmen_insgesa
+mt.pdf Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/kommunale_finanzen.steuereinnahmen_insgesam
+t.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/kommunale_finanzen.steu
+ereinnahmen_insgesamt.pdf  used on input line 112.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/kommunale_finanzen.gemeindesteuereinnahmen.insg
+esamt.pdf, id=456, 363.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/kommunale_finanzen.gemeindesteuereinnahmen
+.insgesamt.pdf Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/kommunale_finanzen.gemeindesteuereinnahmen.
+insgesamt.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/kommunale_finanzen.geme
+indesteuereinnahmen.insgesamt.pdf  used on input line 112.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/kommunale_finanzen.steuereinnahmekraft.je_einwo
+hner.pdf, id=457, 363.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/kommunale_finanzen.steuereinnahmekraft.je_
+einwohner.pdf Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/kommunale_finanzen.steuereinnahmekraft.je_e
+inwohner.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/kommunale_finanzen.steu
+ereinnahmekraft.je_einwohner.pdf  used on input line 116.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+<../plots_oberbayern_MAXPOP5000/kommunale_finanzen.realsteueraufbringungskraft.
+pdf, id=458, 363.3575pt x 339.2675pt>
+File: ../plots_oberbayern_MAXPOP5000/kommunale_finanzen.realsteueraufbringungsk
+raft.pdf Graphic file (type pdf)
+<use ../plots_oberbayern_MAXPOP5000/kommunale_finanzen.realsteueraufbringungskr
+aft.pdf>
+Package pdftex.def Info: ../plots_oberbayern_MAXPOP5000/kommunale_finanzen.real
+steueraufbringungskraft.pdf  used on input line 116.
+(pdftex.def)             Requested size: 209.46088pt x 195.57944pt.
+ [8 <../plots_oberbayern_MAXPOP5000/lohneinksteuer.gesamtbetrag_einkuenfte.je_s
+teuerpfl.pdf> <../plots_oberbayern_MAXPOP5000/sozialhilfe_empf.insg.rel.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/sozialhi
+lfe_empf.insg.rel.pdf): PDF inclusion: multiple pdfs with page group included i
+n a single page
+> <../plots_oberbayern_MAXPOP5000/kommunale_finanzen.steuereinnahmen_insgesamt.
+pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/kommunal
+e_finanzen.steuereinnahmen_insgesamt.pdf): PDF inclusion: multiple pdfs with pa
+ge group included in a single page
+> <../plots_oberbayern_MAXPOP5000/kommunale_finanzen.gemeindesteuereinnahmen.in
+sgesamt.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/kommunal
+e_finanzen.gemeindesteuereinnahmen.insgesamt.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <../plots_oberbayern_MAXPOP5000/kommunale_finanzen.steuereinnahmekraft.je_ein
+wohner.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/kommunal
+e_finanzen.steuereinnahmekraft.je_einwohner.pdf): PDF inclusion: multiple pdfs 
+with page group included in a single page
+> <../plots_oberbayern_MAXPOP5000/kommunale_finanzen.realsteueraufbringungskraf
+t.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../plots_oberbayern_MAXPOP5000/kommunal
+e_finanzen.realsteueraufbringungskraft.pdf): PDF inclusion: multiple pdfs with 
+page group included in a single page
+>] (./oberbayern_maxpop5000.aux) ) 
+Here is how much of TeX's memory you used:
+ 2593 strings out of 492616
+ 46522 string characters out of 6135178
+ 111399 words of memory out of 5000000
+ 6423 multiletter control sequences out of 15000+600000
+ 8835 words of font info for 31 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,6n,37p,359b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/hfb
+right/hfbr10.pfb></usr/share/texmf-dist/fonts/type1/public/hfbright/hfbrbx10.pf
+b></usr/share/texmf-dist/fonts/type1/public/hfbright/hfbrsl10.pfb>
+Output written on oberbayern_maxpop5000.pdf (8 pages, 680136 bytes).
+PDF statistics:
+ 561 PDF objects out of 1000 (max. 8388607)
+ 367 compressed objects within 4 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+
