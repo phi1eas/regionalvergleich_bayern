@@ -3,8 +3,20 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 
+# SETTINGS ----------------------------------------------------------------
+HIGHLIGHT = "Engelsberg"
+REGIERUNGSBEZIRK = "Oberbayern"
+LANDKREIS = NULL # set to NULL to use REGIERUNGSBEZIRK instead
+USE_NEW_DATA = FALSE
+FILTER_MAXIMUM_POPULATION = NULL
+SAVE.PLOTS = T
+
 # Load and clean data -----------------------------------------------------
-raw_data = read.csv('GDH2016_Daten_xlsx.csv', sep=';', stringsAsFactors = F)
+if(USE_NEW_DATA) {
+  raw_data = read.csv('GDH2018_Daten_xlsx.csv', sep=';', stringsAsFactors = F)
+} else {
+  raw_data = read.csv('GDH2016_Daten_xlsx.csv', sep=';', stringsAsFactors = F)
+}
 colnames(raw_data)[2:4] = c('Regional.Schluessel', 'Gemeinde.Schluessel.Nr', 'Vgem.Schluessel')
 data = raw_data[!is.na(raw_data$Gemeinde.Schluessel.Nr) & raw_data$Bezeichnung != "Gemeindefreie Gebiete", ]
 
@@ -69,12 +81,8 @@ data$Landkreis <- data$Regional.Schluessel %>%
 
 
 
-# SETTINGS ----------------------------------------------------------------
-HIGHLIGHT = "Engelsberg"
-REGIERUNGSBEZIRK = "Oberbayern"
-LANDKREIS = NULL # set to NULL to use REGIERUNGSBEZIRK instead
 
-FILTER_MAXIMUM_POPULATION = NULL
+# Apply Settings ----------------------------------------------------------
 
 data.filtered = data %>%
   filter(
@@ -94,12 +102,19 @@ if(is.numeric(FILTER_MAXIMUM_POPULATION)) {
 COMPARISON.COLOR = "#F2B134"
 HIGHLIGHT.COLOR = "#ED553B"
 
-SAVE.PLOTS = T
 PLOT.HEIGHT=4.7
 if(is.integer(FILTER_MAXIMUM_POPULATION)) {
-  PLOT.FOLDER = paste0('plots_oberbayern_MAXPOP', FILTER_MAXIMUM_POPULATION, '/')
+  if(USE_NEW_DATA) {
+    PLOT.FOLDER = paste0('plots_oberbayern_NEWDATA_MAXPOP', FILTER_MAXIMUM_POPULATION, '/')
+  } else {
+    PLOT.FOLDER = paste0('plots_oberbayern_MAXPOP', FILTER_MAXIMUM_POPULATION, '/')
+  }
 } else {
-  PLOT.FOLDER = 'plots_oberbayern/'
+  if(USE_NEW_DATA) {
+    PLOT.FOLDER = 'plots_oberbayern_NEWDATA/'
+  } else {
+    PLOT.FOLDER = 'plots_oberbayern/'
+  }
 }
 
 # Prepare Plots -----------------------------------------------------------
@@ -115,23 +130,23 @@ std.plot = function(var.name, plot.title, xlab = var.name, d = data.filtered, lo
   } else {
     NULL
   }
-
+  
   highlight.x = d %>%
     filter(Bezeichnung == HIGHLIGHT) %>%
     select_(var.name) %>%
     as.numeric()
-
+  
   x = d %>%
     select_(var.name) %>%
     .[[1]]
-
+  
   upper_break.y = if(!is.null(upper_break)) sum(x >= upper_break) else NULL
-
+  
   print(sum(x < highlight.x, na.rm = T)/length(x))
-
+  
   percent.lower = scales::percent(sum(x < highlight.x, na.rm = T)/length(x), accuracy = 1)
   percent.greater = scales::percent(sum(x > highlight.x, na.rm = T)/length(x), accuracy = 1)
-
+  
   plt = d %>%
     ggplot(aes_string(x = var.name)) +
     geom_histogram(breaks = breaks, color='black', fill = COMPARISON.COLOR) +
@@ -156,7 +171,7 @@ std.plot = function(var.name, plot.title, xlab = var.name, d = data.filtered, lo
           axis.title = element_text(color = 'black', size = '12'),
           plot.title = element_text(size = 14, face = 'bold'),
           plot.subtitle = element_text(size = 9))
-
+  
   if(SAVE.PLOTS) {
     ggsave(filename = paste0(plot.folder, var.name, ".pdf"), plot = plt, device = cairo_pdf, height=PLOT.HEIGHT)
   } else {
