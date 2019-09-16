@@ -14,28 +14,28 @@
 \contentsline {subsection}{Anteil Landwirtschaftsfl\IeC {\"a}che}{5}% 
 \contentsline {subsection}{Anteil Waldfl\IeC {\"a}che}{5}% 
 \contentsline {subsection}{Anteil Erholungsfl\IeC {\"a}che}{5}% 
-\contentsline {section}{\numberline {3}Wohnen}{6}% 
-\contentsline {subsection}{Wohnungsbestand}{6}% 
-\contentsline {subsection}{Baugenehmigungen f\IeC {\"u}r Wohnungen}{6}% 
-\contentsline {section}{\numberline {4}Kinderbetreuung und Bildung}{7}% 
-\contentsline {subsection}{Kindertagespl\IeC {\"a}tze}{7}% 
-\contentsline {subsection}{Sch\IeC {\"u}ler}{7}% 
-\contentsline {section}{\numberline {5}Landwirtschaft und Umwelt}{7}% 
-\contentsline {subsection}{Land- und forstwirtschaftliche Betriebe}{7}% 
-\contentsline {subsection}{Wasserverbrauch pro Kopf}{7}% 
-\contentsline {section}{\numberline {6}Erwerb, Einkommen und Soziales}{8}% 
-\contentsline {subsection}{Besch\IeC {\"a}ftigte am Arbeitsort}{8}% 
-\contentsline {subsection}{Besch\IeC {\"a}ftigte am Arbeitsort, darunter Einpendler}{8}% 
-\contentsline {subsection}{Besch\IeC {\"a}ftigte am Wohnort, darunter Auspendler}{8}% 
-\contentsline {subsection}{Pendlersaldo}{8}% 
-\contentsline {subsection}{Bruttolohn je Arbeitnehmer}{8}% 
-\contentsline {subsection}{Lohn- und Einkommensteuer: Gesamtbetrag der Eink\IeC {\"u}nfte}{8}% 
-\contentsline {subsection}{Lohn- und Einkommensteuer: Eink\IeC {\"u}nfte je Steuerpflichtiger}{8}% 
-\contentsline {subsection}{Sozialhilfeempf\IeC {\"a}nger}{8}% 
-\contentsline {section}{\numberline {7}Kommunale Finanzen}{9}% 
-\contentsline {subsection}{Gemeindesteuereinnahmen: Grundsteuer A}{9}% 
-\contentsline {subsection}{Gemeindesteuereinnahmen: Grundsteuer B}{9}% 
-\contentsline {subsection}{Steuereinnahmen insgesamt}{9}% 
-\contentsline {subsection}{Gemeindesteuereinnahmen insgesamt}{9}% 
-\contentsline {subsection}{Steuereinnahmekraft je Einwohner}{9}% 
-\contentsline {subsection}{Realsteueraufbringungskraft}{9}% 
+\contentsline {section}{\numberline {3}Wohnen}{5}% 
+\contentsline {subsection}{Wohnungsbestand}{5}% 
+\contentsline {subsection}{Baugenehmigungen f\IeC {\"u}r Wohnungen}{5}% 
+\contentsline {section}{\numberline {4}Kinderbetreuung und Bildung}{6}% 
+\contentsline {subsection}{Kindertagespl\IeC {\"a}tze}{6}% 
+\contentsline {subsection}{Sch\IeC {\"u}ler}{6}% 
+\contentsline {section}{\numberline {5}Landwirtschaft und Umwelt}{6}% 
+\contentsline {subsection}{Land- und forstwirtschaftliche Betriebe}{6}% 
+\contentsline {subsection}{Wasserverbrauch pro Kopf}{6}% 
+\contentsline {section}{\numberline {6}Erwerb, Einkommen und Soziales}{6}% 
+\contentsline {subsection}{Besch\IeC {\"a}ftigte am Arbeitsort}{6}% 
+\contentsline {subsection}{Besch\IeC {\"a}ftigte am Arbeitsort, darunter Einpendler}{6}% 
+\contentsline {subsection}{Besch\IeC {\"a}ftigte am Wohnort, darunter Auspendler}{6}% 
+\contentsline {subsection}{Pendlersaldo}{6}% 
+\contentsline {subsection}{Bruttolohn je Arbeitnehmer}{7}% 
+\contentsline {subsection}{Lohn- und Einkommensteuer: Gesamtbetrag der Eink\IeC {\"u}nfte}{7}% 
+\contentsline {subsection}{Lohn- und Einkommensteuer: Eink\IeC {\"u}nfte je Steuerpflichtiger}{7}% 
+\contentsline {subsection}{Sozialhilfeempf\IeC {\"a}nger}{7}% 
+\contentsline {section}{\numberline {7}Kommunale Finanzen}{7}% 
+\contentsline {subsection}{Gemeindesteuereinnahmen: Grundsteuer A}{7}% 
+\contentsline {subsection}{Gemeindesteuereinnahmen: Grundsteuer B}{7}% 
+\contentsline {subsection}{Steuereinnahmen insgesamt}{8}% 
+\contentsline {subsection}{Gemeindesteuereinnahmen insgesamt}{8}% 
+\contentsline {subsection}{Steuereinnahmekraft je Einwohner}{8}% 
+\contentsline {subsection}{Realsteueraufbringungskraft}{8}% 
