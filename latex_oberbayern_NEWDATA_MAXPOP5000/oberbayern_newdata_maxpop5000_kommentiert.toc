@@ -1,0 +1,47 @@
+\contentsline {section}{\numberline {0}Erläuterungen}{3}% 
+\contentsline {section}{\numberline {1}Eine junge und finanzstarke Gemeinde}{4}% 
+\contentsline {paragraph}{Die Bevölkerung von Engelsberg und seine Entwicklung: 24 Jahre lang starke Zunahme, dann Stagnation}{4}% 
+\contentsline {subsection}{Bevölkerung insgesamt}{4}% 
+\contentsline {subsection}{Bevölkerungsdichte}{4}% 
+\contentsline {subsection}{Bevölkerungsveränderung im Vgl. zu 1987}{4}% 
+\contentsline {subsection}{Bevölkerungsveränderung im Vgl. zu 2011}{4}% 
+\contentsline {subsection}{Bevölkerungsbewegung: Wanderungsgewinn}{4}% 
+\contentsline {subsection}{Bevölkerung: Altersstruktur}{4}% 
+\contentsline {section}{\numberline {2}Altersstruktur}{5}% 
+\contentsline {paragraph}{Engelsberg ist eine junge Gemeinde}{5}% 
+\contentsline {section}{\numberline {3}Die Flächen von Engelsberg}{5}% 
+\contentsline {paragraph}{Viel freies Land mit viel Landwirtschaft}{5}% 
+\contentsline {subsection}{Anteil Gebäude- und Freifläche}{5}% 
+\contentsline {subsection}{Anteil Betriebsfläche}{5}% 
+\contentsline {subsection}{Anteil Landwirtschaftsfläche}{5}% 
+\contentsline {subsection}{Anteil Waldfläche}{5}% 
+\contentsline {subsection}{Anteil Erholungsfläche}{5}% 
+\contentsline {section}{\numberline {4}Wohnen in Engelsberg}{6}% 
+\contentsline {paragraph}{Durchschnittlich viele Wohnungen und Baugenehmigungen}{6}% 
+\contentsline {paragraph}{Kinderbetreuung und Bildung: Wenige Kindertagesstätten und viele Schüler}{6}% 
+\contentsline {subsection}{Wohnungsbestand}{6}% 
+\contentsline {subsection}{Baugenehmigungen für Wohnungen}{6}% 
+\contentsline {subsection}{Kindertagesplätze}{6}% 
+\contentsline {subsection}{Schüler}{6}% 
+\contentsline {section}{\numberline {5}Landwirtschaft und Umwelt}{7}% 
+\contentsline {paragraph}{An der Spitze in Oberbayern liegt Engelsberg...}{7}% 
+\contentsline {subsection}{Land- und forstwirtschaftliche Betriebe}{7}% 
+\contentsline {subsection}{Wasserverbrauch pro Kopf}{7}% 
+\contentsline {section}{\numberline {6}Erwerb, Einkommen und Soziales}{7}% 
+\contentsline {paragraph}{Viele Beschäftigte – mehr Auspendler – relativ hohe Einkünfte}{7}% 
+\contentsline {subsection}{Beschäftigte am Arbeitsort}{7}% 
+\contentsline {subsection}{Beschäftigte am Arbeitsort, darunter Einpendler}{7}% 
+\contentsline {subsection}{Beschäftigte am Wohnort, darunter Auspendler}{8}% 
+\contentsline {subsection}{Pendlersaldo}{8}% 
+\contentsline {subsection}{Bruttolohn je Arbeitnehmer}{8}% 
+\contentsline {subsection}{Lohn- und Einkommensteuer: Gesamtbetrag der Einkünfte}{8}% 
+\contentsline {subsection}{Lohn- und Einkommensteuer: Einkünfte je Steuerpflichtiger}{8}% 
+\contentsline {subsection}{Sozialhilfeempfänger}{8}% 
+\contentsline {section}{\numberline {7}Kommunale Finanzen}{9}% 
+\contentsline {paragraph}{Eine finanzstarke Gemeinde}{9}% 
+\contentsline {subsection}{Gemeindesteuereinnahmen: Grundsteuer A}{9}% 
+\contentsline {subsection}{Gemeindesteuereinnahmen: Grundsteuer B}{9}% 
+\contentsline {subsection}{Steuereinnahmen insgesamt}{9}% 
+\contentsline {subsection}{Gemeindesteuereinnahmen insgesamt}{9}% 
+\contentsline {subsection}{Steuereinnahmekraft je Einwohner}{10}% 
+\contentsline {subsection}{Realsteueraufbringungskraft}{10}% 
